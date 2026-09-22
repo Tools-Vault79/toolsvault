@@ -1,0 +1,14 @@
+# Optional Cloudflare Pages headers.
+# Keep the custom domain indexable while preventing the Pages deployment URL
+# from becoming a duplicate search result.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+/payment-setup.html
+  X-Robots-Tag: noindex
+
+/payment-setup
+  X-Robots-Tag: noindex
