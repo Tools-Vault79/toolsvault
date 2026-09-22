@@ -21,7 +21,28 @@
 footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer .container{display:flex;justify-content:space-between}
 @media(max-width:820px){.workspace{grid-template-columns:1fr}}@media(max-width:520px){.row,.stats{grid-template-columns:1fr}}
 </style>
-</head>
+<style id="toolvault-paywall-css">
+.tv-protected-output{position:relative;overflow:hidden}
+.tv-output-mask{position:absolute;inset:0;z-index:50;background:rgba(248,250,252,.97);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;min-height:180px}
+.tv-output-lock{max-width:430px}
+.tv-output-lock span{display:block;font-size:30px;margin-bottom:8px}
+.tv-output-lock strong{display:block;font-size:20px;color:#0B1220;margin-bottom:7px}
+.tv-output-lock small{display:block;color:#64748B;line-height:1.5;margin-bottom:16px}
+.tv-output-lock button,.tv-buy{display:inline-block;border:0;border-radius:10px;padding:12px 18px;background:#2563EB;color:#fff;font-weight:700;text-decoration:none;cursor:pointer}
+.tv-modal{display:none;position:fixed;inset:0;z-index:9999}
+.tv-modal.open{display:block}
+.tv-modal-backdrop{position:absolute;inset:0;background:rgba(11,18,32,.65);backdrop-filter:blur(3px)}
+.tv-modal-card{position:relative;width:min(520px,calc(100% - 32px));margin:10vh auto 0;background:#fff;border-radius:20px;padding:32px;box-shadow:0 24px 80px rgba(0,0,0,.25);text-align:center}
+.tv-modal-close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;color:#64748B;cursor:pointer}
+.tv-lock{font-size:34px}
+.tv-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;color:#2563EB;margin:8px 0}
+.tv-modal-card h2{margin:5px 0 10px;color:#0B1220}
+.tv-modal-card p{color:#64748B;line-height:1.6;margin:0 auto 18px;max-width:430px}
+.tv-benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px;text-align:left;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:14px;margin:18px 0 20px;color:#334155;font-size:14px}
+.tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
+body.tv-modal-open{overflow:hidden}
+@media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
+</style></head>
 <body>
 <header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a class="back" href="../index.html">← Back to Tools</a></div></header>
 <section class="hero"><div class="container"><div class="badge">CONTENT TOOL</div><h1>Content Calendar Generator</h1><p>Generate a simple 30-day content calendar around a topic and audience.</p></div></section>
@@ -30,8 +51,8 @@ footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer
 <div class="field"><label>Main Topic</label><input id="topic" value="Digital productivity"></div>
 <div class="field"><label>Audience</label><input id="audience" value="Small business owners"></div>
 <div class="field"><label>Posts Per Week</label><select id="freq"><option value="3">3</option><option value="5">5</option><option value="7">7</option></select></div>
-<button class="btn" onclick="generate()">Generate Calendar</button></div>
-<div class="result"><h2>30-Day Calendar</h2><div id="output" class="output"></div><button class="btn" onclick="copyIt()">Copy Calendar</button></div></main>
+<button class="btn"  onclick="ToolVaultPaywall.show()">Generate Calendar</button></div>
+<div class="result"><h2>30-Day Calendar</h2><div id="output" class="output"></div><button class="btn"  onclick="ToolVaultPaywall.show()">Copy Calendar</button></div></main>
 <footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
 <script>function generate(){let b=brand.value,t=topic.value,a=audience.value,n=["How-to guide","Quick tip","Common mistake","Checklist","FAQ","Myth vs fact","Case example","Behind the scenes","Expert insight","Resources"];let step=Math.max(1,Math.round(7/(+freq.value||3))),s=[];for(let d=1;d<=30;d+=step)s.push(`Day ${d}: ${n[(d-1)%n.length]} about ${t}\nAudience: ${a}\nBrand: ${b}\nCTA: Save or share.`);output.textContent=s.join("\n\n")}function copyIt(){navigator.clipboard.writeText(output.textContent)}generate();</script>
-</body></html>
+<script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/content-calendar?wanted=true",toolName:"Content Calendar"};</script><script src="../js/paywall.js"></script></body></html>

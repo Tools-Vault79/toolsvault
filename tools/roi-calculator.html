@@ -21,7 +21,28 @@
 footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer .container{display:flex;justify-content:space-between}
 @media(max-width:820px){.workspace{grid-template-columns:1fr}}@media(max-width:520px){.row,.stats{grid-template-columns:1fr}}
 </style>
-</head>
+<style id="toolvault-paywall-css">
+.tv-protected-output{position:relative;overflow:hidden}
+.tv-output-mask{position:absolute;inset:0;z-index:50;background:rgba(248,250,252,.97);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;min-height:180px}
+.tv-output-lock{max-width:430px}
+.tv-output-lock span{display:block;font-size:30px;margin-bottom:8px}
+.tv-output-lock strong{display:block;font-size:20px;color:#0B1220;margin-bottom:7px}
+.tv-output-lock small{display:block;color:#64748B;line-height:1.5;margin-bottom:16px}
+.tv-output-lock button,.tv-buy{display:inline-block;border:0;border-radius:10px;padding:12px 18px;background:#2563EB;color:#fff;font-weight:700;text-decoration:none;cursor:pointer}
+.tv-modal{display:none;position:fixed;inset:0;z-index:9999}
+.tv-modal.open{display:block}
+.tv-modal-backdrop{position:absolute;inset:0;background:rgba(11,18,32,.65);backdrop-filter:blur(3px)}
+.tv-modal-card{position:relative;width:min(520px,calc(100% - 32px));margin:10vh auto 0;background:#fff;border-radius:20px;padding:32px;box-shadow:0 24px 80px rgba(0,0,0,.25);text-align:center}
+.tv-modal-close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;color:#64748B;cursor:pointer}
+.tv-lock{font-size:34px}
+.tv-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;color:#2563EB;margin:8px 0}
+.tv-modal-card h2{margin:5px 0 10px;color:#0B1220}
+.tv-modal-card p{color:#64748B;line-height:1.6;margin:0 auto 18px;max-width:430px}
+.tv-benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px;text-align:left;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:14px;margin:18px 0 20px;color:#334155;font-size:14px}
+.tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
+body.tv-modal-open{overflow:hidden}
+@media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
+</style></head>
 <body>
 <header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a class="back" href="../index.html">← Back to Tools</a></div></header>
 <section class="hero"><div class="container"><div class="badge">FINANCE TOOL</div><h1>ROI Calculator</h1><p>Calculate total investment cost, net gain, ROI percentage and return multiple.</p></div></section>
@@ -29,8 +50,8 @@ footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer
 <div class="field"><label>Initial Investment ($)</label><input id="investment" type="number" value="1000"></div>
 <div class="field"><label>Additional Costs ($)</label><input id="costs" type="number" value="100"></div>
 <div class="field"><label>Total Return ($)</label><input id="returns" type="number" value="1500"></div>
-<button class="btn" onclick="calc()">Calculate ROI</button></div>
+<button class="btn"  onclick="ToolVaultPaywall.show()">Calculate ROI</button></div>
 <div class="result"><h2>ROI Results</h2><div class="stats"><div class="stat"><span>Total Cost</span><strong id="total">$0</strong></div><div class="stat"><span>Net Gain</span><strong id="gain">$0</strong></div><div class="stat"><span>ROI</span><strong id="roi">0%</strong></div><div class="stat"><span>Return Multiple</span><strong id="multiple">0x</strong></div></div></div></main>
 <footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
 <script>function money(x){return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(x)}function calc(){let t=(+investment.value||0)+(+costs.value||0),r=+returns.value||0,g=r-t;total.textContent=money(t);gain.textContent=money(g);roi.textContent=t?(g/t*100).toFixed(2)+"%":"N/A";multiple.textContent=t?(r/t).toFixed(2)+"x":"N/A"}calc();</script>
-</body></html>
+<script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/roi-calculator?wanted=true",toolName:"Roi Calculator"};</script><script src="../js/paywall.js"></script></body></html>

@@ -21,7 +21,28 @@
 footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer .container{display:flex;justify-content:space-between}
 @media(max-width:820px){.workspace{grid-template-columns:1fr}}@media(max-width:520px){.row,.stats{grid-template-columns:1fr}}
 </style>
-</head>
+<style id="toolvault-paywall-css">
+.tv-protected-output{position:relative;overflow:hidden}
+.tv-output-mask{position:absolute;inset:0;z-index:50;background:rgba(248,250,252,.97);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;min-height:180px}
+.tv-output-lock{max-width:430px}
+.tv-output-lock span{display:block;font-size:30px;margin-bottom:8px}
+.tv-output-lock strong{display:block;font-size:20px;color:#0B1220;margin-bottom:7px}
+.tv-output-lock small{display:block;color:#64748B;line-height:1.5;margin-bottom:16px}
+.tv-output-lock button,.tv-buy{display:inline-block;border:0;border-radius:10px;padding:12px 18px;background:#2563EB;color:#fff;font-weight:700;text-decoration:none;cursor:pointer}
+.tv-modal{display:none;position:fixed;inset:0;z-index:9999}
+.tv-modal.open{display:block}
+.tv-modal-backdrop{position:absolute;inset:0;background:rgba(11,18,32,.65);backdrop-filter:blur(3px)}
+.tv-modal-card{position:relative;width:min(520px,calc(100% - 32px));margin:10vh auto 0;background:#fff;border-radius:20px;padding:32px;box-shadow:0 24px 80px rgba(0,0,0,.25);text-align:center}
+.tv-modal-close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:28px;color:#64748B;cursor:pointer}
+.tv-lock{font-size:34px}
+.tv-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;color:#2563EB;margin:8px 0}
+.tv-modal-card h2{margin:5px 0 10px;color:#0B1220}
+.tv-modal-card p{color:#64748B;line-height:1.6;margin:0 auto 18px;max-width:430px}
+.tv-benefits{display:grid;grid-template-columns:1fr 1fr;gap:9px;text-align:left;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:12px;padding:14px;margin:18px 0 20px;color:#334155;font-size:14px}
+.tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
+body.tv-modal-open{overflow:hidden}
+@media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
+</style></head>
 <body>
 <header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a class="back" href="../index.html">← Back to Tools</a></div></header>
 <section class="hero"><div class="container"><div class="badge">PRODUCTIVITY TOOL</div><h1>Meeting Notes Generator</h1><p>Turn meeting information into organized notes and action items.</p></div></section>
@@ -31,8 +52,8 @@ footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer
 <div class="field"><label>Participants</label><input id="people" value="Team members"></div>
 <div class="field"><label>Discussion Notes</label><textarea id="notes">Add key discussion points and decisions.</textarea></div>
 <div class="field"><label>Next Steps</label><textarea id="steps">Add action items and owners.</textarea></div>
-<button class="btn" onclick="generate()">Create Notes</button></div>
-<div class="result"><h2>Structured Notes</h2><div id="output" class="output"></div><button class="btn" onclick="copyIt()">Copy Notes</button></div></main>
+<button class="btn"  onclick="ToolVaultPaywall.show()">Create Notes</button></div>
+<div class="result"><h2>Structured Notes</h2><div id="output" class="output"></div><button class="btn"  onclick="ToolVaultPaywall.show()">Copy Notes</button></div></main>
 <footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
 <script>date.valueAsDate=new Date();function generate(){output.textContent=`MEETING NOTES\n\nTitle: ${title.value}\nDate: ${date.value}\nParticipants: ${people.value}\n\nDISCUSSION\n${notes.value}\n\nACTION ITEMS\n${steps.value}\n\nFOLLOW-UP\nReview action items at the next meeting.`}function copyIt(){navigator.clipboard.writeText(output.textContent)}generate();</script>
-</body></html>
+<script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/meeting-notes-generator?wanted=true",toolName:"Meeting Notes Generator"};</script><script src="../js/paywall.js"></script></body></html>
