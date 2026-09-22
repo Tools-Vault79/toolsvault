@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ToolVault — Digital Tools for Smarter Work</title>
+<meta name="description" content="ToolVault provides practical browser-based digital tools for business, productivity, marketing and finance.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0;--green:#10B981}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:"Space Grotesk",Arial,sans-serif}
+.container{width:min(1120px,92%);margin:auto}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 23px "Space Grotesk";color:var(--navy);text-decoration:none}
+.logo span{display:inline-flex;width:31px;height:31px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;align-items:center;justify-content:center;margin-right:8px}
+nav{display:flex;gap:20px;align-items:center}
+nav a{color:#475569;text-decoration:none;font-size:14px;font-weight:600}
+nav a:hover{color:var(--blue)}
+.hero{padding:85px 0 70px;text-align:center;background:linear-gradient(180deg,#fff,#F8FAFC)}
+.badge{display:inline-block;background:#EFF6FF;color:var(--blue);border:1px solid #DBEAFE;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:700;margin-bottom:16px}
+.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.05;color:var(--navy);max-width:800px;margin:auto}
+.hero p{max-width:690px;margin:18px auto 28px;color:var(--muted);font-size:17px}
+.btn{display:inline-block;text-decoration:none;border:0;border-radius:10px;padding:12px 18px;background:var(--blue);color:#fff;font-weight:700;font-size:14px;cursor:pointer}
+.btn.secondary{background:#fff;color:var(--navy);border:1px solid var(--border);margin-left:7px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 auto 70px}
+.trust div{background:#fff;border:1px solid var(--border);padding:15px;border-radius:12px;text-align:center;font-size:13px;font-weight:700}
+.section{padding:35px 0 75px}
+.heading{text-align:center;margin-bottom:28px}
+.heading h2{font-size:34px;color:var(--navy)}
+.heading p{color:var(--muted);margin-top:5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--border);border-radius:17px;padding:22px;display:flex;flex-direction:column;min-height:250px;box-shadow:0 8px 25px rgba(15,23,42,.035)}
+.icon{font-size:30px;margin-bottom:12px}
+.card h3{font-size:20px;color:var(--navy);margin-bottom:8px}
+.card p{font-size:13px;color:var(--muted);margin-bottom:18px}
+.card-bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.price{font-weight:800;color:var(--navy)}
+.view{color:var(--blue);font-size:13px;font-weight:800;text-decoration:none}
+.category{padding:20px;border:1px solid var(--border);border-radius:14px;background:#fff;text-decoration:none;color:var(--navy);font-weight:700;text-align:center}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.feature{background:var(--navy);color:#fff;border-radius:22px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.feature h2{font-size:35px}
+.feature p{color:#CBD5E1;margin:10px 0 20px}
+footer{background:var(--navy);color:#94A3B8;padding:30px 0;font-size:12px}
+footer .container{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr 1fr}.categories{grid-template-columns:repeat(3,1fr)}.trust{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.categories{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.hero{padding:60px 0}.btn.secondary{margin:8px 0 0}}
+
+
+.category.active{background:#2563EB;color:#fff;border-color:#2563EB}
+.category{cursor:pointer}
+.free-card{background:#fff;border:1px solid #E2E8F0;border-radius:17px;padding:22px;display:flex;flex-direction:column;min-height:220px}
+.free-card h3{font-size:20px;color:#0B1220;margin:10px 0 7px}
+.free-card p{font-size:13px;color:#64748B;margin-bottom:16px}
+.free-badge{display:inline-block;width:max-content;background:#ECFDF5;color:#047857;border:1px solid #A7F3D0;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:800}
+.tool-card.hidden{display:none}
+.free-link{margin-top:auto;color:#2563EB;font-size:13px;font-weight:800;text-decoration:none}
+
+
+.buy-btn{display:inline-block;background:#0B1220;color:#fff!important;padding:7px 10px;border-radius:8px;text-decoration:none!important;font-size:11px;font-weight:800;margin-left:5px}
+.buy-btn:hover{background:#2563EB}
+
+</style>
+</head>
+<body>
+<header><div class="container nav"><a class="logo" href="index.html"><span>T</span>ToolVault</a><nav><a href="#tools">Tools</a><a href="#categories">Categories</a><a href="#how">How It Works</a><a href="#about">About</a></nav></div></header>
+
+<section class="hero"><div class="container">
+<div class="badge">PRACTICAL DIGITAL TOOLS</div>
+<h1>Powerful Digital Tools. Built to Make Work Easier.</h1>
+<p>Simple browser-based tools for business owners, creators, marketers and professionals. Use them instantly without complicated software.</p>
+<a class="btn" href="#tools">Explore Tools</a><a class="btn secondary" href="#free">Try Free Tools</a>
+</div></section>
+
+<div class="container trust"><div>⚡ Instant Access</div><div>✓ Easy to Use</div><div>🔒 Secure Checkout</div><div>↻ Regular Updates</div></div>
+
+<section class="section" id="tools"><div class="container">
+<div class="heading"><h2>Popular Digital Tools</h2><p>Practical tools designed for everyday work.</p></div>
+<div class="grid">
+<div class="card tool-card" data-category="AI Tools"><div class="icon">🤖</div><h3>AI Prompt Generator</h3><p>Build structured, reusable prompts for AI writing, business and content tasks.</p><div class="card-bottom"><span class="price">$4.99</span><a class="view" href="tools/ai-prompt-generator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="ai-prompt-generator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Business"><div class="icon">📊</div><h3>Business Profit Calculator</h3><p>Calculate revenue, costs, profit, margin and break-even units.</p><div class="card-bottom"><span class="price">$3.99</span><a class="view" href="tools/profit-calculator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="profit-calculator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Business"><div class="icon">🧾</div><h3>Invoice Generator</h3><p>Create professional invoices and print or save them as PDF.</p><div class="card-bottom"><span class="price">$4.99</span><a class="view" href="tools/invoice-generator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="invoice-generator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Marketing"><div class="icon">📱</div><h3>Social Media Planner</h3><p>Generate a simple 7-day social content plan around your audience and topic.</p><div class="card-bottom"><span class="price">$3.99</span><a class="view" href="tools/social-media-planner.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="social-media-planner">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Finance"><div class="icon">💰</div><h3>Expense Calculator</h3><p>Summarize business expenses, remaining budget and expense ratio.</p><div class="card-bottom"><span class="price">$2.99</span><a class="view" href="tools/expense-calculator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="expense-calculator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Business"><div class="icon">🏷️</div><h3>Pricing Calculator</h3><p>Estimate a selling price based on costs, fees and desired profit margin.</p><div class="card-bottom"><span class="price">$3.99</span><a class="view" href="tools/pricing-calculator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="pricing-calculator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Finance"><div class="icon">📈</div><h3>ROI Calculator</h3><p>Calculate net gain, ROI percentage and return multiple.</p><div class="card-bottom"><span class="price">$2.99</span><a class="view" href="tools/roi-calculator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="roi-calculator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Business"><div class="icon">📋</div><h3>Business Quote Generator</h3><p>Prepare a clean quotation for services and products.</p><div class="card-bottom"><span class="price">$3.99</span><a class="view" href="tools/quote-generator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="quote-generator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Productivity"><div class="icon">📝</div><h3>Meeting Notes Generator</h3><p>Turn meeting details into structured notes and action items.</p><div class="card-bottom"><span class="price">$2.99</span><a class="view" href="tools/meeting-notes-generator.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="meeting-notes-generator">Buy Now</a></div></div>
+<div class="card tool-card" data-category="Marketing"><div class="icon">📅</div><h3>Content Calendar Generator</h3><p>Create a simple 30-day publishing calendar around your topic.</p><div class="card-bottom"><span class="price">$3.99</span><a class="view" href="tools/content-calendar.html">View Tool →</a><a class="buy-btn" href="payment-setup.html" data-product="content-calendar">Buy Now</a></div></div>
+</div></div></section>
+
+<section class="section" id="categories"><div class="container">
+<div class="heading"><h2>Browse by Category</h2><p>Choose a category to see the tools that match your needs.</p></div>
+<div class="categories">
+<button class="category active" data-filter="All">All Tools</button>
+<button class="category" data-filter="AI Tools">🤖 AI Tools</button>
+<button class="category" data-filter="Business">💼 Business</button>
+<button class="category" data-filter="Marketing">📣 Marketing</button>
+<button class="category" data-filter="Productivity">⚡ Productivity</button>
+<button class="category" data-filter="Finance">💰 Finance</button>
+</div></div></section>
+
+<section class="section" id="free"><div class="container">
+<div class="heading"><div class="badge">100% FREE</div><h2>Free Tools</h2><p>Useful mini-tools visitors can use immediately — no payment required.</p></div>
+<div class="grid">
+<div class="free-card"><span class="free-badge">FREE</span><div class="icon">🔢</div><h3>Word & Character Counter</h3><p>Count words, characters, sentences and paragraphs instantly.</p><a class="free-link" href="tools/word-counter.html">Use Free Tool →</a></div>
+<div class="free-card"><span class="free-badge">FREE</span><div class="icon">🔤</div><h3>Text Case Converter</h3><p>Convert text to UPPERCASE, lowercase, Title Case and Sentence case.</p><a class="free-link" href="tools/text-case-converter.html">Use Free Tool →</a></div>
+<div class="free-card"><span class="free-badge">FREE</span><div class="icon">🧹</div><h3>Text Cleaner</h3><p>Remove extra spaces and clean copied text in seconds.</p><a class="free-link" href="tools/text-cleaner.html">Use Free Tool →</a></div>
+</div></div></section>
+
+<section class="section" id="how" style="padding-top:25px;padding-bottom:45px">
+<div class="container">
+<div class="heading" style="margin-bottom:18px">
+<h2>How It Works</h2>
+<p>Simple. Fast. Practical.</p>
+</div>
+<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px">
+<div class="card" style="min-height:auto;padding:18px">
+<div style="font-size:22px;margin-bottom:7px">1️⃣</div>
+<h3 style="font-size:17px">Choose a Tool</h3>
+<p style="margin-bottom:0">Pick the tool that matches your task.</p>
+</div>
+<div class="card" style="min-height:auto;padding:18px">
+<div style="font-size:22px;margin-bottom:7px">2️⃣</div>
+<h3 style="font-size:17px">Use It</h3>
+<p style="margin-bottom:0">Enter your information and get your result.</p>
+</div>
+<div class="card" style="min-height:auto;padding:18px">
+<div style="font-size:22px;margin-bottom:7px">3️⃣</div>
+<h3 style="font-size:17px">Get More Done</h3>
+<p style="margin-bottom:0">Save time with simple digital tools.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="about"><div class="container"><div class="heading"><h2>About ToolVault</h2><p>A practical digital toolbox for modern work.</p></div><div class="feature"><div><h2>Less repetitive work. More useful output.</h2><p>ToolVault is being developed around simple utilities that help people calculate, plan, organize and create faster.</p></div><div><p>Future phases can add secure payments, user accounts, protected downloads, subscriptions and premium tool access.</p></div></div></div></section>
+
+<footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
+
+<script>
+document.querySelectorAll('.category[data-filter]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.category[data-filter]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter=btn.dataset.filter;
+    document.querySelectorAll('.tool-card').forEach(card=>{
+      card.classList.toggle('hidden', filter!=='All' && card.dataset.category!==filter);
+    });
+    document.getElementById('tools').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+
+<script src="js/payment-config.js"></script>
+<script src="js/payment-config.js"></script>
+
+<script>
+document.querySelectorAll('.buy-btn').forEach(btn=>{
+  btn.addEventListener('click', e=>{
+    const id=btn.dataset.product;
+    const url=(typeof TOOLVAULT_PRODUCTS!=="undefined") ? TOOLVAULT_PRODUCTS[id] : "";
+    if(url){
+      e.preventDefault();
+      window.location.href=url;
+    }
+  });
+});
+</script>
+
+</body></html>

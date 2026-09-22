@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Profit Calculator — ToolVault</title>
+<meta name="description" content="Calculate revenue, total costs, profit and profit margin with the ToolVault Business Profit Calculator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0;--soft:#EFF6FF;--green:#10B981}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif}
+.container{width:min(1000px,92%);margin:auto}
+header{background:rgba(255,255,255,.97);border-bottom:1px solid var(--border)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 23px "Space Grotesk";color:var(--navy);text-decoration:none}
+.logo span{display:inline-flex;width:31px;height:31px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;align-items:center;justify-content:center;margin-right:8px}
+.back{color:var(--blue);font-size:14px;font-weight:700;text-decoration:none}
+.hero{text-align:center;padding:55px 0 25px}
+.badge{display:inline-block;background:var(--soft);color:var(--blue);border:1px solid #DBEAFE;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:700;margin-bottom:15px}
+.hero h1{font-size:clamp(34px,5vw,50px);line-height:1.1;color:var(--navy);margin-bottom:12px}
+.hero p{color:var(--muted);max-width:650px;margin:auto}
+.calculator{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:28px 0 60px}
+.panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:25px}
+.panel h2{font-size:21px;color:var(--navy);margin-bottom:20px}
+.field{margin-bottom:15px}
+label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
+input{width:100%;padding:12px 13px;border:1px solid #CBD5E1;border-radius:10px;font:inherit;outline:none}
+input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.10)}
+.help{font-size:11px;color:var(--muted);margin-top:4px}
+.btn{width:100%;border:0;border-radius:11px;padding:13px 16px;background:var(--blue);color:#fff;font-weight:700;font-size:14px;cursor:pointer;margin-top:5px}
+.secondary{background:#fff;color:var(--navy);border:1px solid var(--border);margin-top:9px}
+.results{display:grid;gap:11px}
+.result{border:1px solid var(--border);border-radius:13px;padding:15px;background:#F8FAFC}
+.result span{display:block;color:var(--muted);font-size:12px;margin-bottom:3px}
+.result strong{font-size:24px;color:var(--navy)}
+.result.profit{background:#ECFDF5;border-color:#A7F3D0}
+.result.profit strong{color:#047857}
+.result.loss{background:#FEF2F2;border-color:#FECACA}
+.result.loss strong{color:#B91C1C}
+.note{margin-top:16px;font-size:12px;color:var(--muted)}
+footer{background:var(--navy);color:#94A3B8;text-align:center;padding:25px;font-size:12px}
+@media(max-width:760px){.calculator{grid-template-columns:1fr}.hero{padding-top:40px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="../index.html"><span>T</span>ToolVault</a>
+<a class="back" href="../index.html">← Back to Tools</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="badge">BUSINESS TOOL</div>
+<h1>Business Profit Calculator</h1>
+<p>Enter your sales and costs to quickly estimate revenue, total expenses, net profit and profit margin.</p>
+</div>
+</section>
+
+<section class="container calculator">
+<div class="panel">
+<h2>Enter Your Numbers</h2>
+
+<div class="field">
+<label for="units">Units / Sales</label>
+<input id="units" type="number" min="0" step="1" value="100">
+<div class="help">Number of products or services sold.</div>
+</div>
+
+<div class="field">
+<label for="price">Selling Price per Unit ($)</label>
+<input id="price" type="number" min="0" step="0.01" value="25">
+</div>
+
+<div class="field">
+<label for="variable">Variable Cost per Unit ($)</label>
+<input id="variable" type="number" min="0" step="0.01" value="10">
+<div class="help">Cost that changes with each unit sold.</div>
+</div>
+
+<div class="field">
+<label for="fixed">Fixed Costs ($)</label>
+<input id="fixed" type="number" min="0" step="0.01" value="500">
+<div class="help">Rent, software, salaries and other fixed expenses.</div>
+</div>
+
+<div class="field">
+<label for="other">Other Costs ($)</label>
+<input id="other" type="number" min="0" step="0.01" value="0">
+</div>
+
+<button class="btn" onclick="calculate()">Calculate Profit</button>
+<button class="btn secondary" onclick="resetCalculator()">Reset</button>
+</div>
+
+<div class="panel">
+<h2>Your Results</h2>
+<div class="results">
+<div class="result"><span>Total Revenue</span><strong id="revenue">$0.00</strong></div>
+<div class="result"><span>Variable Costs</span><strong id="variableTotal">$0.00</strong></div>
+<div class="result"><span>Total Costs</span><strong id="totalCosts">$0.00</strong></div>
+<div class="result profit" id="profitBox"><span>Net Profit</span><strong id="profit">$0.00</strong></div>
+<div class="result"><span>Profit Margin</span><strong id="margin">0.00%</strong></div>
+<div class="result"><span>Break-even Units</span><strong id="breakEven">0</strong></div>
+</div>
+<p class="note">This calculator is for planning and estimation. It does not provide accounting, tax or financial advice.</p>
+</div>
+</section>
+</main>
+
+<footer>© 2026 ToolVault — Practical digital tools for smarter work.</footer>
+
+<script>
+function money(value){
+  return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(value);
+}
+function calculate(){
+  const units = Math.max(0, Number(document.getElementById('units').value) || 0);
+  const price = Math.max(0, Number(document.getElementById('price').value) || 0);
+  const variable = Math.max(0, Number(document.getElementById('variable').value) || 0);
+  const fixed = Math.max(0, Number(document.getElementById('fixed').value) || 0);
+  const other = Math.max(0, Number(document.getElementById('other').value) || 0);
+
+  const revenue = units * price;
+  const variableTotal = units * variable;
+  const totalCosts = variableTotal + fixed + other;
+  const profit = revenue - totalCosts;
+  const margin = revenue > 0 ? (profit / revenue) * 100 : 0;
+  const contribution = price - variable;
+  const breakEven = contribution > 0 ? Math.ceil((fixed + other) / contribution) : 0;
+
+  document.getElementById('revenue').textContent = money(revenue);
+  document.getElementById('variableTotal').textContent = money(variableTotal);
+  document.getElementById('totalCosts').textContent = money(totalCosts);
+  document.getElementById('profit').textContent = money(profit);
+  document.getElementById('margin').textContent = margin.toFixed(2) + '%';
+  document.getElementById('breakEven').textContent = contribution > 0 ? breakEven.toLocaleString('en-US') : 'N/A';
+
+  const box = document.getElementById('profitBox');
+  box.classList.toggle('profit', profit >= 0);
+  box.classList.toggle('loss', profit < 0);
+}
+function resetCalculator(){
+  document.getElementById('units').value = 100;
+  document.getElementById('price').value = 25;
+  document.getElementById('variable').value = 10;
+  document.getElementById('fixed').value = 500;
+  document.getElementById('other').value = 0;
+  calculate();
+}
+calculate();
+</script>
+</body>
+</html>

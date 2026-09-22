@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ToolVault Payment Setup</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;background:#F8FAFC;color:#111827;margin:0}
+.wrap{max-width:800px;margin:70px auto;padding:30px}
+.box{background:#fff;border:1px solid #E2E8F0;border-radius:18px;padding:30px}
+h1{font-family:"Space Grotesk",Arial,sans-serif;color:#0B1220}
+li{margin:10px 0}code{background:#F1F5F9;padding:3px 6px;border-radius:5px}
+</style>
+</head>
+<body><div class="wrap"><div class="box">
+<h1>ToolVault Payment Setup</h1>
+<p>The ToolVault website is connected to the 10 live Gumroad checkout URLs. Gumroad handles the checkout and digital delivery for each paid product.</p>
+<h2>Planned customer flow</h2>
+<ol>
+<li>Visitor opens a ToolVault product page.</li>
+<li>Visitor sees the description and preview.</li>
+<li>Visitor clicks <strong>Buy Now</strong>.</li>
+<li>Checkout is handled by the payment provider.</li>
+<li>Gumroad processes the payment.</li>
+<li>The customer receives the purchased files through Gumroad.</li>
+</ol>
+<h2>Security principle</h2>
+<p>Paid source files should not be treated as protected merely because a button is hidden in HTML. Final protection requires server-side verification or a controlled delivery mechanism.</p>
+<p>Netlify Functions can provide server-side endpoints and can read secrets from environment variables, which is the architecture planned for the final deployment.</p>
+</div></div></body>
+</html>

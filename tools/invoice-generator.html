@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Generator — ToolVault</title>
+<meta name="description" content="Create a clean professional invoice in your browser with the ToolVault Invoice Generator and print or save it as PDF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif}
+.container{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--border)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 23px "Space Grotesk";color:var(--navy);text-decoration:none}
+.logo span{display:inline-flex;width:31px;height:31px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;align-items:center;justify-content:center;margin-right:8px}
+.back{color:var(--blue);font-size:14px;font-weight:700;text-decoration:none}
+.hero{text-align:center;padding:48px 0 25px}
+.badge{display:inline-block;background:#EFF6FF;color:var(--blue);border:1px solid #DBEAFE;padding:7px 13px;border-radius:30px;font-size:12px;font-weight:700;margin-bottom:15px}
+.hero h1{font-size:clamp(32px,5vw,46px);line-height:1.1;color:var(--navy);margin-bottom:10px}
+.hero p{color:var(--muted);max-width:680px;margin:auto}
+.workspace{display:grid;grid-template-columns:370px 1fr;gap:22px;margin:28px 0 60px;align-items:start}
+.panel{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px}
+.panel h2{font-size:20px;margin-bottom:17px;color:var(--navy)}
+.field{margin-bottom:13px}
+label{display:block;font-size:12px;font-weight:700;margin-bottom:5px}
+input,textarea,select{width:100%;padding:10px 11px;border:1px solid #CBD5E1;border-radius:9px;font:inherit;font-size:13px;outline:none}
+textarea{min-height:65px;resize:vertical}
+input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.09)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.items-head,.item{display:grid;grid-template-columns:1.6fr .7fr .9fr 28px;gap:7px;align-items:center}
+.items-head{font-size:10px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.item{margin-bottom:7px}
+.item input{min-width:0}
+.remove{height:36px;border:1px solid #CBD5E1;background:#fff;border-radius:8px;cursor:pointer;color:#B91C1C;font-weight:700}
+.btn{width:100%;border:0;border-radius:10px;padding:12px 15px;background:var(--blue);color:#fff;font-weight:700;font-size:13px;cursor:pointer;margin-top:6px}
+.secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
+.smallbtn{padding:9px 12px;width:auto}
+.invoice{background:#fff;border:1px solid var(--border);border-radius:4px;padding:42px;min-height:760px;box-shadow:0 8px 30px rgba(15,23,42,.06)}
+.invoice-top{display:flex;justify-content:space-between;gap:30px;border-bottom:2px solid var(--navy);padding-bottom:24px}
+.invoice h2{font-size:28px;color:var(--navy)}
+.biz-name{font-size:20px;font-weight:700;margin-bottom:5px}
+.meta{text-align:right;font-size:12px;color:var(--muted)}
+.addresses{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:25px 0}
+.addresses h3{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:5px}
+.addresses p{font-size:13px;white-space:pre-line}
+.invoice-table{width:100%;border-collapse:collapse;margin-top:8px}
+.invoice-table th{background:#F1F5F9;text-align:left;font-size:11px;padding:10px}
+.invoice-table td{padding:10px;border-bottom:1px solid var(--border);font-size:12px}
+.invoice-table th:nth-child(n+2),.invoice-table td:nth-child(n+2){text-align:right}
+.totals{margin-left:auto;width:min(300px,100%);margin-top:18px}
+.total-row{display:flex;justify-content:space-between;padding:6px 0;font-size:13px}
+.total-row.grand{border-top:2px solid var(--navy);margin-top:5px;padding-top:10px;font-size:17px;font-weight:700}
+.notes{margin-top:35px;padding-top:15px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);white-space:pre-line}
+.actions{display:flex;gap:10px;margin-bottom:15px}
+.actions .btn{width:auto;flex:1;margin:0}
+@media(max-width:900px){.workspace{grid-template-columns:1fr}.invoice{padding:25px}}
+@media(max-width:600px){.invoice-top,.addresses{grid-template-columns:1fr;display:grid}.meta{text-align:left}.row{grid-template-columns:1fr}.items-head,.item{grid-template-columns:1.4fr .6fr .8fr 28px}.invoice{min-height:auto}}
+@media print{
+  body{background:#fff}
+  header,.hero,.editor,.actions{display:none!important}
+  .container{width:100%}
+  .workspace{display:block;margin:0}
+  .invoice{border:0;box-shadow:none;padding:20px;min-height:0}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="../index.html"><span>T</span>ToolVault</a>
+<a class="back" href="../index.html">← Back to Tools</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container">
+<div class="badge">BUSINESS TOOL</div>
+<h1>Invoice Generator</h1>
+<p>Create a professional invoice in your browser, calculate totals automatically, then print or save it as a PDF.</p>
+</div>
+</section>
+
+<section class="container workspace">
+<div class="panel editor">
+<h2>Invoice Details</h2>
+
+<div class="row">
+<div class="field"><label>Business Name</label><input id="business" value="Your Business"></div>
+<div class="field"><label>Invoice Number</label><input id="invoiceNo" value="INV-001"></div>
+</div>
+
+<div class="row">
+<div class="field"><label>Invoice Date</label><input id="invoiceDate" type="date"></div>
+<div class="field"><label>Due Date</label><input id="dueDate" type="date"></div>
+</div>
+
+<div class="field"><label>Business Address</label><textarea id="businessAddress">123 Business Street
+Your City, Country</textarea></div>
+
+<div class="field"><label>Bill To</label><textarea id="client">Client Name
+Client Address
+City, Country</textarea></div>
+
+<h2 style="margin-top:22px">Items</h2>
+<div class="items-head"><span>Description</span><span>Qty</span><span>Unit Price</span><span></span></div>
+<div id="items"></div>
+<button class="btn secondary smallbtn" onclick="addItem()">+ Add Item</button>
+
+<div class="row" style="margin-top:15px">
+<div class="field"><label>Tax (%)</label><input id="tax" type="number" min="0" step="0.01" value="0"></div>
+<div class="field"><label>Discount ($)</label><input id="discount" type="number" min="0" step="0.01" value="0"></div>
+</div>
+
+<div class="field"><label>Notes / Payment Terms</label><textarea id="notes">Thank you for your business.</textarea></div>
+
+<button class="btn" onclick="updateInvoice()">Update Invoice</button>
+<button class="btn secondary" onclick="resetForm()">Reset</button>
+</div>
+
+<div>
+<div class="actions">
+<button class="btn" onclick="updateInvoice()">Preview</button>
+<button class="btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+
+<div class="invoice" id="invoice">
+<div class="invoice-top">
+<div>
+<div class="biz-name" id="outBusiness">Your Business</div>
+<div style="font-size:12px;color:#64748B;white-space:pre-line" id="outBusinessAddress"></div>
+</div>
+<div class="meta">
+<h2>INVOICE</h2>
+<div>Invoice #: <strong id="outNo">INV-001</strong></div>
+<div>Date: <span id="outDate"></span></div>
+<div>Due: <span id="outDue"></span></div>
+</div>
+</div>
+
+<div class="addresses">
+<div><h3>Bill To</h3><p id="outClient"></p></div>
+<div><h3>Payment Status</h3><p>Payment due by the date shown above.</p></div>
+</div>
+
+<table class="invoice-table">
+<thead><tr><th>Description</th><th>Qty</th><th>Unit Price</th><th>Amount</th></tr></thead>
+<tbody id="outItems"></tbody>
+</table>
+
+<div class="totals">
+<div class="total-row"><span>Subtotal</span><strong id="outSubtotal">$0.00</strong></div>
+<div class="total-row"><span>Discount</span><strong id="outDiscount">$0.00</strong></div>
+<div class="total-row"><span>Tax</span><strong id="outTax">$0.00</strong></div>
+<div class="total-row grand"><span>Total</span><strong id="outTotal">$0.00</strong></div>
+</div>
+
+<div class="notes" id="outNotes"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer style="background:#0B1220;color:#94A3B8;text-align:center;padding:25px;font-size:12px">© 2026 ToolVault — Practical digital tools for smarter work.</footer>
+
+<script>
+const today=new Date();
+document.getElementById('invoiceDate').valueAsDate=today;
+const due=new Date(today); due.setDate(due.getDate()+7);
+document.getElementById('dueDate').valueAsDate=due;
+
+function addItem(desc='Service / Product',qty=1,price=0){
+  const row=document.createElement('div');
+  row.className='item';
+  row.innerHTML=`<input class="desc" value="${desc}">
+  <input class="qty" type="number" min="0" step="1" value="${qty}">
+  <input class="unit" type="number" min="0" step="0.01" value="${price}">
+  <button class="remove" onclick="this.parentElement.remove();updateInvoice()">×</button>`;
+  document.getElementById('items').appendChild(row);
+}
+function money(v){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(v)}
+function dateText(v){if(!v)return '—'; const d=new Date(v+'T00:00:00'); return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}
+function updateInvoice(){
+  const business=document.getElementById('business').value.trim()||'Your Business';
+  const no=document.getElementById('invoiceNo').value.trim()||'INV-001';
+  const address=document.getElementById('businessAddress').value.trim();
+  const client=document.getElementById('client').value.trim();
+  const notes=document.getElementById('notes').value.trim();
+  const taxRate=Math.max(0,Number(document.getElementById('tax').value)||0);
+  const discount=Math.max(0,Number(document.getElementById('discount').value)||0);
+
+  document.getElementById('outBusiness').textContent=business;
+  document.getElementById('outBusinessAddress').textContent=address;
+  document.getElementById('outNo').textContent=no;
+  document.getElementById('outDate').textContent=dateText(document.getElementById('invoiceDate').value);
+  document.getElementById('outDue').textContent=dateText(document.getElementById('dueDate').value);
+  document.getElementById('outClient').textContent=client;
+  document.getElementById('outNotes').textContent=notes;
+
+  const out=document.getElementById('outItems');
+  out.innerHTML='';
+  let subtotal=0;
+  document.querySelectorAll('#items .item').forEach(row=>{
+    const desc=row.querySelector('.desc').value.trim()||'Item';
+    const qty=Math.max(0,Number(row.querySelector('.qty').value)||0);
+    const unit=Math.max(0,Number(row.querySelector('.unit').value)||0);
+    const amount=qty*unit;
+    subtotal+=amount;
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${escapeHtml(desc)}</td><td>${qty}</td><td>${money(unit)}</td><td>${money(amount)}</td>`;
+    out.appendChild(tr);
+  });
+  const taxable=Math.max(0,subtotal-discount);
+  const tax=taxable*(taxRate/100);
+  const total=taxable+tax;
+  document.getElementById('outSubtotal').textContent=money(subtotal);
+  document.getElementById('outDiscount').textContent=money(discount);
+  document.getElementById('outTax').textContent=money(tax);
+  document.getElementById('outTotal').textContent=money(total);
+}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+function resetForm(){
+  document.getElementById('business').value='Your Business';
+  document.getElementById('invoiceNo').value='INV-001';
+  document.getElementById('businessAddress').value='123 Business Street\nYour City, Country';
+  document.getElementById('client').value='Client Name\nClient Address\nCity, Country';
+  document.getElementById('tax').value=0;
+  document.getElementById('discount').value=0;
+  document.getElementById('notes').value='Thank you for your business.';
+  document.getElementById('items').innerHTML='';
+  addItem('Service / Product',1,0);
+  updateInvoice();
+}
+addItem('Service / Product',1,100);
+updateInvoice();
+</script>
+</body>
+</html>
