@@ -1,20 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<title>Social Media Planner – Plan Your Social Content | ToolVault</title>
-<meta name="description" content="Plan and organize your social media content with ToolVault's Social Media Planner. Structure posts, content ideas, publishing plans and campaigns.">
-<link rel="canonical" href="https://toolsvault.shop/tools/social-media-planner.html">
-<meta property="og:title" content="Social Media Planner – Plan Your Social Content | ToolVault">
-<meta property="og:description" content="Plan social media posts, content ideas and publishing schedules with ToolVault.">
-<meta property="og:url" content="https://toolsvault.shop/tools/social-media-planner.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="ToolVault">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Social Media Planner — ToolVault</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>Social Media Planner – Plan Your Social Content | ToolVault</title><meta content="Plan and organize your social media content with ToolVault's Social Media Planner. Structure posts, content ideas, publishing plans and campaigns." name="description"/><link href="https://toolsvault.shop/tools/social-media-planner.html" rel="canonical"/><meta content="Social Media Planner – Plan Your Social Content | ToolVault" property="og:title"/><meta content="Plan and organize your social media content with ToolVault's Social Media Planner. Structure posts, content ideas, publishing plans and campaigns." property="og:description"/><meta content="https://toolsvault.shop/tools/social-media-planner.html" property="og:url"/><meta content="website" property="og:type"/><meta content="ToolVault" property="og:site_name"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}h1,h2,h3{font-family:"Space Grotesk",Arial,sans-serif}
@@ -50,18 +43,18 @@ footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer
 .tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
 body.tv-modal-open{overflow:hidden}
 @media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
-</style></head>
+</style><script id="toolvault-schema-v3" type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Social Media Planner", "url": "https://toolsvault.shop/tools/social-media-planner.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Web Browser", "description": "Plan and organize your social media content with ToolVault's Social Media Planner. Structure posts, content ideas, publishing plans and campaigns.", "publisher": {"@type": "Organization", "name": "ToolVault", "url": "https://toolsvault.shop/"}}</script><style id="toolvault-seo-v3">.seo-content{max-width:900px;margin:0 auto 70px;padding:28px 24px;background:#fff;border:1px solid #E2E8F0;border-radius:18px}.seo-content h2{font-size:24px;color:#0B1220;margin:0 0 10px}.seo-content p{color:#64748B;font-size:14px;line-height:1.75;margin:0 0 14px}.seo-related{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.seo-related a{color:#2563EB;text-decoration:none;font-weight:700;font-size:13px;border:1px solid #DBEAFE;background:#EFF6FF;padding:8px 11px;border-radius:9px}</style></head>
 <body>
 <header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a class="back" href="../index.html">← Back to Tools</a></div></header>
 <section class="hero"><div class="container"><div class="badge">MARKETING TOOL</div><h1>Social Media Planner</h1><p>Build a practical 7-day posting plan for your social media channel.</p></div></section>
 <main class="container workspace"><div class="panel"><h2>Plan Your Week</h2>
-<div class="field"><label>Brand</label><input id="brand" value="My Business"></div>
+<div class="field"><label>Brand</label><input id="brand" value="My Business"/></div>
 <div class="field"><label>Platform</label><select id="platform"><option>Facebook</option><option>Instagram</option><option>LinkedIn</option><option>TikTok</option><option>YouTube Shorts</option><option>Pinterest</option></select></div>
-<div class="field"><label>Main Topic</label><input id="topic" value="Productivity tips"></div>
-<div class="field"><label>Target Audience</label><input id="audience" value="Small business owners"></div>
+<div class="field"><label>Main Topic</label><input id="topic" value="Productivity tips"/></div>
+<div class="field"><label>Target Audience</label><input id="audience" value="Small business owners"/></div>
 <div class="field"><label>Tone</label><select id="tone"><option>Helpful</option><option>Professional</option><option>Friendly</option><option>Bold</option></select></div>
-<button class="btn"  onclick="ToolVaultPaywall.show()">Generate Plan</button></div>
-<div class="result"><h2>7-Day Plan</h2><div id="output" class="output"></div><button class="btn"  onclick="ToolVaultPaywall.show()">Copy Plan</button></div></main>
-<footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
+<button class="btn" onclick="ToolVaultPaywall.show()">Generate Plan</button></div>
+<div class="result"><h2>7-Day Plan</h2><div class="output" id="output"></div><button class="btn" onclick="ToolVaultPaywall.show()">Copy Plan</button></div></main>
+<section aria-label="About this tool" class="seo-content"><h2>How to Use the Social Media Planner</h2><p>Plan and organize your social media content with ToolVault's Social Media Planner. Structure posts, content ideas, publishing plans and campaigns.</p><p>Enter your planning information and review the generated schedule as a starting point for your social content workflow.</p><h2>Who Is This Tool For?</h2><p>Useful for creators, marketers, agencies, small businesses and social media managers.</p><h2>Explore Related Tools</h2><div class="seo-related"><a href="content-calendar.html">Content Calendar Generator</a><a href="ai-prompt-generator.html">AI Prompt Generator</a><a href="word-counter.html">Word Counter</a></div></section><footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
 <script>function generate(){let t=topic.value,a=audience.value,p=platform.value,b=brand.value,n=["Common mistake","3 quick tips","Before vs after","Checklist","FAQ","Behind the scenes","Myth vs fact"];output.textContent=n.map((x,i)=>`Day ${i+1}: ${x} about ${t}\nPlatform: ${p}\nAudience: ${a}\nBrand: ${b}\nCTA: Save or share this post.`).join("\n\n")}function copyIt(){navigator.clipboard.writeText(output.textContent)}generate();</script>
 <script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/social-media-planner?wanted=true",toolName:"Social Media Planner"};</script><script src="../js/paywall.js"></script></body></html>

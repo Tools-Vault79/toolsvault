@@ -1,20 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<title>Expense Calculator – Track and Calculate Business Expenses | ToolVault</title>
-<meta name="description" content="Calculate and organize business expenses with ToolVault's Expense Calculator. Track costs, review totals and simplify everyday expense management.">
-<link rel="canonical" href="https://toolsvault.shop/tools/expense-calculator.html">
-<meta property="og:title" content="Expense Calculator – Track and Calculate Business Expenses | ToolVault">
-<meta property="og:description" content="Calculate and organize business expenses with ToolVault's Expense Calculator.">
-<meta property="og:url" content="https://toolsvault.shop/tools/expense-calculator.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="ToolVault">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Expense Calculator — ToolVault</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/><title>Expense Calculator – Track and Calculate Business Expenses | ToolVault</title><meta content="Calculate and organize business expenses with ToolVault's Expense Calculator. Track costs, review totals and simplify everyday expense management." name="description"/><link href="https://toolsvault.shop/tools/expense-calculator.html" rel="canonical"/><meta content="Expense Calculator – Track and Calculate Business Expenses | ToolVault" property="og:title"/><meta content="Calculate and organize business expenses with ToolVault's Expense Calculator. Track costs, review totals and simplify everyday expense management." property="og:description"/><meta content="https://toolsvault.shop/tools/expense-calculator.html" property="og:url"/><meta content="website" property="og:type"/><meta content="ToolVault" property="og:site_name"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}h1,h2,h3{font-family:"Space Grotesk",Arial,sans-serif}
@@ -50,19 +43,19 @@ footer{background:var(--navy);color:#94A3B8;padding:25px 0;font-size:12px}footer
 .tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
 body.tv-modal-open{overflow:hidden}
 @media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
-</style></head>
+</style><script id="toolvault-schema-v3" type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Expense Calculator", "url": "https://toolsvault.shop/tools/expense-calculator.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Web Browser", "description": "Calculate and organize business expenses with ToolVault's Expense Calculator. Track costs, review totals and simplify everyday expense management.", "publisher": {"@type": "Organization", "name": "ToolVault", "url": "https://toolsvault.shop/"}}</script><style id="toolvault-seo-v3">.seo-content{max-width:900px;margin:0 auto 70px;padding:28px 24px;background:#fff;border:1px solid #E2E8F0;border-radius:18px}.seo-content h2{font-size:24px;color:#0B1220;margin:0 0 10px}.seo-content p{color:#64748B;font-size:14px;line-height:1.75;margin:0 0 14px}.seo-related{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.seo-related a{color:#2563EB;text-decoration:none;font-weight:700;font-size:13px;border:1px solid #DBEAFE;background:#EFF6FF;padding:8px 11px;border-radius:9px}</style></head>
 <body>
 <header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a class="back" href="../index.html">← Back to Tools</a></div></header>
 <section class="hero"><div class="container"><div class="badge">FINANCE TOOL</div><h1>Expense Calculator</h1><p>Calculate total business expenses, remaining budget and expense ratio.</p></div></section>
 <main class="container workspace"><div class="panel"><h2>Monthly Expenses</h2>
-<div class="field"><label>Monthly Budget ($)</label><input id="budget" type="number" value="3000"></div>
-<div class="field"><label>Rent / Office ($)</label><input class="e" type="number" value="500"></div>
-<div class="field"><label>Utilities ($)</label><input class="e" type="number" value="150"></div>
-<div class="field"><label>Software ($)</label><input class="e" type="number" value="100"></div>
-<div class="field"><label>Marketing ($)</label><input class="e" type="number" value="200"></div>
-<div class="field"><label>Other ($)</label><input class="e" type="number" value="100"></div>
-<button class="btn"  onclick="ToolVaultPaywall.show()">Calculate</button></div>
+<div class="field"><label>Monthly Budget ($)</label><input id="budget" type="number" value="3000"/></div>
+<div class="field"><label>Rent / Office ($)</label><input class="e" type="number" value="500"/></div>
+<div class="field"><label>Utilities ($)</label><input class="e" type="number" value="150"/></div>
+<div class="field"><label>Software ($)</label><input class="e" type="number" value="100"/></div>
+<div class="field"><label>Marketing ($)</label><input class="e" type="number" value="200"/></div>
+<div class="field"><label>Other ($)</label><input class="e" type="number" value="100"/></div>
+<button class="btn" onclick="ToolVaultPaywall.show()">Calculate</button></div>
 <div class="result"><h2>Summary</h2><div class="stats"><div class="stat"><span>Total Expenses</span><strong id="total">$0</strong></div><div class="stat"><span>Remaining</span><strong id="remaining">$0</strong></div><div class="stat"><span>Expense Ratio</span><strong id="ratio">0%</strong></div><div class="stat"><span>Largest Expense</span><strong id="largest">—</strong></div></div></div></main>
-<footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
+<section aria-label="About this tool" class="seo-content"><h2>How to Use the Expense Calculator</h2><p>Calculate and organize business expenses with ToolVault's Expense Calculator. Track costs, review totals and simplify everyday expense management.</p><p>Enter the requested expense values and review the calculated summary before using the result in your budgeting workflow.</p><h2>Who Is This Tool For?</h2><p>Useful for freelancers, small businesses, managers and anyone tracking recurring expenses.</p><h2>Explore Related Tools</h2><div class="seo-related"><a href="profit-calculator.html">Profit Calculator</a><a href="pricing-calculator.html">Pricing Calculator</a><a href="roi-calculator.html">ROI Calculator</a></div></section><footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
 <script>function money(x){return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(x)}function calc(){let b=+budget.value||0,v=[...document.querySelectorAll(".e")].map(x=>+x.value||0),names=["Rent","Utilities","Software","Marketing","Other"],t=v.reduce((a,x)=>a+x,0),m=Math.max(...v);total.textContent=money(t);remaining.textContent=money(b-t);ratio.textContent=(b?t/b*100:0).toFixed(1)+"%";largest.textContent=m?names[v.indexOf(m)]:"—"}calc();</script>
 <script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/expense-calculator?wanted=true",toolName:"Expense Calculator"};</script><script src="../js/paywall.js"></script></body></html>

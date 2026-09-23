@@ -1,0 +1,9 @@
+ToolVault SEO V3 - Ready Package
+
+Based on the uploaded ToolVault Universal Unlock v1 FIXED project.
+
+Included: unique title/meta/canonical/Open Graph metadata; homepage WebSite schema; tool-page WebApplication schema; crawlable H2/paragraph content; related-tool internal links. Existing tool functionality and Universal Unlock/paywall JavaScript are preserved.
+
+Deployment: back up the current GitHub repo, copy the ToolVault-final contents into the repo, commit to the branch connected to Cloudflare, wait for deployment, then test the homepage, several tool pages, and the paywall.
+
+Note: the included paywall is client-side UX protection. True purchase enforcement requires server-side purchase verification.
