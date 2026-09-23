@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://toolsvault.shop/</loc></url>
-  <url><loc>https://toolsvault.shop/tools/ai-prompt-generator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/content-calendar</loc></url>
-  <url><loc>https://toolsvault.shop/tools/expense-calculator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/invoice-generator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/meeting-notes-generator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/pricing-calculator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/profit-calculator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/quote-generator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/roi-calculator</loc></url>
-  <url><loc>https://toolsvault.shop/tools/social-media-planner</loc></url>
-  <url><loc>https://toolsvault.shop/tools/text-case-converter</loc></url>
-  <url><loc>https://toolsvault.shop/tools/text-cleaner</loc></url>
-  <url><loc>https://toolsvault.shop/tools/word-counter</loc></url>
+
+  <url>
+    <loc>https://toolsvault.shop/</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/ai-prompt-generator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/content-calendar.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/expense-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/invoice-generator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/meeting-notes-generator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/pricing-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/profit-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/quote-generator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/roi-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/social-media-planner.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/text-case-converter.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/text-cleaner.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/tools/word-counter.html</loc>
+  </url>
+
 </urlset>
