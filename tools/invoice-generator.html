@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<title>Invoice Generator – Create Professional Invoices | ToolVault</title>
-<meta name="description" content="Create professional invoices quickly with ToolVault's free Invoice Generator. Generate clear, organized invoices for your business, clients, and services.">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Invoice Generator – Free Professional Invoice Maker | ToolVault</title>
+
+<meta name="description" content="Create professional invoices online with ToolVault's free Invoice Generator. Add business and client details, calculate totals, tax and discounts, then print or save your invoice as a PDF.">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+
 <link rel="canonical" href="https://toolsvault.shop/tools/invoice-generator.html">
-<meta property="og:title" content="Invoice Generator – Create Professional Invoices | ToolVault">
-<meta property="og:description" content="Create professional invoices quickly with ToolVault's free Invoice Generator. Generate clear, organized invoices for your business, clients, and services.">
+
+<meta property="og:title" content="Invoice Generator – Free Professional Invoice Maker | ToolVault">
+<meta property="og:description" content="Create professional invoices online with ToolVault's free Invoice Generator. Add business and client details, calculate totals, tax and discounts, then print or save your invoice as a PDF.">
 <meta property="og:url" content="https://toolsvault.shop/tools/invoice-generator.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ToolVault">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Invoice Generator – Free Professional Invoice Maker | ToolVault">
+<meta name="twitter:description" content="Create professional invoices online with ToolVault's free invoice generator for businesses, freelancers and service providers.">
+
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+
 <style>
 :root{--navy:#0B1220;--blue:#2563EB;--cyan:#06B6D4;--bg:#F8FAFC;--white:#fff;--text:#111827;--muted:#64748B;--border:#E2E8F0}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -65,16 +77,29 @@ input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 
 .notes{margin-top:35px;padding-top:15px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);white-space:pre-line}
 .actions{display:flex;gap:10px;margin-bottom:15px}
 .actions .btn{width:auto;flex:1;margin:0}
-@media(max-width:900px){.workspace{grid-template-columns:1fr}.invoice{padding:25px}}
-@media(max-width:600px){.invoice-top,.addresses{grid-template-columns:1fr;display:grid}.meta{text-align:left}.row{grid-template-columns:1fr}.items-head,.item{grid-template-columns:1.4fr .6fr .8fr 28px}.invoice{min-height:auto}}
+
+@media(max-width:900px){
+.workspace{grid-template-columns:1fr}
+.invoice{padding:25px}
+}
+
+@media(max-width:600px){
+.invoice-top,.addresses{grid-template-columns:1fr;display:grid}
+.meta{text-align:left}
+.row{grid-template-columns:1fr}
+.items-head,.item{grid-template-columns:1.4fr .6fr .8fr 28px}
+.invoice{min-height:auto}
+}
+
 @media print{
-  body{background:#fff}
-  header,.hero,.editor,.actions{display:none!important}
-  .container{width:100%}
-  .workspace{display:block;margin:0}
-  .invoice{border:0;box-shadow:none;padding:20px;min-height:0}
+body{background:#fff}
+header,.hero,.editor,.actions,.seo-content,footer{display:none!important}
+.container{width:100%}
+.workspace{display:block;margin:0}
+.invoice{border:0;box-shadow:none;padding:20px;min-height:0}
 }
 </style>
+
 <style id="toolvault-paywall-css">
 .tv-protected-output{position:relative;overflow:hidden}
 .tv-output-mask{position:absolute;inset:0;z-index:50;background:rgba(248,250,252,.97);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;min-height:180px}
@@ -96,158 +121,616 @@ input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 
 .tv-note{font-size:12px;color:#94A3B8;margin-top:12px}
 body.tv-modal-open{overflow:hidden}
 @media(max-width:560px){.tv-benefits{grid-template-columns:1fr}.tv-modal-card{padding:28px 20px}}
-</style><script id="toolvault-schema-v3" type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Invoice Generator", "url": "https://toolsvault.shop/tools/invoice-generator.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Web Browser", "description": "Create professional invoices quickly with ToolVault's Invoice Generator. Enter your business and customer details and prepare an organized invoice.", "publisher": {"@type": "Organization", "name": "ToolVault", "url": "https://toolsvault.shop/"}}</script><style id="toolvault-seo-v3">.seo-content{max-width:900px;margin:0 auto 70px;padding:28px 24px;background:#fff;border:1px solid #E2E8F0;border-radius:18px}.seo-content h2{font-size:24px;color:#0B1220;margin:0 0 10px}.seo-content p{color:#64748B;font-size:14px;line-height:1.75;margin:0 0 14px}.seo-related{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.seo-related a{color:#2563EB;text-decoration:none;font-weight:700;font-size:13px;border:1px solid #DBEAFE;background:#EFF6FF;padding:8px 11px;border-radius:9px}</style></head>
+</style>
+
+<script id="toolvault-schema-v4" type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Invoice Generator",
+  "url":"https://toolsvault.shop/tools/invoice-generator.html",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web Browser",
+  "description":"Free online invoice generator for creating professional business invoices with client details, items, quantities, prices, tax, discounts and payment terms.",
+  "isAccessibleForFree":true,
+  "publisher":{
+    "@type":"Organization",
+    "name":"ToolVault",
+    "url":"https://toolsvault.shop/"
+  }
+}
+</script>
+
+<script id="toolvault-faq-schema" type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What is an invoice generator?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"An invoice generator is an online tool that helps businesses, freelancers and service providers create organized invoices with customer details, products or services, prices, taxes and payment information."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How does the ToolVault Invoice Generator work?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Enter your business details, client information, invoice number, dates and line items. The generator calculates the subtotal, discount, tax and total automatically."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I use this invoice generator for a small business?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The invoice generator can be used by small businesses, freelancers, consultants and service providers to prepare organized business invoices."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I print or save the generated invoice as a PDF?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The invoice includes a Print / Save PDF option so you can use the browser's printing functionality to print or save the invoice as a PDF."
+      }
+    }
+  ]
+}
+</script>
+
+<style id="toolvault-seo-v4">
+.seo-content{
+max-width:900px;
+margin:0 auto 70px;
+padding:28px 24px;
+background:#fff;
+border:1px solid #E2E8F0;
+border-radius:18px
+}
+
+.seo-content h2{
+font-size:24px;
+color:#0B1220;
+margin:0 0 10px
+}
+
+.seo-content h3{
+font-size:18px;
+color:#0B1220;
+margin:22px 0 8px
+}
+
+.seo-content p{
+color:#64748B;
+font-size:14px;
+line-height:1.75;
+margin:0 0 14px
+}
+
+.seo-content ul{
+margin:0 0 18px 20px;
+color:#64748B;
+font-size:14px;
+line-height:1.75
+}
+
+.seo-related{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:16px
+}
+
+.seo-related a{
+color:#2563EB;
+text-decoration:none;
+font-weight:700;
+font-size:13px;
+border:1px solid #DBEAFE;
+background:#EFF6FF;
+padding:8px 11px;
+border-radius:9px
+}
+</style>
+
+</head>
+
 <body>
+
 <header>
 <div class="container nav">
 <a class="logo" href="../index.html"><span>T</span>ToolVault</a>
 <a class="back" href="../index.html">← Back to Tools</a>
 </div>
 </header>
+
 <main>
+
 <section class="hero">
 <div class="container">
-<div class="badge">BUSINESS TOOL</div>
+
+<div class="badge">FREE INVOICE GENERATOR</div>
+
 <h1>Invoice Generator</h1>
-<p>Create a professional invoice in your browser, calculate totals automatically, then print or save it as a PDF.</p>
+
+<p>
+Create a professional business invoice online, calculate totals automatically, and print or save your invoice as a PDF with ToolVault's free Invoice Generator.
+</p>
+
 </div>
 </section>
+
 <section class="container workspace">
+
 <div class="panel editor">
+
 <h2>Invoice Details</h2>
+
 <div class="row">
-<div class="field"><label>Business Name</label><input id="business" value="Your Business"/></div>
-<div class="field"><label>Invoice Number</label><input id="invoiceNo" value="INV-001"/></div>
+
+<div class="field">
+<label>Business Name</label>
+<input id="business" value="Your Business"/>
 </div>
+
+<div class="field">
+<label>Invoice Number</label>
+<input id="invoiceNo" value="INV-001"/>
+</div>
+
+</div>
+
 <div class="row">
-<div class="field"><label>Invoice Date</label><input id="invoiceDate" type="date"/></div>
-<div class="field"><label>Due Date</label><input id="dueDate" type="date"/></div>
+
+<div class="field">
+<label>Invoice Date</label>
+<input id="invoiceDate" type="date"/>
 </div>
-<div class="field"><label>Business Address</label><textarea id="businessAddress">123 Business Street
-Your City, Country</textarea></div>
-<div class="field"><label>Bill To</label><textarea id="client">Client Name
+
+<div class="field">
+<label>Due Date</label>
+<input id="dueDate" type="date"/>
+</div>
+
+</div>
+
+<div class="field">
+<label>Business Address</label>
+<textarea id="businessAddress">123 Business Street
+Your City, Country</textarea>
+</div>
+
+<div class="field">
+<label>Bill To</label>
+<textarea id="client">Client Name
 Client Address
-City, Country</textarea></div>
+City, Country</textarea>
+</div>
+
 <h2 style="margin-top:22px">Items</h2>
-<div class="items-head"><span>Description</span><span>Qty</span><span>Unit Price</span><span></span></div>
+
+<div class="items-head">
+<span>Description</span>
+<span>Qty</span>
+<span>Unit Price</span>
+<span></span>
+</div>
+
 <div id="items"></div>
+
 <button class="btn secondary smallbtn" onclick="addItem()">+ Add Item</button>
+
 <div class="row" style="margin-top:15px">
-<div class="field"><label>Tax (%)</label><input id="tax" min="0" step="0.01" type="number" value="0"/></div>
-<div class="field"><label>Discount ($)</label><input id="discount" min="0" step="0.01" type="number" value="0"/></div>
+
+<div class="field">
+<label>Tax (%)</label>
+<input id="tax" min="0" step="0.01" type="number" value="0"/>
 </div>
-<div class="field"><label>Notes / Payment Terms</label><textarea id="notes">Thank you for your business.</textarea></div>
+
+<div class="field">
+<label>Discount ($)</label>
+<input id="discount" min="0" step="0.01" type="number" value="0"/>
+</div>
+
+</div>
+
+<div class="field">
+<label>Notes / Payment Terms</label>
+<textarea id="notes">Thank you for your business.</textarea>
+</div>
+
 <button class="btn" onclick="ToolVaultPaywall.show()">Update Invoice</button>
+
 <button class="btn secondary" onclick="resetForm()">Reset</button>
+
 </div>
+
 <div>
+
 <div class="actions">
+
 <button class="btn" onclick="ToolVaultPaywall.show()">Preview</button>
+
 <button class="btn" onclick="ToolVaultPaywall.show()">Print / Save PDF</button>
+
 </div>
+
 <div class="invoice" id="invoice">
+
 <div class="invoice-top">
+
 <div>
+
 <div class="biz-name" id="outBusiness">Your Business</div>
+
 <div id="outBusinessAddress" style="font-size:12px;color:#64748B;white-space:pre-line"></div>
+
 </div>
+
 <div class="meta">
+
 <h2>INVOICE</h2>
+
 <div>Invoice #: <strong id="outNo">INV-001</strong></div>
+
 <div>Date: <span id="outDate"></span></div>
+
 <div>Due: <span id="outDue"></span></div>
+
 </div>
+
 </div>
+
 <div class="addresses">
-<div><h3>Bill To</h3><p id="outClient"></p></div>
-<div><h3>Payment Status</h3><p>Payment due by the date shown above.</p></div>
+
+<div>
+<h3>Bill To</h3>
+<p id="outClient"></p>
 </div>
+
+<div>
+<h3>Payment Status</h3>
+<p>Payment due by the date shown above.</p>
+</div>
+
+</div>
+
 <table class="invoice-table">
-<thead><tr><th>Description</th><th>Qty</th><th>Unit Price</th><th>Amount</th></tr></thead>
+
+<thead>
+<tr>
+<th>Description</th>
+<th>Qty</th>
+<th>Unit Price</th>
+<th>Amount</th>
+</tr>
+</thead>
+
 <tbody id="outItems"></tbody>
+
 </table>
+
 <div class="totals">
-<div class="total-row"><span>Subtotal</span><strong id="outSubtotal">$0.00</strong></div>
-<div class="total-row"><span>Discount</span><strong id="outDiscount">$0.00</strong></div>
-<div class="total-row"><span>Tax</span><strong id="outTax">$0.00</strong></div>
-<div class="total-row grand"><span>Total</span><strong id="outTotal">$0.00</strong></div>
+
+<div class="total-row">
+<span>Subtotal</span>
+<strong id="outSubtotal">$0.00</strong>
 </div>
+
+<div class="total-row">
+<span>Discount</span>
+<strong id="outDiscount">$0.00</strong>
+</div>
+
+<div class="total-row">
+<span>Tax</span>
+<strong id="outTax">$0.00</strong>
+</div>
+
+<div class="total-row grand">
+<span>Total</span>
+<strong id="outTotal">$0.00</strong>
+</div>
+
+</div>
+
 <div class="notes" id="outNotes"></div>
+
 </div>
+
 </div>
+
 </section>
+
 </main>
-<section aria-label="About this tool" class="seo-content"><h2>How to Use the Invoice Generator</h2><p>Create professional invoices quickly with ToolVault's Invoice Generator. Enter your business and customer details and prepare an organized invoice.</p><p>Enter the requested invoice details and item information, then review the generated invoice before using it for your workflow.</p><h2>Who Is This Tool For?</h2><p>Useful for freelancers, consultants, service providers and small businesses.</p><h2>Explore Related Tools</h2><div class="seo-related"><a href="quote-generator.html">Quote Generator</a><a href="expense-calculator.html">Expense Calculator</a><a href="profit-calculator.html">Profit Calculator</a></div></section><footer style="background:#0B1220;color:#94A3B8;text-align:center;padding:25px;font-size:12px">© 2026 ToolVault — Practical digital tools for smarter work.</footer>
+
+<section aria-label="Invoice Generator information" class="seo-content">
+
+<h2>Free Invoice Generator Online</h2>
+
+<p>
+ToolVault's Invoice Generator helps businesses, freelancers, consultants and service providers create professional invoices online. Enter your business information, client details and products or services to prepare an organized invoice.
+</p>
+
+<p>
+The invoice maker automatically calculates line-item amounts, subtotal, discount, tax and final total. You can then review the invoice and use the print or PDF option for your workflow.
+</p>
+
+<h2>How to Use the Invoice Generator</h2>
+
+<p>
+Creating an invoice with ToolVault is straightforward. Enter the required information and add the products or services you want to include.
+</p>
+
+<ul>
+<li>Enter your business name and invoice number.</li>
+<li>Select the invoice date and payment due date.</li>
+<li>Add your business address.</li>
+<li>Enter the client's billing information.</li>
+<li>Add products or services as invoice items.</li>
+<li>Enter quantities and unit prices.</li>
+<li>Add tax or a discount when applicable.</li>
+<li>Add payment terms or notes.</li>
+<li>Update and review the generated invoice.</li>
+<li>Print or save the invoice as a PDF.</li>
+</ul>
+
+<h2>What Is an Invoice Generator?</h2>
+
+<p>
+An invoice generator is an online tool that helps create invoices for products and services. Instead of manually calculating every line item, an invoice maker can automatically calculate amounts and organize important billing information into a professional invoice format.
+</p>
+
+<h2>Invoice Generator for Small Business</h2>
+
+<p>
+Small businesses can use an online invoice generator to prepare invoices for customers and clients. Common users include consultants, freelancers, agencies, contractors, service providers and other businesses that bill for products or services.
+</p>
+
+<h3>Business Invoice Generator</h3>
+
+<p>
+A business invoice should clearly identify the seller, customer, invoice number, dates, items, prices and total amount due. ToolVault's invoice generator provides fields for these core details in one place.
+</p>
+
+<h3>Invoice Generator for Freelancers</h3>
+
+<p>
+Freelancers and independent professionals can use the tool to organize service descriptions, quantities, prices, discounts and taxes when preparing invoices for clients.
+</p>
+
+<h2>Invoice Maker With Automatic Calculations</h2>
+
+<p>
+The calculator automatically determines each line-item amount from quantity and unit price. It then calculates the subtotal, applies any discount and calculates the tax before displaying the final invoice total.
+</p>
+
+<h2>Printable Invoice Generator</h2>
+
+<p>
+After reviewing your invoice, use the Print / Save PDF option to print the document or save it as a PDF through your browser's print functionality.
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is an invoice generator?</h3>
+
+<p>
+An invoice generator is an online tool that helps businesses and individuals create organized invoices containing customer details, products or services, prices, taxes and payment information.
+</p>
+
+<h3>Can I use this invoice generator for a small business?</h3>
+
+<p>
+Yes. It can be used by small businesses, freelancers, consultants, agencies and service providers to prepare organized business invoices.
+</p>
+
+<h3>Can I add tax and discounts?</h3>
+
+<p>
+Yes. The invoice form includes separate fields for tax percentage and discount amount, and the calculator incorporates them into the final total.
+</p>
+
+<h3>Can I print or save the invoice as a PDF?</h3>
+
+<p>
+Yes. Use the Print / Save PDF option to print the generated invoice or save it as a PDF using your browser.
+</p>
+
+<h2>Explore Related ToolVault Tools</h2>
+
+<div class="seo-related">
+
+<a href="quote-generator.html">Quote Generator</a>
+
+<a href="expense-calculator.html">Expense Calculator</a>
+
+<a href="profit-calculator.html">Profit Calculator</a>
+
+<a href="business-profit-calculator.html">Business Profit Calculator</a>
+
+</div>
+
+</section>
+
+<footer style="background:#0B1220;color:#94A3B8;text-align:center;padding:25px;font-size:12px">
+© 2026 ToolVault — Practical digital tools for smarter work.
+</footer>
+
 <script>
+
 const today=new Date();
+
 document.getElementById('invoiceDate').valueAsDate=today;
-const due=new Date(today); due.setDate(due.getDate()+7);
+
+const due=new Date(today);
+due.setDate(due.getDate()+7);
+
 document.getElementById('dueDate').valueAsDate=due;
 
 function addItem(desc='Service / Product',qty=1,price=0){
+
   const row=document.createElement('div');
+
   row.className='item';
+
   row.innerHTML=`<input class="desc" value="${desc}">
   <input class="qty" type="number" min="0" step="1" value="${qty}">
   <input class="unit" type="number" min="0" step="0.01" value="${price}">
   <button class="remove" onclick="this.parentElement.remove();updateInvoice()">×</button>`;
+
   document.getElementById('items').appendChild(row);
 }
-function money(v){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(v)}
-function dateText(v){if(!v)return '—'; const d=new Date(v+'T00:00:00'); return d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})}
+
+function money(v){
+
+  return new Intl.NumberFormat('en-US',{
+    style:'currency',
+    currency:'USD'
+  }).format(v)
+
+}
+
+function dateText(v){
+
+  if(!v)return '—';
+
+  const d=new Date(v+'T00:00:00');
+
+  return d.toLocaleDateString('en-US',{
+    year:'numeric',
+    month:'short',
+    day:'numeric'
+  })
+
+}
+
 function updateInvoice(){
+
   const business=document.getElementById('business').value.trim()||'Your Business';
+
   const no=document.getElementById('invoiceNo').value.trim()||'INV-001';
+
   const address=document.getElementById('businessAddress').value.trim();
+
   const client=document.getElementById('client').value.trim();
+
   const notes=document.getElementById('notes').value.trim();
+
   const taxRate=Math.max(0,Number(document.getElementById('tax').value)||0);
+
   const discount=Math.max(0,Number(document.getElementById('discount').value)||0);
 
   document.getElementById('outBusiness').textContent=business;
+
   document.getElementById('outBusinessAddress').textContent=address;
+
   document.getElementById('outNo').textContent=no;
+
   document.getElementById('outDate').textContent=dateText(document.getElementById('invoiceDate').value);
+
   document.getElementById('outDue').textContent=dateText(document.getElementById('dueDate').value);
+
   document.getElementById('outClient').textContent=client;
+
   document.getElementById('outNotes').textContent=notes;
 
   const out=document.getElementById('outItems');
+
   out.innerHTML='';
+
   let subtotal=0;
+
   document.querySelectorAll('#items .item').forEach(row=>{
+
     const desc=row.querySelector('.desc').value.trim()||'Item';
+
     const qty=Math.max(0,Number(row.querySelector('.qty').value)||0);
+
     const unit=Math.max(0,Number(row.querySelector('.unit').value)||0);
+
     const amount=qty*unit;
+
     subtotal+=amount;
+
     const tr=document.createElement('tr');
+
     tr.innerHTML=`<td>${escapeHtml(desc)}</td><td>${qty}</td><td>${money(unit)}</td><td>${money(amount)}</td>`;
+
     out.appendChild(tr);
+
   });
+
   const taxable=Math.max(0,subtotal-discount);
+
   const tax=taxable*(taxRate/100);
+
   const total=taxable+tax;
+
   document.getElementById('outSubtotal').textContent=money(subtotal);
+
   document.getElementById('outDiscount').textContent=money(discount);
+
   document.getElementById('outTax').textContent=money(tax);
+
   document.getElementById('outTotal').textContent=money(total);
+
 }
-function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+
+function escapeHtml(s){
+
+  return s.replace(/[&<>"']/g,c=>({
+    '&':'&amp;',
+    '<':'&lt;',
+    '>':'&gt;',
+    '"':'&quot;',
+    "'":'&#039;'
+  }[c]))
+
+}
+
 function resetForm(){
+
   document.getElementById('business').value='Your Business';
+
   document.getElementById('invoiceNo').value='INV-001';
+
   document.getElementById('businessAddress').value='123 Business Street\nYour City, Country';
+
   document.getElementById('client').value='Client Name\nClient Address\nCity, Country';
+
   document.getElementById('tax').value=0;
+
   document.getElementById('discount').value=0;
+
   document.getElementById('notes').value='Thank you for your business.';
+
   document.getElementById('items').innerHTML='';
+
   addItem('Service / Product',1,0);
+
   updateInvoice();
+
 }
+
 addItem('Service / Product',1,100);
+
 updateInvoice();
+
 </script>
-<script>window.TOOLVAULT_PAYWALL={checkout:"https://zafcommander.gumroad.com/l/invoice-generator?wanted=true",toolName:"Invoice Generator"};</script><script src="../js/paywall.js"></script></body>
+
+<script>
+window.TOOLVAULT_PAYWALL={
+checkout:"https://zafcommander.gumroad.com/l/invoice-generator?wanted=true",
+toolName:"Invoice Generator"
+};
+</script>
+
+<script src="../js/paywall.js"></script>
+
+</body>
 </html>
