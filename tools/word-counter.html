@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 
-<title>Word Counter - Count Words and Characters Online | ToolVault</title>
+<title>Word Counter Online – Count Words & Characters Free | ToolVault</title>
 
-<meta name="description" content="Count words, characters, sentences, and paragraphs online with ToolVault's free Word Counter. Get quick and accurate text statistics instantly.">
+<meta name="description" content="Use ToolVault's free Word Counter online to count words, characters, sentences and paragraphs instantly. Accurate word and character counter for essays, articles, blogs and social media.">
 
 <link rel="canonical" href="https://toolsvault.shop/tools/word-counter.html">
 
-<meta property="og:title" content="Word Counter - Count Words and Characters Online | ToolVault">
-<meta property="og:description" content="Count words, characters, sentences, and paragraphs online with ToolVault's free Word Counter. Get quick and accurate text statistics instantly.">
+<meta property="og:title" content="Word Counter Online – Count Words & Characters Free | ToolVault">
+<meta property="og:description" content="Use ToolVault's free Word Counter online to count words, characters, sentences and paragraphs instantly.">
 <meta property="og:url" content="https://toolsvault.shop/tools/word-counter.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ToolVault">
@@ -22,13 +22,24 @@
 
 <script id="toolvault-schema-v3" type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Word Counter",
-  "url": "https://toolsvault.shop/tools/word-counter.html",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Any",
-  "description": "Free online Word Counter for counting words, characters, sentences, and paragraphs in text."
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Word Counter",
+  "url":"https://toolsvault.shop/tools/word-counter.html",
+  "applicationCategory":"UtilitiesApplication",
+  "operatingSystem":"Any",
+  "description":"Free online Word Counter for counting words, characters, sentences and paragraphs in text.",
+  "browserRequirements":"Requires JavaScript",
+  "offers":{
+    "@type":"Offer",
+    "price":"0",
+    "priceCurrency":"USD"
+  },
+  "publisher":{
+    "@type":"Organization",
+    "name":"ToolVault",
+    "url":"https://toolsvault.shop/"
+  }
 }
 </script>
 
@@ -46,13 +57,155 @@ textarea{width:100%;min-height:260px;padding:14px;border:1px solid #CBD5E1;borde
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
 .stat{background:#F8FAFC;border:1px solid #E2E8F0;border-radius:11px;padding:13px;text-align:center}
 .stat span{display:block;font-size:11px;color:#64748B}
+.stat strong{font-size:22px;color:#0B1220}
 @media(max-width:650px){.stats{grid-template-columns:1fr 1fr}}
 </style>
+
+<style id="toolvault-seo-v3">
+.seo-content{max-width:900px;margin:0 auto 70px;padding:28px 24px;background:#fff;border:1px solid #E2E8F0;border-radius:18px}
+.seo-content h2{font-size:24px;color:#0B1220;margin:0 0 10px}
+.seo-content p{color:#64748B;font-size:14px;line-height:1.75;margin:0 0 14px}
+.seo-related{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.seo-related a{color:#2563EB;text-decoration:none;font-weight:700;font-size:13px;border:1px solid #DBEAFE;background:#EFF6FF;padding:8px 11px;border-radius:9px}
+</style>
+
 </head>
-<body><header><div class="container nav"><a class="logo" href="../index.html"><span>T</span>ToolVault</a><a href="../index.html" style="color:#2563EB;font-weight:700;text-decoration:none;font-size:14px">← Back to Tools</a></div></header>
-<section class="toolhero"><div class="container"><div class="badge">FREE TOOL</div><h1>Word &amp; Character Counter</h1><p>Count words, characters, sentences and paragraphs instantly.</p></div></section>
-<main class="container workspace"><div class="panel"><textarea id="text" placeholder="Type or paste your text here..."></textarea>
-<div class="stats"><div class="stat"><span>Words</span><strong id="words">0</strong></div><div class="stat"><span>Characters</span><strong id="chars">0</strong></div><div class="stat"><span>Sentences</span><strong id="sentences">0</strong></div><div class="stat"><span>Paragraphs</span><strong id="paragraphs">0</strong></div></div>
-<button class="btnfull" onclick="clearText()">Clear</button></div></main>
-<section aria-label="About this tool" class="seo-content"><h2>What Can You Count?</h2><p>Count words, characters and text length quickly with ToolVault's Word Counter. Useful for articles, essays, social media posts and other writing.</p><p>Paste or type your text to instantly review word, character, sentence and paragraph counts.</p><h2>Who Is This Tool For?</h2><p>Useful for writers, students, bloggers, marketers and professionals working with word or character limits.</p><h2>Explore Related Tools</h2><div class="seo-related"><a href="text-cleaner.html">Text Cleaner</a><a href="text-case-converter.html">Text Case Converter</a><a href="content-calendar.html">Content Calendar Generator</a></div></section><footer><div class="container"><span>© 2026 ToolVault</span><span>Practical digital tools for smarter work.</span></div></footer>
-<script>const t=document.getElementById("text");function count(){let v=t.value;document.getElementById("words").textContent=v.trim()?v.trim().split(/\s+/).length:0;document.getElementById("chars").textContent=v.length;document.getElementById("sentences").textContent=(v.match(/[.!?]+(?=\s|$)/g)||[]).length;document.getElementById("paragraphs").textContent=v.trim()?v.trim().split(/\n\s*\n/).length:0}function clearText(){t.value="";count()}t.addEventListener("input",count);count();</script></body></html>
+
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="../index.html"><span>T</span>ToolVault</a>
+<a href="../index.html" style="color:#2563EB;font-weight:700;text-decoration:none;font-size:14px">← Back to Tools</a>
+</div>
+</header>
+
+<section class="toolhero">
+<div class="container">
+<div class="badge">FREE WRITING TOOL</div>
+<h1>Word Counter Online</h1>
+<p>Count words, characters, sentences and paragraphs instantly with this free online word and character counter.</p>
+</div>
+</section>
+
+<main class="container workspace">
+
+<div class="panel">
+
+<textarea id="text" placeholder="Type or paste your text here..."></textarea>
+
+<div class="stats">
+<div class="stat">
+<span>Words</span>
+<strong id="words">0</strong>
+</div>
+
+<div class="stat">
+<span>Characters</span>
+<strong id="chars">0</strong>
+</div>
+
+<div class="stat">
+<span>Sentences</span>
+<strong id="sentences">0</strong>
+</div>
+
+<div class="stat">
+<span>Paragraphs</span>
+<strong id="paragraphs">0</strong>
+</div>
+</div>
+
+<button class="btnfull" onclick="clearText()">Clear</button>
+
+</div>
+
+</main>
+
+<section aria-label="About this tool" class="seo-content">
+
+<h2>Free Word Counter Online</h2>
+
+<p>ToolVault's Word Counter is a free online word counting tool that instantly calculates the number of words, characters, sentences and paragraphs in your text.</p>
+
+<p>Simply type or paste your content into the text box and the Word Counter automatically updates the statistics as you write or edit.</p>
+
+<h2>Word and Character Counter</h2>
+
+<p>Use this online word and character counter to check the length of articles, essays, blog posts, website content, emails and social media posts.</p>
+
+<h2>Count Words Online</h2>
+
+<p>The word count updates automatically while you type or paste text. This makes it easy to keep your content within a required word limit without manually counting individual words.</p>
+
+<h2>Count Characters Online</h2>
+
+<p>The character counter shows the total number of characters in your text. Character counts can be useful when working with platforms, forms or content that have character limits.</p>
+
+<h2>Count Sentences and Paragraphs</h2>
+
+<p>In addition to word and character counts, ToolVault's Word Counter provides sentence and paragraph counts so you can quickly review the overall structure and length of your text.</p>
+
+<h2>Who Is This Word Counter For?</h2>
+
+<p>This free word count tool is useful for students, writers, bloggers, content creators, marketers, researchers, freelancers and professionals who work with word or character limits.</p>
+
+<h2>Use a Word Counter for Essays and Articles</h2>
+
+<p>Students and writers can use the tool to check essay and article length before submitting or publishing their work. Bloggers and content marketers can also use it to monitor the length of website content and articles.</p>
+
+<h2>Check Social Media Content Length</h2>
+
+<p>The character count can help when preparing short-form social media content and other text where keeping track of content length is important.</p>
+
+<h2>How to Use the Word Counter</h2>
+
+<p>Paste or type your text into the box above. The tool automatically calculates the word count, character count, sentence count and paragraph count. Use the Clear button to remove the current text and start again.</p>
+
+<h2>Explore Related Writing Tools</h2>
+
+<div class="seo-related">
+<a href="text-cleaner.html">Text Cleaner</a>
+<a href="text-case-converter.html">Text Case Converter</a>
+<a href="content-calendar.html">Content Calendar Generator</a>
+</div>
+
+</section>
+
+<footer>
+<div class="container">
+<span>© 2026 ToolVault</span>
+<span>Practical digital tools for smarter work.</span>
+</div>
+</footer>
+
+<script>
+const t=document.getElementById("text");
+
+function count(){
+let v=t.value;
+
+document.getElementById("words").textContent=
+v.trim()?v.trim().split(/\s+/).length:0;
+
+document.getElementById("chars").textContent=
+v.length;
+
+document.getElementById("sentences").textContent=
+(v.match(/[.!?]+(?=\s|$)/g)||[]).length;
+
+document.getElementById("paragraphs").textContent=
+v.trim()?v.trim().split(/\n\s*\n/).length:0
+}
+
+function clearText(){
+t.value="";
+count()
+}
+
+t.addEventListener("input",count);
+count();
+</script>
+
+</body>
+</html>
