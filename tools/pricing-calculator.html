@@ -4,55 +4,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pricing Calculator – Product Price & Profit | ToolVault</title>
-  <meta name="description" content="Use ToolVault's free pricing calculator to calculate product prices, costs, fees, profit margins, and suggested selling prices.">
+  <title>Pricing Calculator – Product Price, Profit & Margin | ToolVault</title>
+
+  <meta name="description" content="Use ToolVault's free pricing calculator to calculate product prices, costs, fees, profit margins and suggested selling prices with an easy pricing tool.">
+
   <link rel="canonical" href="https://toolsvault.shop/tools/pricing-calculator.html">
 
-  <meta property="og:title" content="Pricing Calculator – Product Price & Profit | ToolVault">
-  <meta property="og:description" content="Calculate product prices, costs, fees, and profit margins with ToolVault's free pricing calculator.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Pricing Calculator – Product Price, Profit & Margin | ToolVault">
+  <meta property="og:description" content="Calculate product prices, costs, fees, profit margins and suggested selling prices with ToolVault's free pricing calculator.">
   <meta property="og:url" content="https://toolsvault.shop/tools/pricing-calculator.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ToolVault">
 
+  <!-- Breadcrumb Schema -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@type":"ListItem",
-        "position":1,
-        "name":"ToolVault",
-        "item":"https://toolsvault.shop/"
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ToolVault",
+        "item": "https://toolsvault.shop/"
       },
       {
-        "@type":"ListItem",
-        "position":2,
-        "name":"Business Tools"
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Business Tools"
       },
       {
-        "@type":"ListItem",
-        "position":3,
-        "name":"Pricing Calculator",
-        "item":"https://toolsvault.shop/tools/pricing-calculator.html"
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pricing Calculator",
+        "item": "https://toolsvault.shop/tools/pricing-calculator.html"
       }
     ]
   }
   </script>
 
+  <!-- WebApplication Schema -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebApplication",
-    "name":"Pricing Calculator",
-    "url":"https://toolsvault.shop/tools/pricing-calculator.html",
-    "applicationCategory":"BusinessApplication",
-    "operatingSystem":"Web Browser",
-    "description":"Calculate product and service pricing with ToolVault's Pricing Calculator. Review costs, fees, margins and suggested selling prices.",
-    "publisher":{
-      "@type":"Organization",
-      "name":"ToolVault",
-      "url":"https://toolsvault.shop/"
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Pricing Calculator",
+    "url": "https://toolsvault.shop/tools/pricing-calculator.html",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "description": "Free pricing calculator for calculating product prices, business costs, platform fees, profit margins and suggested selling prices.",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ToolVault",
+      "url": "https://toolsvault.shop/"
     }
   }
   </script>
@@ -75,9 +87,15 @@
       --danger:#DC2626;
     }
 
-    *{box-sizing:border-box;margin:0;padding:0}
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
 
-    html{scroll-behavior:smooth}
+    html{
+      scroll-behavior:smooth;
+    }
 
     body{
       font-family:Inter,Arial,sans-serif;
@@ -90,7 +108,9 @@
       font-family:"Space Grotesk",Arial,sans-serif;
     }
 
-    a{color:inherit}
+    a{
+      color:inherit;
+    }
 
     .container{
       width:min(1120px,92%);
@@ -143,7 +163,9 @@
       font-weight:600;
     }
 
-    .back:hover{color:var(--blue)}
+    .back:hover{
+      color:var(--blue);
+    }
 
     .breadcrumb{
       max-width:1120px;
@@ -158,7 +180,9 @@
       text-decoration:none;
     }
 
-    .breadcrumb span{margin:0 5px}
+    .breadcrumb span{
+      margin:0 5px;
+    }
 
     .hero{
       padding:55px 0 45px;
@@ -186,7 +210,7 @@
     }
 
     .hero p{
-      max-width:690px;
+      max-width:720px;
       margin:0 auto;
       color:var(--muted);
       font-size:17px;
@@ -257,7 +281,9 @@
       font-size:14px;
     }
 
-    .btn:hover{background:#1D4ED8}
+    .btn:hover{
+      background:#1D4ED8;
+    }
 
     .result{
       min-height:260px;
@@ -306,7 +332,13 @@
     }
 
     .seo-content h2:not(:first-child){
-      margin-top:24px;
+      margin-top:26px;
+    }
+
+    .seo-content h3{
+      font-size:18px;
+      color:var(--navy);
+      margin:20px 0 8px;
     }
 
     .seo-content p{
@@ -316,16 +348,21 @@
       margin:0 0 14px;
     }
 
-    .seo-content ol{
+    .seo-content ol,
+    .seo-content ul{
       margin:0 0 10px 20px;
       color:#475569;
       font-size:14px;
     }
 
+    .seo-content li{
+      margin-bottom:7px;
+    }
+
     .related-tools{
       max-width:900px;
       margin:0 auto 70px;
-      padding:0 0;
+      padding:0;
     }
 
     .related-tools h2{
@@ -400,7 +437,9 @@
       min-height:180px;
     }
 
-    .tv-output-lock{max-width:430px}
+    .tv-output-lock{
+      max-width:430px;
+    }
 
     .tv-output-lock span{
       display:block;
@@ -442,7 +481,9 @@
       z-index:9999;
     }
 
-    .tv-modal.open{display:block}
+    .tv-modal.open{
+      display:block;
+    }
 
     .tv-modal-backdrop{
       position:absolute;
@@ -473,7 +514,9 @@
       cursor:pointer;
     }
 
-    .tv-lock{font-size:34px}
+    .tv-lock{
+      font-size:34px;
+    }
 
     .tv-kicker{
       font-size:12px;
@@ -515,22 +558,52 @@
       margin-top:12px;
     }
 
-    body.tv-modal-open{overflow:hidden}
+    body.tv-modal-open{
+      overflow:hidden;
+    }
 
     @media(max-width:820px){
-      .workspace{grid-template-columns:1fr}
-      .related-grid{grid-template-columns:1fr 1fr}
+      .workspace{
+        grid-template-columns:1fr;
+      }
+
+      .related-grid{
+        grid-template-columns:1fr 1fr;
+      }
     }
 
     @media(max-width:560px){
-      .nav{min-height:62px}
-      .back{font-size:12px}
-      .hero{padding:40px 0 35px}
-      .stats{grid-template-columns:1fr}
-      .related-grid{grid-template-columns:1fr}
-      footer .container{flex-direction:column}
-      .tv-benefits{grid-template-columns:1fr}
-      .tv-modal-card{padding:28px 20px}
+      .nav{
+        min-height:62px;
+      }
+
+      .back{
+        font-size:12px;
+      }
+
+      .hero{
+        padding:40px 0 35px;
+      }
+
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+      .related-grid{
+        grid-template-columns:1fr;
+      }
+
+      footer .container{
+        flex-direction:column;
+      }
+
+      .tv-benefits{
+        grid-template-columns:1fr;
+      }
+
+      .tv-modal-card{
+        padding:28px 20px;
+      }
     }
   </style>
 </head>
@@ -550,22 +623,33 @@
       <a class="logo" href="../index.html">
         <span>T</span>ToolVault
       </a>
-      <a class="back" href="../index.html">← Back to Tools</a>
+
+      <a class="back" href="../index.html">
+        ← Back to Tools
+      </a>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <div class="badge">BUSINESS TOOL</div>
+
+      <div class="badge">FREE PRICING TOOL</div>
+
       <h1>Pricing Calculator</h1>
-      <p>Estimate a selling price from your costs, fees and target profit margin.</p>
+
+      <p>
+        Calculate product prices, business costs, platform fees, profit margins
+        and suggested selling prices with a simple online pricing calculator.
+      </p>
+
     </div>
   </section>
 
   <main class="container workspace">
 
-    <section class="panel" aria-label="Pricing inputs">
-      <h2>Pricing Inputs</h2>
+    <section class="panel" aria-label="Pricing calculator inputs">
+
+      <h2>Pricing Calculator Inputs</h2>
 
       <div class="field">
         <label for="cost">Product Cost ($)</label>
@@ -590,96 +674,182 @@
       <button class="btn" type="button" onclick="ToolVaultPaywall.show()">
         Calculate Price
       </button>
+
     </section>
 
-    <section class="result tv-protected-output" aria-label="Pricing result">
-      <h2>Result</h2>
+    <section class="result tv-protected-output" aria-label="Pricing calculator results">
+
+      <h2>Pricing Calculator Results</h2>
 
       <div class="stats">
+
         <div class="stat">
           <span>Base Cost</span>
           <strong id="base">$0.00</strong>
         </div>
 
         <div class="stat">
-          <span>Suggested Price</span>
+          <span>Suggested Selling Price</span>
           <strong id="price">$0.00</strong>
         </div>
 
         <div class="stat">
-          <span>Profit / Sale</span>
+          <span>Profit Per Sale</span>
           <strong id="profit">$0.00</strong>
         </div>
 
         <div class="stat">
-          <span>Margin</span>
+          <span>Profit Margin</span>
           <strong id="out">0%</strong>
         </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <section aria-label="About this tool" class="seo-content">
+  <section aria-label="Pricing calculator information" class="seo-content">
+
+    <h2>Free Pricing Calculator for Products and Services</h2>
+
+    <p>
+      ToolVault's free pricing calculator helps you calculate a practical selling
+      price using your product cost, additional costs, payment or platform fees,
+      and desired profit margin. Use this pricing tool to estimate what you should
+      charge for a product or service.
+    </p>
+
+    <p>
+      Whether you need a product pricing calculator, business pricing calculator,
+      pricing estimator, or simple cost calculator, this tool provides a quick
+      way to review your pricing numbers before setting a selling price.
+    </p>
+
     <h2>How to Use the Pricing Calculator</h2>
 
     <p>
-      Enter your product or service cost and provide the pricing information requested by the calculator.
-      The tool helps estimate a practical selling price based on your costs, fees, and desired profit margin.
+      Enter your costs and target margin into the calculator, then review the
+      suggested selling price and estimated profit per sale.
     </p>
 
     <ol>
       <li>Enter your product or service cost.</li>
-      <li>Enter any additional costs.</li>
-      <li>Enter payment or platform fees.</li>
+      <li>Add any other business or operating costs.</li>
+      <li>Enter payment processing or platform fees.</li>
       <li>Enter your desired profit margin.</li>
-      <li>Review the suggested selling price and estimated profit.</li>
+      <li>Review the suggested product price and estimated profit.</li>
     </ol>
 
     <h2>What Is a Pricing Calculator?</h2>
 
     <p>
-      A pricing calculator is a simple tool that helps businesses estimate how much to charge for a
-      product or service. By considering costs, fees, and profit margin, you can plan prices using clear numbers.
+      A pricing calculator is an online tool that helps businesses estimate how
+      much to charge for products or services. It can combine costs, fees and
+      target profit margins to produce a suggested selling price.
+    </p>
+
+    <p>
+      A pricing calculator can be useful when launching a product, reviewing
+      existing prices, comparing costs, or creating a pricing strategy for an
+      online business.
     </p>
 
     <h2>Pricing Calculator for Small Businesses</h2>
 
     <p>
-      Small businesses, freelancers, agencies, online sellers, and service providers can use a pricing
-      calculator to review costs, estimate selling prices, and understand potential profit margins.
+      Small businesses, freelancers, agencies, online sellers and service
+      providers can use a business pricing calculator to estimate costs,
+      selling prices and potential profit margins.
     </p>
+
+    <p>
+      For businesses selling products online, accounting for payment processing
+      fees, marketplace fees and other costs can help create a more realistic
+      pricing estimate.
+    </p>
+
+    <h2>Product Pricing Calculator and Pricing Estimator</h2>
+
+    <p>
+      A product pricing calculator can help you work backwards from your costs
+      and desired profit margin to estimate a suitable selling price. This can
+      be useful for physical products, digital products, services and other
+      business offers.
+    </p>
+
+    <h2>Profit Margin and Markup Calculations</h2>
+
+    <p>
+      Profit margin and markup are related but different pricing concepts.
+      A pricing tool can help you review the relationship between your costs,
+      selling price and expected profit. For more detailed calculations, you
+      can also use the ToolVault Profit Calculator.
+    </p>
+
+    <h2>Who Can Use This Pricing Tool?</h2>
+
+    <ul>
+      <li>Small business owners</li>
+      <li>Online sellers and e-commerce businesses</li>
+      <li>Freelancers and consultants</li>
+      <li>Digital product sellers</li>
+      <li>Agencies and service providers</li>
+      <li>Entrepreneurs planning new products</li>
+    </ul>
+
   </section>
 
   <section class="related-tools" aria-label="Related business tools">
+
     <h2>Related Business Tools</h2>
 
     <div class="related-grid">
+
       <a href="profit-calculator.html">
         <strong>Profit Calculator</strong>
-        <span>Calculate estimated business profit and profit margins.</span>
+        <span>
+          Calculate estimated business profit, revenue and profit margins.
+        </span>
       </a>
 
       <a href="roi-calculator.html">
         <strong>ROI Calculator</strong>
-        <span>Calculate return on investment for your business decisions.</span>
+        <span>
+          Calculate return on investment and review investment performance.
+        </span>
       </a>
 
       <a href="expense-calculator.html">
         <strong>Expense Calculator</strong>
-        <span>Estimate and review business expenses.</span>
+        <span>
+          Estimate and review business expenses and operating costs.
+        </span>
       </a>
 
       <a href="invoice-generator.html">
         <strong>Invoice Generator</strong>
-        <span>Create professional invoices for products and services.</span>
+        <span>
+          Create professional invoices for products and services.
+        </span>
       </a>
 
       <a href="quote-generator.html">
         <strong>Quote Generator</strong>
-        <span>Create business quotations quickly and easily.</span>
+        <span>
+          Create business quotations and price estimates quickly.
+        </span>
       </a>
+
+      <a href="business-profit-calculator.html">
+        <strong>Business Profit Calculator</strong>
+        <span>
+          Review business revenue, costs and potential profit.
+        </span>
+      </a>
+
     </div>
+
   </section>
 
   <footer>
@@ -698,16 +868,28 @@
     }
 
     function calc(){
-      const c = (+document.getElementById("cost").value || 0)
-              + (+document.getElementById("other").value || 0);
 
-      const f = (+document.getElementById("fee").value || 0) / 100;
-      const m = (+document.getElementById("margin").value || 0) / 100;
+      const c =
+        (+document.getElementById("cost").value || 0) +
+        (+document.getElementById("other").value || 0);
 
-      const base = document.getElementById("base");
-      const price = document.getElementById("price");
-      const profit = document.getElementById("profit");
-      const out = document.getElementById("out");
+      const f =
+        (+document.getElementById("fee").value || 0) / 100;
+
+      const m =
+        (+document.getElementById("margin").value || 0) / 100;
+
+      const base =
+        document.getElementById("base");
+
+      const price =
+        document.getElementById("price");
+
+      const profit =
+        document.getElementById("profit");
+
+      const out =
+        document.getElementById("out");
 
       base.textContent = money(c);
 
@@ -721,14 +903,25 @@
       const p = c / (1 - f - m);
 
       price.textContent = money(p);
-      profit.textContent = money(p * (1 - f) - c);
-      out.textContent = (m * 100).toFixed(1) + "%";
+
+      profit.textContent =
+        money(p * (1 - f) - c);
+
+      out.textContent =
+        (m * 100).toFixed(1) + "%";
     }
 
-    document.getElementById("cost").addEventListener("input", calc);
-    document.getElementById("other").addEventListener("input", calc);
-    document.getElementById("fee").addEventListener("input", calc);
-    document.getElementById("margin").addEventListener("input", calc);
+    document.getElementById("cost")
+      .addEventListener("input", calc);
+
+    document.getElementById("other")
+      .addEventListener("input", calc);
+
+    document.getElementById("fee")
+      .addEventListener("input", calc);
+
+    document.getElementById("margin")
+      .addEventListener("input", calc);
 
     calc();
   </script>
