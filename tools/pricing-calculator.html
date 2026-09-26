@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-MGV8BY8PVJ');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MGV8BY8PVJ');
+  </script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Pricing Calculator – Product Price, Profit & Margin | ToolVault</title>
 
-  <meta name="description" content="Use ToolVault's free pricing calculator to calculate product prices, costs, fees, profit margins and suggested selling prices with an easy pricing tool.">
+  <meta name="description" content="Use ToolVault's free pricing calculator to calculate product costs, selling prices, platform fees, profit and target profit margins for your products or services.">
 
-  <link rel="canonical" href="https://toolsvault.shop/tools/pricing-calculator.html">
+  <link rel="canonical" href="https://toolsvault.shop/tools/pricing-calculator">
 
   <meta name="robots" content="index, follow">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="Pricing Calculator – Product Price, Profit & Margin | ToolVault">
-  <meta property="og:description" content="Calculate product prices, costs, fees, profit margins and suggested selling prices with ToolVault's free pricing calculator.">
-  <meta property="og:url" content="https://toolsvault.shop/tools/pricing-calculator.html">
+  <meta property="og:description" content="Calculate product costs, selling prices, platform fees, profit and target profit margins with ToolVault's free pricing calculator.">
+  <meta property="og:url" content="https://toolsvault.shop/tools/pricing-calculator">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ToolVault">
 
@@ -42,13 +45,14 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Business Tools"
+        "name": "Business Tools",
+        "item": "https://toolsvault.shop/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Pricing Calculator",
-        "item": "https://toolsvault.shop/tools/pricing-calculator.html"
+        "item": "https://toolsvault.shop/tools/pricing-calculator"
       }
     ]
   }
@@ -60,10 +64,10 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Pricing Calculator",
-    "url": "https://toolsvault.shop/tools/pricing-calculator.html",
+    "url": "https://toolsvault.shop/tools/pricing-calculator",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
-    "description": "Free pricing calculator for calculating product prices, business costs, platform fees, profit margins and suggested selling prices.",
+    "description": "Free online pricing calculator for calculating product costs, additional costs, platform fees, profit margins and suggested selling prices.",
     "browserRequirements": "Requires JavaScript",
     "offers": {
       "@type": "Offer",
@@ -75,6 +79,48 @@
       "name": "ToolVault",
       "url": "https://toolsvault.shop/"
     }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a pricing calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A pricing calculator is an online tool that helps estimate a suitable selling price by considering costs, fees and a target profit margin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does a pricing calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter your product or service cost, additional costs, payment or platform fees and desired profit margin. The calculator uses those values to estimate a suggested selling price and profit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a pricing calculator help with profit margins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A pricing calculator can use a target profit margin together with costs and fees to estimate a selling price."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can use a pricing calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing calculators can be useful for small businesses, freelancers, online sellers, agencies, service providers and entrepreneurs."
+        }
+      }
+    ]
   }
   </script>
 
@@ -368,6 +414,28 @@
       margin-bottom:7px;
     }
 
+    .faq-list{
+      margin-top:10px;
+    }
+
+    .faq-item{
+      border-top:1px solid var(--border);
+      padding:16px 0;
+    }
+
+    .faq-item:first-child{
+      border-top:0;
+    }
+
+    .faq-item h3{
+      margin:0 0 7px;
+      font-size:17px;
+    }
+
+    .faq-item p{
+      margin:0;
+    }
+
     .related-tools{
       max-width:900px;
       margin:0 auto 70px;
@@ -629,6 +697,7 @@
 
   <header>
     <div class="container nav">
+
       <a class="logo" href="../index.html">
         <span>T</span>ToolVault
       </a>
@@ -636,6 +705,7 @@
       <a class="back" href="../index.html">
         ← Back to Tools
       </a>
+
     </div>
   </header>
 
@@ -647,7 +717,7 @@
       <h1>Pricing Calculator</h1>
 
       <p>
-        Calculate product prices, business costs, platform fees, profit margins
+        Calculate product costs, selling prices, platform fees, profit margins
         and suggested selling prices with a simple online pricing calculator.
       </p>
 
@@ -723,23 +793,24 @@
     <h2>Free Pricing Calculator for Products and Services</h2>
 
     <p>
-      ToolVault's free pricing calculator helps you calculate a practical selling
-      price using your product cost, additional costs, payment or platform fees,
-      and desired profit margin. Use this pricing tool to estimate what you should
-      charge for a product or service.
+      ToolVault's free pricing calculator helps you estimate a selling price
+      using your product or service cost, additional costs, payment or platform
+      fees, and desired profit margin. Use this pricing tool to review your
+      pricing before setting a final selling price.
     </p>
 
     <p>
-      Whether you need a product pricing calculator, business pricing calculator,
-      pricing estimator, or simple cost calculator, this tool provides a quick
-      way to review your pricing numbers before setting a selling price.
+      Whether you are looking for a product pricing calculator, business pricing
+      calculator, pricing estimator or simple cost calculator, this tool gives
+      you a quick way to evaluate your pricing numbers.
     </p>
 
     <h2>How to Use the Pricing Calculator</h2>
 
     <p>
-      Enter your costs and target margin into the calculator, then review the
-      suggested selling price and estimated profit per sale.
+      Enter your costs, applicable fees and target profit margin into the
+      calculator. The tool then estimates a suggested selling price and
+      potential profit per sale.
     </p>
 
     <ol>
@@ -747,21 +818,21 @@
       <li>Add any other business or operating costs.</li>
       <li>Enter payment processing or platform fees.</li>
       <li>Enter your desired profit margin.</li>
-      <li>Review the suggested product price and estimated profit.</li>
+      <li>Review the suggested selling price and estimated profit.</li>
     </ol>
 
     <h2>What Is a Pricing Calculator?</h2>
 
     <p>
-      A pricing calculator is an online tool that helps businesses estimate how
-      much to charge for products or services. It can combine costs, fees and
-      target profit margins to produce a suggested selling price.
+      A pricing calculator is an online tool that helps businesses estimate
+      how much to charge for products or services. It can combine costs,
+      fees and a target profit margin to produce a suggested selling price.
     </p>
 
     <p>
       A pricing calculator can be useful when launching a product, reviewing
-      existing prices, comparing costs, or creating a pricing strategy for an
-      online business.
+      existing prices, comparing costs, or planning pricing for an online
+      business.
     </p>
 
     <h2>Pricing Calculator for Small Businesses</h2>
@@ -773,27 +844,28 @@
     </p>
 
     <p>
-      For businesses selling products online, accounting for payment processing
-      fees, marketplace fees and other costs can help create a more realistic
+      For businesses selling online, accounting for payment processing fees,
+      marketplace fees and other costs can help create a more realistic
       pricing estimate.
     </p>
 
     <h2>Product Pricing Calculator and Pricing Estimator</h2>
 
     <p>
-      A product pricing calculator can help you work backwards from your costs
-      and desired profit margin to estimate a suitable selling price. This can
+      A product pricing calculator can help you work from your costs and
+      desired profit margin to estimate a suitable selling price. This can
       be useful for physical products, digital products, services and other
       business offers.
     </p>
 
-    <h2>Profit Margin and Markup Calculations</h2>
+    <h2>Profit Margin and Pricing</h2>
 
     <p>
       Profit margin and markup are related but different pricing concepts.
-      A pricing tool can help you review the relationship between your costs,
-      selling price and expected profit. For more detailed calculations, you
-      can also use the ToolVault Profit Calculator.
+      A pricing calculator can help you review the relationship between
+      costs, selling price, fees and expected profit. For more detailed
+      profit calculations, you can also use the
+      <a href="/tools/profit-calculator">ToolVault Profit Calculator</a>.
     </p>
 
     <h2>Who Can Use This Pricing Tool?</h2>
@@ -807,6 +879,46 @@
       <li>Entrepreneurs planning new products</li>
     </ul>
 
+    <h2>Pricing Calculator FAQ</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3>What is a pricing calculator?</h3>
+        <p>
+          A pricing calculator is an online tool that helps estimate a
+          suitable selling price by considering costs, fees and a target
+          profit margin.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How does a pricing calculator work?</h3>
+        <p>
+          Enter your product or service cost, additional costs, payment or
+          platform fees and desired profit margin. The calculator uses those
+          values to estimate a suggested selling price and profit.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can a pricing calculator help with profit margins?</h3>
+        <p>
+          Yes. A pricing calculator can use a target profit margin together
+          with costs and fees to estimate a selling price.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Who can use a pricing calculator?</h3>
+        <p>
+          Pricing calculators can be useful for small businesses, freelancers,
+          online sellers, agencies, service providers and entrepreneurs.
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
   <section class="related-tools" aria-label="Related business tools">
@@ -815,45 +927,38 @@
 
     <div class="related-grid">
 
-      <a href="profit-calculator.html">
+      <a href="/tools/profit-calculator">
         <strong>Profit Calculator</strong>
         <span>
           Calculate estimated business profit, revenue and profit margins.
         </span>
       </a>
 
-      <a href="roi-calculator.html">
+      <a href="/tools/roi-calculator">
         <strong>ROI Calculator</strong>
         <span>
           Calculate return on investment and review investment performance.
         </span>
       </a>
 
-      <a href="expense-calculator.html">
+      <a href="/tools/expense-calculator">
         <strong>Expense Calculator</strong>
         <span>
           Estimate and review business expenses and operating costs.
         </span>
       </a>
 
-      <a href="invoice-generator.html">
+      <a href="/tools/invoice-generator">
         <strong>Invoice Generator</strong>
         <span>
           Create professional invoices for products and services.
         </span>
       </a>
 
-      <a href="quote-generator.html">
+      <a href="/tools/quote-generator">
         <strong>Quote Generator</strong>
         <span>
           Create business quotations and price estimates quickly.
-        </span>
-      </a>
-
-      <a href="business-profit-calculator.html">
-        <strong>Business Profit Calculator</strong>
-        <span>
-          Review business revenue, costs and potential profit.
         </span>
       </a>
 
