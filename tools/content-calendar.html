@@ -2,905 +2,1685 @@
 <html lang="en">
 <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-MGV8BY8PVJ');
-</script>
-
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-
-<title>Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault</title>
-
-<meta name="description" content="Create a 30-day content calendar with ToolVault's free Content Calendar Generator. Plan social media, blog and marketing content around your topic, audience and posting frequency."/>
-
-<meta name="robots" content="index, follow, max-image-preview:large"/>
-
-<link rel="canonical" href="https://toolsvault.shop/tools/content-calendar.html"/>
-
-<meta property="og:title" content="Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault"/>
-<meta property="og:description" content="Create a 30-day content calendar for social media, blogs and marketing with ToolVault's free online content planning tool."/>
-<meta property="og:url" content="https://toolsvault.shop/tools/content-calendar.html"/>
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="ToolVault"/>
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault"/>
-<meta name="twitter:description" content="Create a 30-day content calendar for social media, blogs and marketing with ToolVault's online content calendar generator."/>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
-
-<style>
-
-:root{
---navy:#0B1220;
---blue:#2563EB;
---cyan:#06B6D4;
---bg:#F8FAFC;
---white:#fff;
---text:#111827;
---muted:#64748B;
---border:#E2E8F0
-}
-
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:Inter,Arial,sans-serif;
-background:var(--bg);
-color:var(--text)
-}
-
-h1,h2,h3{
-font-family:"Space Grotesk",Arial,sans-serif
-}
-
-.container{
-width:min(1050px,92%);
-margin:auto
-}
-
-header{
-background:#fff;
-border-bottom:1px solid var(--border)
-}
-
-.nav{
-height:70px;
-display:flex;
-align-items:center;
-justify-content:space-between
-}
-
-.logo{
-font:700 23px "Space Grotesk";
-color:var(--navy);
-text-decoration:none
-}
-
-.logo span{
-display:inline-flex;
-width:31px;
-height:31px;
-border-radius:9px;
-background:linear-gradient(135deg,var(--blue),var(--cyan));
-color:#fff;
-align-items:center;
-justify-content:center;
-margin-right:8px
-}
-
-.back{
-color:var(--blue);
-font-weight:700;
-text-decoration:none;
-font-size:14px
-}
-
-.hero{
-text-align:center;
-padding:50px 0 25px
-}
-
-.badge{
-display:inline-block;
-background:#EFF6FF;
-color:var(--blue);
-border:1px solid #DBEAFE;
-padding:7px 13px;
-border-radius:30px;
-font-size:11px;
-font-weight:800;
-margin-bottom:13px
-}
-
-.hero h1{
-font-size:clamp(34px,5vw,48px);
-line-height:1.1;
-color:var(--navy);
-margin:0 0 10px
-}
-
-.hero p{
-max-width:720px;
-margin:auto;
-color:var(--muted);
-line-height:1.7
-}
-
-.workspace{
-display:grid;
-grid-template-columns:370px 1fr;
-gap:22px;
-margin:20px auto 70px;
-align-items:start
-}
-
-.panel{
-background:#fff;
-border:1px solid var(--border);
-border-radius:18px;
-padding:23px
-}
-
-.panel h2{
-margin:0 0 18px;
-color:var(--navy);
-font-size:21px
-}
-
-.field{
-margin-bottom:13px
-}
-
-label{
-display:block;
-font-size:12px;
-font-weight:700;
-margin-bottom:5px
-}
-
-input,textarea,select{
-width:100%;
-padding:11px;
-border:1px solid #CBD5E1;
-border-radius:9px;
-font:inherit;
-font-size:13px
-}
-
-textarea{
-min-height:90px;
-resize:vertical
-}
-
-input:focus,
-textarea:focus,
-select:focus{
-outline:none;
-border-color:var(--blue);
-box-shadow:0 0 0 3px rgba(37,99,235,.1)
-}
-
-.btn{
-width:100%;
-border:0;
-border-radius:10px;
-padding:12px;
-background:var(--blue);
-color:#fff;
-font-weight:700;
-cursor:pointer;
-margin-top:7px
-}
-
-.secondary{
-background:#fff;
-color:var(--navy);
-border:1px solid var(--border)
-}
-
-.result{
-background:#fff;
-border:1px solid var(--border);
-border-radius:18px;
-padding:23px
-}
-
-.result h2{
-margin:0 0 17px;
-color:var(--navy);
-font-size:21px
-}
-
-.output{
-white-space:pre-wrap;
-background:#F8FAFC;
-border:1px solid var(--border);
-border-radius:12px;
-padding:17px;
-min-height:220px;
-font-size:13px
-}
-
-.seo-content{
-max-width:900px;
-margin:0 auto 70px;
-padding:30px 25px;
-background:#fff;
-border:1px solid #E2E8F0;
-border-radius:18px
-}
-
-.seo-content h2{
-font-size:25px;
-color:#0B1220;
-margin:0 0 11px
-}
-
-.seo-content h3{
-font-size:18px;
-color:#0B1220;
-margin:24px 0 8px
-}
-
-.seo-content p{
-color:#64748B;
-font-size:14px;
-line-height:1.8;
-margin:0 0 15px
-}
-
-.seo-content ul{
-margin:0 0 20px 20px;
-color:#64748B;
-font-size:14px;
-line-height:1.8
-}
-
-.seo-related{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:16px
-}
-
-.seo-related a{
-color:#2563EB;
-text-decoration:none;
-font-weight:700;
-font-size:13px;
-border:1px solid #DBEAFE;
-background:#EFF6FF;
-padding:8px 11px;
-border-radius:9px
-}
-
-footer{
-background:var(--navy);
-color:#94A3B8;
-padding:25px 0;
-font-size:12px
-}
-
-footer .container{
-display:flex;
-justify-content:space-between
-}
-
-@media(max-width:820px){
-.workspace{grid-template-columns:1fr}
-}
-
-@media(max-width:520px){
-footer .container{
-display:block;
-text-align:center
-}
-}
-
-</style>
-
-<style id="toolvault-paywall-css">
-
-.tv-protected-output{
-position:relative;
-overflow:hidden
-}
-
-.tv-output-mask{
-position:absolute;
-inset:0;
-z-index:50;
-background:rgba(248,250,252,.97);
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:24px;
-min-height:180px
-}
-
-.tv-output-lock{
-max-width:430px
-}
-
-.tv-output-lock span{
-display:block;
-font-size:30px;
-margin-bottom:8px
-}
-
-.tv-output-lock strong{
-display:block;
-font-size:20px;
-color:#0B1220;
-margin-bottom:7px
-}
-
-.tv-output-lock small{
-display:block;
-color:#64748B;
-line-height:1.5;
-margin-bottom:16px
-}
-
-.tv-output-lock button,
-.tv-buy{
-display:inline-block;
-border:0;
-border-radius:10px;
-padding:12px 18px;
-background:#2563EB;
-color:#fff;
-font-weight:700;
-text-decoration:none;
-cursor:pointer
-}
-
-.tv-modal{
-display:none;
-position:fixed;
-inset:0;
-z-index:9999
-}
-
-.tv-modal.open{
-display:block
-}
-
-.tv-modal-backdrop{
-position:absolute;
-inset:0;
-background:rgba(11,18,32,.65);
-backdrop-filter:blur(3px)
-}
-
-.tv-modal-card{
-position:relative;
-width:min(520px,calc(100% - 32px));
-margin:10vh auto 0;
-background:#fff;
-border-radius:20px;
-padding:32px;
-box-shadow:0 24px 80px rgba(0,0,0,.25);
-text-align:center
-}
-
-.tv-modal-close{
-position:absolute;
-right:14px;
-top:10px;
-border:0;
-background:none;
-font-size:28px;
-color:#64748B;
-cursor:pointer
-}
-
-.tv-lock{
-font-size:34px
-}
-
-.tv-kicker{
-font-size:12px;
-font-weight:800;
-letter-spacing:.12em;
-color:#2563EB;
-margin:8px 0
-}
-
-.tv-modal-card h2{
-margin:5px 0 10px;
-color:#0B1220
-}
-
-.tv-modal-card p{
-color:#64748B;
-line-height:1.6;
-margin:0 auto 18px;
-max-width:430px
-}
-
-.tv-benefits{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:9px;
-text-align:left;
-background:#F8FAFC;
-border:1px solid #E2E8F0;
-border-radius:12px;
-padding:14px;
-margin:18px 0 20px;
-color:#334155;
-font-size:14px
-}
-
-.tv-note{
-font-size:12px;
-color:#94A3B8;
-margin-top:12px
-}
-
-body.tv-modal-open{
-overflow:hidden
-}
-
-@media(max-width:560px){
-.tv-benefits{
-grid-template-columns:1fr
-}
-
-.tv-modal-card{
-padding:28px 20px
-}
-}
-
-</style>
-
-<script id="toolvault-schema-v4" type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Content Calendar Generator",
-  "url":"https://toolsvault.shop/tools/content-calendar.html",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web Browser",
-  "description":"Free online content calendar generator for planning 30 days of social media, blog and marketing content.",
-  "isAccessibleForFree":true,
-  "publisher":{
-    "@type":"Organization",
-    "name":"ToolVault",
-    "url":"https://toolsvault.shop/"
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MGV8BY8PVJ');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault</title>
+
+  <meta name="description" content="Create a 30-day content calendar with ToolVault's free Content Calendar Generator. Plan social media, blog and marketing content around your topic, audience and posting frequency.">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link rel="canonical" href="https://toolsvault.shop/tools/content-calendar.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault">
+  <meta property="og:description" content="Create a 30-day content calendar for social media, blogs and marketing with ToolVault's free online content planning tool.">
+  <meta property="og:url" content="https://toolsvault.shop/tools/content-calendar.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ToolVault">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Content Calendar Generator – Free 30-Day Social Media Planner | ToolVault">
+  <meta name="twitter:description" content="Create a 30-day content calendar for social media, blogs and marketing with ToolVault's online content calendar generator.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ToolVault",
+        "item": "https://toolsvault.shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://toolsvault.shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Content Calendar Generator",
+        "item": "https://toolsvault.shop/tools/content-calendar.html"
+      }
+    ]
   }
-}
-</script>
+  </script>
 
-<script id="toolvault-faq-schema" type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"What is a content calendar generator?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"A content calendar generator helps organize content ideas into a planned schedule for social media, blogging and marketing."
-      }
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Content Calendar Generator",
+    "url": "https://toolsvault.shop/tools/content-calendar.html",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "description": "Free online content calendar generator for planning 30 days of social media, blog and marketing content.",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
     },
-    {
-      "@type":"Question",
-      "name":"Is this a 30-day content calendar generator?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. ToolVault generates content ideas across a 30-day period based on the topic, audience and posting frequency you provide."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Can I use this as a social media content calendar?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. The generated calendar can be used as a starting point for planning social media posts and other recurring content."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Is the content calendar generator free?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"ToolVault provides an online content calendar generator for organizing content ideas around a topic, audience and publishing frequency."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Who can use a content calendar generator?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Small businesses, marketers, creators and teams can use a content calendar generator to organize recurring content."
-      }
+    "publisher": {
+      "@type": "Organization",
+      "name": "ToolVault",
+      "url": "https://toolsvault.shop/"
     }
-  ]
-}
-</script>
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a content calendar generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A content calendar generator helps organize content ideas into a planned schedule for social media, blogging and marketing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a 30-day content calendar generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ToolVault generates content ideas across a 30-day period based on the topic, audience and posting frequency you provide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this as a social media content calendar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The generated calendar can be used as a starting point for planning social media posts and other recurring content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the content calendar generator free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ToolVault provides an online content calendar generator for organizing content ideas around a topic, audience and publishing frequency."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can use a content calendar generator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small businesses, marketers, creators and teams can use a content calendar generator to organize recurring content."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+
+    :root {
+      --navy: #0B1220;
+      --blue: #2563EB;
+      --cyan: #06B6D4;
+      --bg: #F8FAFC;
+      --white: #FFFFFF;
+      --text: #111827;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --soft: #EFF6FF;
+      --green: #10B981;
+      --danger: #DC2626;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    body.tv-modal-open {
+      overflow: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", Arial, sans-serif;
+    }
+
+    .container {
+      width: min(1050px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font: 700 23px "Space Grotesk", sans-serif;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .logo span {
+      display: inline-flex;
+      width: 31px;
+      height: 31px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+    }
+
+    .back {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    /* BREADCRUMB */
+
+    .breadcrumb {
+      width: min(1050px, 92%);
+      margin: auto;
+      padding: 13px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .breadcrumb span {
+      margin: 0 5px;
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+      padding: 50px 0 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--blue);
+      border: 1px solid #DBEAFE;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.1;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* WORKSPACE */
+
+    .workspace {
+      display: grid;
+      grid-template-columns: 370px 1fr;
+      gap: 22px;
+      margin: 20px auto 70px;
+      align-items: start;
+    }
+
+    .panel,
+    .result {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 23px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.03);
+    }
+
+    .panel h2,
+    .result h2 {
+      margin: 0 0 7px;
+      color: var(--navy);
+      font-size: 21px;
+    }
+
+    .panel-subtitle {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .field {
+      margin-bottom: 13px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #CBD5E1;
+      border-radius: 9px;
+      font: inherit;
+      font-size: 13px;
+      color: var(--text);
+      background: #fff;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 9px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #1D4ED8;
+    }
+
+    .secondary {
+      background: #fff;
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .secondary:hover {
+      background: #F8FAFC;
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 17px;
+    }
+
+    .result-status {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .output-wrapper {
+      position: relative;
+    }
+
+    .output {
+      white-space: pre-wrap;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 17px;
+      min-height: 390px;
+      max-height: 620px;
+      overflow: auto;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .output.empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #94A3B8;
+      min-height: 390px;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 9px;
+      margin-top: 12px;
+    }
+
+    .result-actions .btn {
+      width: auto;
+      flex: 1;
+    }
+
+    .tip {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 12px;
+    }
+
+    /* SEO CONTENT */
+
+    .seo-content {
+      max-width: 900px;
+      margin: 0 auto 70px;
+      padding: 30px 25px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .seo-content h2 {
+      font-size: 25px;
+      color: var(--navy);
+      margin: 0 0 11px;
+    }
+
+    .seo-content h2:not(:first-child) {
+      margin-top: 34px;
+    }
+
+    .seo-content h3 {
+      font-size: 18px;
+      color: var(--navy);
+      margin: 24px 0 8px;
+    }
+
+    .seo-content p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 0 15px;
+    }
+
+    .seo-content ul,
+    .seo-content ol {
+      margin: 0 0 20px 20px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .seo-content li {
+      margin-bottom: 5px;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding: 17px 0;
+    }
+
+    .faq-item:first-of-type {
+      border-top: 0;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 7px;
+    }
+
+    .seo-related {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .seo-related a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      border: 1px solid #DBEAFE;
+      background: #EFF6FF;
+      padding: 8px 11px;
+      border-radius: 9px;
+    }
+
+    .seo-related a:hover {
+      border-color: var(--blue);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--navy);
+      color: #94A3B8;
+      padding: 25px 0;
+      font-size: 12px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* PAYWALL */
+
+    .tv-protected-output {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tv-output-mask {
+      position: absolute;
+      inset: 0;
+      z-index: 50;
+      background: rgba(248, 250, 252, 0.97);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      min-height: 180px;
+    }
+
+    .tv-output-lock {
+      max-width: 430px;
+    }
+
+    .tv-output-lock span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .tv-output-lock strong {
+      display: block;
+      font-size: 20px;
+      color: var(--navy);
+      margin-bottom: 7px;
+    }
+
+    .tv-output-lock small {
+      display: block;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .tv-output-lock button,
+    .tv-buy {
+      display: inline-block;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 18px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .tv-output-lock button:hover,
+    .tv-buy:hover {
+      background: #1D4ED8;
+    }
+
+    .tv-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+    }
+
+    .tv-modal.open {
+      display: block;
+    }
+
+    .tv-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 18, 32, 0.65);
+      backdrop-filter: blur(3px);
+    }
+
+    .tv-modal-card {
+      position: relative;
+      width: min(520px, calc(100% - 32px));
+      margin: 10vh auto 0;
+      background: #fff;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    .tv-modal-close {
+      position: absolute;
+      right: 14px;
+      top: 10px;
+      border: 0;
+      background: none;
+      font-size: 28px;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .tv-lock {
+      font-size: 34px;
+    }
+
+    .tv-kicker {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+      margin: 8px 0;
+    }
+
+    .tv-modal-card h2 {
+      margin: 5px 0 10px;
+      color: var(--navy);
+    }
+
+    .tv-modal-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0 auto 18px;
+      max-width: 430px;
+    }
+
+    .tv-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      text-align: left;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 18px 0 20px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    .tv-note {
+      font-size: 12px;
+      color: #94A3B8;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 820px) {
+
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 560px) {
+
+      .nav {
+        height: 64px;
+      }
+
+      .hero {
+        padding: 40px 0 25px;
+      }
+
+      .result-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .result-actions {
+        flex-direction: column;
+      }
+
+      .tv-benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .tv-modal-card {
+        padding: 28px 20px;
+      }
+
+      footer .container {
+        display: block;
+        text-align: center;
+      }
+
+      footer .container span {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .seo-content {
+        padding: 24px 18px;
+      }
+
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-<header>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">ToolVault</a>
+    <span>›</span>
+    <a href="../index.html">Tools</a>
+    <span>›</span>
+    <span>Content Calendar Generator</span>
+  </nav>
 
-<div class="container nav">
+  <!-- Header -->
+  <header>
 
-<a class="logo" href="../index.html">
-<span>T</span>ToolVault
-</a>
+    <div class="container nav">
 
-<a class="back" href="../index.html">
-← Back to Tools
-</a>
+      <a class="logo" href="../index.html">
+        <span>T</span>ToolVault
+      </a>
 
-</div>
+      <a class="back" href="../index.html">
+        ← Back to Tools
+      </a>
 
-</header>
+    </div>
 
-<section class="hero">
+  </header>
 
-<div class="container">
+  <!-- Hero -->
+  <section class="hero">
 
-<div class="badge">
-CONTENT CALENDAR GENERATOR
-</div>
+    <div class="container">
 
-<h1>
-Free Content Calendar Generator
-</h1>
+      <div class="badge">
+        CONTENT CALENDAR GENERATOR
+      </div>
 
-<p>
-Create a 30-day content calendar for social media, blogs and marketing.
-Organize your content around a topic, target audience and posting frequency
-with ToolVault's online content planning tool.
-</p>
+      <h1>
+        Free Content Calendar <span>Generator</span>
+      </h1>
 
-</div>
+      <p>
+        Create a 30-day content calendar for social media, blogs and marketing.
+        Organize your content around a topic, target audience and posting frequency
+        with ToolVault's online content planning tool.
+      </p>
 
-</section>
+    </div>
 
-<main class="container workspace">
+  </section>
 
-<div class="panel">
+  <!-- Main Tool -->
+  <main class="container workspace">
 
-<h2>Calendar Setup</h2>
+    <!-- Setup Panel -->
+    <div class="panel">
 
-<div class="field">
+      <h2>Calendar Setup</h2>
 
-<label>Brand</label>
+      <p class="panel-subtitle">
+        Enter your business information and content topic to create a structured
+        30-day publishing plan.
+      </p>
 
-<input id="brand" value="My Business"/>
+      <div class="field">
 
-</div>
+        <label for="brand">
+          Brand / Business
+        </label>
 
-<div class="field">
+        <input
+          id="brand"
+          type="text"
+          value="My Business"
+          placeholder="e.g. ABC Marketing"
+        >
 
-<label>Main Topic</label>
+      </div>
 
-<input id="topic" value="Digital productivity"/>
+      <div class="field">
 
-</div>
+        <label for="topic">
+          Main Topic
+        </label>
 
-<div class="field">
+        <input
+          id="topic"
+          type="text"
+          value="Digital productivity"
+          placeholder="e.g. Digital Marketing"
+        >
 
-<label>Audience</label>
+      </div>
 
-<input id="audience" value="Small business owners"/>
+      <div class="field">
 
-</div>
+        <label for="audience">
+          Target Audience
+        </label>
 
-<div class="field">
+        <input
+          id="audience"
+          type="text"
+          value="Small business owners"
+          placeholder="e.g. Small business owners"
+        >
 
-<label>Posts Per Week</label>
+      </div>
 
-<select id="freq">
+      <div class="field">
 
-<option value="3">3</option>
-<option value="5">5</option>
-<option value="7">7</option>
+        <label for="platform">
+          Main Platform
+        </label>
 
-</select>
+        <select id="platform">
 
-</div>
+          <option value="Social Media">
+            Social Media
+          </option>
 
-<button class="btn" onclick="ToolVaultPaywall.show()">
-Generate Calendar
-</button>
+          <option value="Facebook">
+            Facebook
+          </option>
 
-</div>
+          <option value="Instagram">
+            Instagram
+          </option>
 
-<div class="result">
+          <option value="LinkedIn">
+            LinkedIn
+          </option>
 
-<h2>30-Day Content Calendar</h2>
+          <option value="TikTok">
+            TikTok
+          </option>
 
-<div class="output" id="output"></div>
+          <option value="Blog">
+            Blog
+          </option>
 
-<button class="btn" onclick="ToolVaultPaywall.show()">
-Copy Calendar
-</button>
+          <option value="Multiple Platforms">
+            Multiple Platforms
+          </option>
 
-</div>
+        </select>
 
-</main>
+      </div>
 
-<section aria-label="Content Calendar Generator information" class="seo-content">
+      <div class="field">
 
-<h2>
-Free Content Calendar Generator Online
-</h2>
+        <label for="freq">
+          Posts Per Week
+        </label>
 
-<p>
-ToolVault's Content Calendar Generator helps you plan and organize recurring
-content around your topic and target audience. Use it to create a practical
-30-day content calendar for social media, blogs, marketing campaigns,
-educational content and other publishing activities.
-</p>
-
-<p>
-If you are looking for a free content calendar generator, 30-day content
-calendar generator or social media content planning tool, ToolVault provides
-a simple way to organize content ideas around your publishing schedule.
-</p>
+        <select id="freq">
 
-<h2>
-30-Day Content Calendar Generator
-</h2>
-
-<p>
-A 30-day content calendar gives you a framework for planning the next month
-of publishing. Instead of deciding what to post at the last minute, you can
-organize ideas around a topic, audience and publishing frequency.
-</p>
-
-<h3>
-Social Media Content Calendar Generator
-</h3>
-
-<p>
-Use the generator as a starting point for planning social media content.
-A structured calendar can help organize educational posts, promotional ideas,
-engagement content, FAQs and other recurring topics.
-</p>
-
-<h2>
-How to Use the Content Calendar Generator
-</h2>
-
-<ul>
-
-<li>Enter your brand or business name.</li>
-
-<li>Choose the main topic for your content.</li>
-
-<li>Define your target audience.</li>
-
-<li>Select how many posts you want to publish each week.</li>
-
-<li>Generate your 30-day content calendar.</li>
-
-<li>Review and adapt the ideas to your actual business and content strategy.</li>
-
-</ul>
-
-<h2>
-What Can You Use a Content Calendar For?
-</h2>
-
-<p>
-A content calendar can help organize different types of publishing activities,
-including social media posts, blog topics, educational content, promotional
-content, audience engagement and marketing campaigns.
-</p>
-
-<h3>
-Content Calendar for Small Businesses
-</h3>
-
-<p>
-Small businesses can use a content calendar to organize topics around their
-products, services, customers and marketing goals. Planning ahead can also
-make it easier to identify gaps in upcoming content.
-</p>
-
-<h3>
-Social Media Content Planning
-</h3>
-
-<p>
-A social media content calendar can help creators and businesses plan topics
-before publishing. Ideas can be adapted for platforms such as Facebook,
-Instagram, LinkedIn, TikTok and other social channels.
-</p>
+          <option value="3">
+            3 posts per week
+          </option>
 
-<h3>
-Monthly Content Planning
-</h3>
+          <option value="5">
+            5 posts per week
+          </option>
 
-<p>
-Monthly content planning gives you a simple framework for organizing upcoming
-topics. You can review the generated ideas, adjust them to your audience and
-turn selected ideas into finished posts or articles.
-</p>
+          <option value="7">
+            7 posts per week
+          </option>
 
-<h2>
-Content Calendar Generator vs. Content Calendar Template
-</h2>
+        </select>
 
-<p>
-A content calendar template usually provides a blank structure that you fill
-manually. A content calendar generator starts with your topic, audience and
-posting frequency and creates a set of ideas that you can use as a starting
-point for your monthly plan.
-</p>
+      </div>
 
-<h2>
-Frequently Asked Questions
-</h2>
+      <div class="field">
 
-<h3>
-What is a content calendar generator?
-</h3>
+        <label for="goal">
+          Content Goal
+        </label>
 
-<p>
-A content calendar generator helps organize content ideas into a planned
-schedule for activities such as social media, blogging and marketing.
-</p>
-
-<h3>
-Is this a 30-day content calendar generator?
-</h3>
-
-<p>
-Yes. The tool generates content ideas across a 30-day period based on the
-topic, audience and posting frequency you provide.
-</p>
-
-<h3>
-Can I use it as a social media content calendar?
-</h3>
-
-<p>
-Yes. The generated calendar can be used as a starting point for planning
-social media posts and other recurring content.
-</p>
-
-<h3>
-Is the content calendar generator free?
-</h3>
-
-<p>
-ToolVault provides an online content calendar generator for organizing
-content ideas around your topic, audience and preferred posting frequency.
-</p>
+        <select id="goal">
 
-<h3>
-Who can use a content calendar generator?
-</h3>
+          <option value="Engagement">
+            Engagement
+          </option>
 
-<p>
-Creators, marketers, small businesses and teams can use the tool to organize
-recurring content around a topic and target audience.
-</p>
+          <option value="Brand Awareness">
+            Brand Awareness
+          </option>
 
-<h2>
-Explore Related ToolVault Tools
-</h2>
+          <option value="Lead Generation">
+            Lead Generation
+          </option>
 
-<div class="seo-related">
+          <option value="Education">
+            Education
+          </option>
 
-<a href="social-media-planner.html">
-Social Media Planner
-</a>
+          <option value="Sales">
+            Sales
+          </option>
 
-<a href="ai-prompt-generator.html">
-AI Prompt Generator
-</a>
+          <option value="Traffic">
+            Website Traffic
+          </option>
 
-<a href="meeting-notes-generator.html">
-Meeting Notes Generator
-</a>
+        </select>
 
-<a href="word-counter.html">
-Word Counter
-</a>
+      </div>
 
-</div>
+      <div class="btn-row">
 
-</section>
+        <button
+          class="btn"
+          type="button"
+          onclick="ToolVaultPaywall.show()"
+        >
+          Generate Calendar →
+        </button>
 
-<footer>
+      </div>
 
-<div class="container">
+      <div class="btn-row">
 
-<span>© 2026 ToolVault</span>
+        <button
+          class="btn secondary"
+          type="button"
+          onclick="loadExample()"
+        >
+          Load Example
+        </button>
 
-<span>
-Practical digital tools for smarter work.
-</span>
+        <button
+          class="btn secondary"
+          type="button"
+          onclick="clearForm()"
+        >
+          Clear
+        </button>
 
-</div>
+      </div>
 
-</footer>
+      <p class="tip">
+        Tip: Define a specific topic and audience for more relevant content ideas.
+      </p>
 
-<script>
+    </div>
 
-function generate(){
+    <!-- Result Panel -->
+    <div class="result">
 
-let b=brand.value,
-t=topic.value,
-a=audience.value,
-n=[
-"How-to guide",
-"Quick tip",
-"Common mistake",
-"Checklist",
-"FAQ",
-"Myth vs fact",
-"Case example",
-"Behind the scenes",
-"Expert insight",
-"Resources"
-],
-step=Math.max(
-1,
-Math.round(7/(+freq.value||3))
-),
-s=[];
+      <div class="result-header">
 
-for(
-let d=1;
-d<=30;
-d+=step
-)
+        <h2>
+          30-Day Content Calendar
+        </h2>
 
-s.push(
-`Day ${d}: ${n[(d-1)%n.length]} about ${t}
-Audience: ${a}
-Brand: ${b}
-CTA: Save or share.`
-);
+        <span
+          class="result-status"
+          id="status"
+        ></span>
 
-output.textContent=s.join("\n\n");
+      </div>
 
-}
+      <div class="output-wrapper">
 
-function copyIt(){
+        <div
+          class="output empty"
+          id="output"
+        >
+          Your 30-day content calendar will appear here.
+        </div>
 
-navigator.clipboard.writeText(
-output.textContent
-);
+      </div>
 
-}
+      <div class="result-actions">
 
-generate();
+        <button
+          class="btn"
+          type="button"
+          onclick="ToolVaultPaywall.show()"
+        >
+          Copy Calendar
+        </button>
 
-</script>
+        <button
+          class="btn secondary"
+          type="button"
+          onclick="ToolVaultPaywall.show()"
+        >
+          Download .txt
+        </button>
 
-<script>
+      </div>
 
-window.TOOLVAULT_PAYWALL={
-checkout:"https://zafcommander.gumroad.com/l/content-calendar?wanted=true",
-toolName:"Content Calendar"
-};
+      <p class="tip">
+        Review and customize the generated ideas before publishing them.
+      </p>
 
-</script>
+    </div>
 
-<script src="../js/paywall.js"></script>
+  </main>
+
+  <!-- SEO Content -->
+  <section
+    aria-label="Content Calendar Generator information"
+    class="seo-content"
+  >
+
+    <h2>
+      Free Content Calendar Generator Online
+    </h2>
+
+    <p>
+      ToolVault's Content Calendar Generator helps you plan and organize recurring
+      content around your topic and target audience. Use it to create a practical
+      30-day content calendar for social media, blogs, marketing campaigns,
+      educational content and other publishing activities.
+    </p>
+
+    <p>
+      If you are looking for a free content calendar generator, 30-day content
+      calendar generator or social media content planning tool, ToolVault provides
+      a simple way to organize content ideas around your publishing schedule.
+    </p>
+
+    <h2>
+      30-Day Content Calendar Generator
+    </h2>
+
+    <p>
+      A 30-day content calendar gives you a framework for planning the next month
+      of publishing. Instead of deciding what to post at the last minute, you can
+      organize ideas around a topic, audience and publishing frequency.
+    </p>
+
+    <h3>
+      Social Media Content Calendar Generator
+    </h3>
+
+    <p>
+      Use the generator as a starting point for planning social media content.
+      A structured calendar can help organize educational posts, promotional ideas,
+      engagement content, FAQs and other recurring topics.
+    </p>
+
+    <h2>
+      How to Use the Content Calendar Generator
+    </h2>
+
+    <ol>
+
+      <li>
+        Enter your brand or business name.
+      </li>
+
+      <li>
+        Choose the main topic for your content.
+      </li>
+
+      <li>
+        Define your target audience.
+      </li>
+
+      <li>
+        Select your main publishing platform.
+      </li>
+
+      <li>
+        Choose how many posts you want to publish each week.
+      </li>
+
+      <li>
+        Select your main content goal.
+      </li>
+
+      <li>
+        Generate your 30-day content calendar.
+      </li>
+
+      <li>
+        Review and adapt the ideas to your actual business and content strategy.
+      </li>
+
+    </ol>
+
+    <h2>
+      What Can You Use a Content Calendar For?
+    </h2>
+
+    <p>
+      A content calendar can help organize different types of publishing activities,
+      including social media posts, blog topics, educational content, promotional
+      content, audience engagement and marketing campaigns.
+    </p>
+
+    <h3>
+      Content Calendar for Small Businesses
+    </h3>
+
+    <p>
+      Small businesses can use a content calendar to organize topics around their
+      products, services, customers and marketing goals. Planning ahead can also
+      make it easier to identify gaps in upcoming content.
+    </p>
+
+    <h3>
+      Social Media Content Planning
+    </h3>
+
+    <p>
+      A social media content calendar can help creators and businesses plan topics
+      before publishing. Ideas can be adapted for platforms such as Facebook,
+      Instagram, LinkedIn, TikTok and other social channels.
+    </p>
+
+    <h3>
+      Monthly Content Planning
+    </h3>
+
+    <p>
+      Monthly content planning gives you a simple framework for organizing upcoming
+      topics. You can review the generated ideas, adjust them to your audience and
+      turn selected ideas into finished posts or articles.
+    </p>
+
+    <h2>
+      Content Calendar Generator vs. Content Calendar Template
+    </h2>
+
+    <p>
+      A content calendar template usually provides a blank structure that you fill
+      manually. A content calendar generator starts with your topic, audience and
+      posting frequency and creates a set of ideas that you can use as a starting
+      point for your monthly plan.
+    </p>
+
+    <h2>
+      Frequently Asked Questions
+    </h2>
+
+    <div class="faq-item">
+
+      <h3>
+        What is a content calendar generator?
+      </h3>
+
+      <p>
+        A content calendar generator helps organize content ideas into a planned
+        schedule for activities such as social media, blogging and marketing.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>
+        Is this a 30-day content calendar generator?
+      </h3>
+
+      <p>
+        Yes. The tool generates content ideas across a 30-day period based on the
+        topic, audience and posting frequency you provide.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>
+        Can I use it as a social media content calendar?
+      </h3>
+
+      <p>
+        Yes. The generated calendar can be used as a starting point for planning
+        social media posts and other recurring content.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>
+        Is the content calendar generator free?
+      </h3>
+
+      <p>
+        ToolVault provides an online content calendar generator for organizing
+        content ideas around your topic, audience and preferred posting frequency.
+      </p>
+
+    </div>
+
+    <div class="faq-item">
+
+      <h3>
+        Who can use a content calendar generator?
+      </h3>
+
+      <p>
+        Creators, marketers, small businesses and teams can use the tool to organize
+        recurring content around a topic and target audience.
+      </p>
+
+    </div>
+
+    <h2>
+      Explore Related ToolVault Tools
+    </h2>
+
+    <div class="seo-related">
+
+      <a href="social-media-planner.html">
+        Social Media Planner
+      </a>
+
+      <a href="ai-prompt-generator.html">
+        AI Prompt Generator
+      </a>
+
+      <a href="meeting-notes-generator.html">
+        Meeting Notes Generator
+      </a>
+
+      <a href="word-counter.html">
+        Word Counter
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="container">
+
+      <span>
+        © 2026 ToolVault
+      </span>
+
+      <span>
+        Practical digital tools for smarter work.
+      </span>
+
+    </div>
+
+  </footer>
+
+  <!-- Tool Logic -->
+  <script>
+
+    const $ = id => document.getElementById(id);
+
+    function generateCalendar() {
+
+      const brand =
+        $("brand").value.trim() || "My Business";
+
+      const topic =
+        $("topic").value.trim() || "Digital productivity";
+
+      const audience =
+        $("audience").value.trim() || "Small business owners";
+
+      const platform =
+        $("platform").value;
+
+      const frequency =
+        parseInt($("freq").value, 10) || 3;
+
+      const goal =
+        $("goal").value;
+
+      const contentTypes = [
+        "Educational Tip",
+        "How-To Guide",
+        "Common Mistake",
+        "Quick Checklist",
+        "FAQ",
+        "Myth vs Fact",
+        "Industry Insight",
+        "Practical Example",
+        "Behind the Scenes",
+        "Expert Tip",
+        "Resource Recommendation",
+        "Customer Problem",
+        "Case Study Idea",
+        "Question for the Audience",
+        "Step-by-Step Guide"
+      ];
+
+      const ctas = [
+        "Save this post for later.",
+        "Share this with someone who may find it useful.",
+        "Comment with your experience.",
+        "Follow for more practical tips.",
+        "Visit your website to learn more.",
+        "Send us a message to learn more.",
+        "Bookmark this idea for later.",
+        "Tell us what you think in the comments."
+      ];
+
+      const hooks = [
+        "Start with a strong problem-focused hook.",
+        "Open with a useful question.",
+        "Lead with a surprising fact or observation.",
+        "Start with a common challenge faced by the audience.",
+        "Begin with a practical tip."
+      ];
+
+      const posts = [];
+
+      /*
+       * Frequency controls how many posts are planned per week.
+       * The calendar covers the full 30-day period.
+       */
+      let postNumber = 0;
+
+      for (let day = 1; day <= 30; day++) {
+
+        const weekDay = (day - 1) % 7;
+
+        let publish = false;
+
+        if (frequency === 7) {
+          publish = true;
+        }
+
+        if (frequency === 5) {
+          publish = weekDay < 5;
+        }
+
+        if (frequency === 3) {
+          publish =
+            weekDay === 0 ||
+            weekDay === 2 ||
+            weekDay === 4;
+        }
+
+        if (!publish) {
+          continue;
+        }
+
+        const type =
+          contentTypes[postNumber % contentTypes.length];
+
+        const hook =
+          hooks[postNumber % hooks.length];
+
+        const cta =
+          ctas[postNumber % ctas.length];
+
+        const angle =
+          getContentAngle(type, topic, audience, goal);
+
+        postNumber++;
+
+        posts.push(
+`DAY ${day}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Content Type: ${type}
+Platform: ${platform}
+Topic: ${topic}
+Target Audience: ${audience}
+Content Goal: ${goal}
+
+Content Idea:
+${angle}
+
+Suggested Hook:
+${hook}
+
+Suggested CTA:
+${cta}
+
+Brand:
+${brand}`
+        );
+
+      }
+
+      const header =
+`30-DAY CONTENT CALENDAR
+=======================
+
+Brand: ${brand}
+Main Topic: ${topic}
+Audience: ${audience}
+Platform: ${platform}
+Posts Per Week: ${frequency}
+Primary Goal: ${goal}
+
+Generated content ideas: ${posts.length}
+
+`;
+
+      $("output").className = "output";
+      $("output").textContent =
+        header + posts.join("\n\n");
+
+      $("status").textContent =
+        `${posts.length} posts generated`;
+
+    }
+
+
+    function getContentAngle(
+      type,
+      topic,
+      audience,
+      goal
+    ) {
+
+      const ideas = {
+
+        "Educational Tip":
+`Share one practical ${topic} tip that can help ${audience} achieve better results. Explain the tip in simple language and show how it can be applied.`,
+
+        "How-To Guide":
+`Create a step-by-step guide showing ${audience} how to use ${topic} to solve a specific problem or achieve a useful result.`,
+
+        "Common Mistake":
+`Explain one common mistake people make when dealing with ${topic}. Describe why the mistake happens and provide a better approach.`,
+
+        "Quick Checklist":
+`Create a short checklist related to ${topic} that ${audience} can save and use when planning or completing a task.`,
+
+        "FAQ":
+`Answer a frequently asked question about ${topic}. Keep the explanation practical and useful for ${audience}.`,
+
+        "Myth vs Fact":
+`Present one common misconception about ${topic} and contrast it with a practical fact or more accurate explanation.`,
+
+        "Industry Insight":
+`Share an interesting observation or useful insight about ${topic} that could help ${audience} understand the subject better.`,
+
+        "Practical Example":
+`Show ${audience} a realistic example of how ${topic} can be applied in a real-world situation.`,
+
+        "Behind the Scenes":
+`Show how ${brand} approaches a task, process or challenge related to ${topic}. Keep the content authentic and useful.`,
+
+        "Expert Tip":
+`Share an expert-style recommendation about ${topic} that can help ${audience} make a better decision or improve their results.`,
+
+        "Resource Recommendation":
+`Recommend a useful type of resource, method or workflow connected to ${topic} and explain how ${audience} could use it.`,
+
+        "Customer Problem":
+`Identify a common problem faced by ${audience} related to ${topic}, then explain a practical way to address it.`,
+
+        "Case Study Idea":
+`Create a simple case-study concept showing how ${topic} could help a person or business achieve the goal of ${goal}.`,
+
+        "Question for the Audience":
+`Ask ${audience} an engaging question related to ${topic}. Encourage people to share their experiences, opinions or challenges.`,
+
+        "Step-by-Step Guide":
+`Create a practical step-by-step process that ${audience} can follow to complete a task related to ${topic}.`
+
+      };
+
+      return ideas[type] ||
+        `Create useful content about ${topic} for ${audience}.`;
+
+    }
+
+
+    function copyCalendar() {
+
+      const text =
+        $("output").textContent.trim();
+
+      if (
+        !text ||
+        text === "Your 30-day content calendar will appear here."
+      ) {
+        return;
+      }
+
+      navigator.clipboard.writeText(text)
+        .then(() => {
+
+          $("status").textContent =
+            "Calendar copied!";
+
+          setTimeout(() => {
+
+            $("status").textContent = "";
+
+          }, 1800);
+
+        })
+        .catch(() => {
+
+          $("status").textContent =
+            "Copy failed — please select the text manually.";
+
+        });
+
+    }
+
+
+    function downloadCalendar() {
+
+      const text =
+        $("output").textContent.trim();
+
+      if (
+        !text ||
+        text === "Your 30-day content calendar will appear here."
+      ) {
+        return;
+      }
+
+      const blob =
+        new Blob(
+          [text],
+          { type: "text/plain;charset=utf-8" }
+        );
+
+      const url =
+        URL.createObjectURL(blob);
+
+      const link =
+        document.createElement("a");
+
+      link.href = url;
+      link.download = "toolvault-30-day-content-calendar.txt";
+
+      document.body.appendChild(link);
+
+      link.click();
+
+      document.body.removeChild(link);
+
+      URL.revokeObjectURL(url);
+
+      $("status").textContent =
+        "Downloaded!";
+
+      setTimeout(() => {
+
+        $("status").textContent = "";
+
+      }, 1800);
+
+    }
+
+
+    function clearForm() {
+
+      $("brand").value = "";
+      $("topic").value = "";
+      $("audience").value = "";
+
+      $("platform").selectedIndex = 0;
+      $("freq").selectedIndex = 0;
+      $("goal").selectedIndex = 0;
+
+      $("output").className =
+        "output empty";
+
+      $("output").textContent =
+        "Your 30-day content calendar will appear here.";
+
+      $("status").textContent = "";
+
+    }
+
+
+    function loadExample() {
+
+      $("brand").value =
+        "ToolVault";
+
+      $("topic").value =
+        "AI tools for small businesses";
+
+      $("audience").value =
+        "Small business owners in the USA";
+
+      $("platform").value =
+        "Multiple Platforms";
+
+      $("freq").value =
+        "5";
+
+      $("goal").value =
+        "Lead Generation";
+
+      /*
+       * Preview generation remains available locally.
+       * The actual Generate button continues through
+       * the ToolVault paywall.
+       */
+      generateCalendar();
+
+    }
+
+
+    /*
+     * Keep the tool usable if the paywall script is loaded after
+     * this script. The real protected action is still handled by
+     * ToolVaultPaywall.show().
+     */
+
+    window.addEventListener("DOMContentLoaded", function() {
+
+      $("output").textContent =
+        "Your 30-day content calendar will appear here.";
+
+    });
+
+  </script>
+
+  <!-- ToolVault Paywall Configuration -->
+  <script>
+
+    window.TOOLVAULT_PAYWALL = {
+
+      checkout:
+        "https://zafcommander.gumroad.com/l/content-calendar?wanted=true",
+
+      toolName:
+        "Content Calendar Generator"
+
+    };
+
+  </script>
+
+  <!-- ToolVault Paywall -->
+  <script src="../js/paywall.js"></script>
 
 </body>
 </html>
