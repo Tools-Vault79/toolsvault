@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MGV8BY8PVJ');
+  </script>
+
+  <title>How to Calculate ROI: Formula, Example & Free ROI Calculator | ToolVault</title>
+
+  <meta name="description"
+        content="Learn how to calculate ROI using the simple ROI formula with a practical example. Understand net gain, ROI percentage and return multiple with ToolVault's free ROI Calculator.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://toolsvault.shop/articles/how-to-calculate-roi.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title"
+        content="How to Calculate ROI: Formula, Example & Free ROI Calculator | ToolVault">
+
+  <meta property="og:description"
+        content="Learn how to calculate ROI using the simple ROI formula with a practical example. Understand net gain, ROI percentage and return multiple with ToolVault's free ROI Calculator.">
+
+  <meta property="og:url"
+        content="https://toolsvault.shop/articles/how-to-calculate-roi.html">
+
+  <meta property="og:type"
+        content="article">
+
+  <meta property="og:site_name"
+        content="ToolVault">
+
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"How to Calculate ROI: Formula, Example & Free ROI Calculator",
+    "description":"Learn how to calculate ROI using the simple ROI formula with a practical example. Understand net gain, ROI percentage and return multiple with ToolVault's free ROI Calculator.",
+    "url":"https://toolsvault.shop/articles/how-to-calculate-roi.html",
+    "datePublished":"2026-09-27",
+    "dateModified":"2026-09-27",
+    "author":{
+      "@type":"Organization",
+      "name":"ToolVault",
+      "url":"https://toolsvault.shop/"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"ToolVault",
+      "url":"https://toolsvault.shop/"
+    },
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://toolsvault.shop/articles/how-to-calculate-roi.html"
+    }
+  }
+  </script>
+
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"ToolVault",
+        "item":"https://toolsvault.shop/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Articles",
+        "item":"https://toolsvault.shop/articles/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"How to Calculate ROI",
+        "item":"https://toolsvault.shop/articles/how-to-calculate-roi.html"
+      }
+    ]
+  }
+  </script>
+
+
+  <link href="../css/style.css" rel="stylesheet"/>
+
+
+  <style>
+
+    .article-hero{
+      text-align:center;
+      padding:55px 0 30px;
+    }
+
+    .article-hero h1{
+      max-width:850px;
+      margin:12px auto;
+      font-size:clamp(34px,5vw,50px);
+      line-height:1.12;
+      color:#0B1220;
+    }
+
+    .article-hero p{
+      max-width:720px;
+      margin:12px auto;
+      color:#64748B;
+      line-height:1.7;
+    }
+
+    .breadcrumb{
+      max-width:850px;
+      margin:25px auto 0;
+      font-size:13px;
+      color:#64748B;
+    }
+
+    .breadcrumb a{
+      color:#2563EB;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .article-wrap{
+      max-width:900px;
+      margin:20px auto 70px;
+    }
+
+    .article{
+      background:#fff;
+      border:1px solid #E2E8F0;
+      border-radius:18px;
+      padding:35px;
+    }
+
+    .article h2{
+      margin:34px 0 12px;
+      color:#0B1220;
+      font-size:27px;
+      line-height:1.3;
+    }
+
+    .article h3{
+      margin:24px 0 8px;
+      color:#0B1220;
+      font-size:20px;
+    }
+
+    .article p{
+      color:#475569;
+      font-size:15px;
+      line-height:1.8;
+      margin:0 0 17px;
+    }
+
+    .article ul{
+      color:#475569;
+      line-height:1.8;
+      padding-left:25px;
+      margin-bottom:20px;
+    }
+
+    .article a{
+      color:#2563EB;
+      font-weight:600;
+    }
+
+    .formula{
+      background:#F8FAFC;
+      border:1px solid #E2E8F0;
+      border-radius:12px;
+      padding:18px;
+      margin:18px 0;
+      font-weight:700;
+      color:#0B1220;
+      text-align:center;
+    }
+
+    .example{
+      background:#EFF6FF;
+      border:1px solid #DBEAFE;
+      border-radius:14px;
+      padding:20px;
+      margin:20px 0;
+    }
+
+    .example p{
+      margin-bottom:8px;
+    }
+
+    .cta{
+      margin:30px 0;
+      padding:25px;
+      background:#0B1220;
+      border-radius:16px;
+      text-align:center;
+    }
+
+    .cta h2{
+      color:#fff;
+      margin:0 0 10px;
+    }
+
+    .cta p{
+      color:#CBD5E1;
+      margin-bottom:18px;
+    }
+
+    .cta a{
+      display:inline-block;
+      background:#2563EB;
+      color:#fff;
+      text-decoration:none;
+      padding:12px 20px;
+      border-radius:10px;
+      font-weight:700;
+    }
+
+    .related{
+      margin-top:35px;
+      padding-top:25px;
+      border-top:1px solid #E2E8F0;
+    }
+
+    .related h2{
+      margin-top:0;
+    }
+
+    .related a{
+      display:inline-block;
+      margin:5px 7px 5px 0;
+      padding:9px 12px;
+      background:#EFF6FF;
+      border:1px solid #DBEAFE;
+      border-radius:9px;
+      color:#2563EB;
+      text-decoration:none;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .back-link{
+      display:inline-block;
+      margin-top:20px;
+      color:#2563EB;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    @media(max-width:600px){
+
+      .article{
+        padding:22px;
+      }
+
+      .article h2{
+        font-size:23px;
+      }
+
+      .article p{
+        font-size:14px;
+      }
+
+      .breadcrumb{
+        padding:0 15px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container nav">
+
+    <a class="logo" href="../index.html">
+      <span>T</span>ToolVault
+    </a>
+
+    <a href="../index.html"
+       style="color:#2563EB;font-weight:700;text-decoration:none;font-size:14px">
+      ← Back to Tools
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<section class="article-hero">
+
+  <div class="container">
+
+    <div class="badge">BUSINESS &amp; FINANCE GUIDE</div>
+
+    <h1>
+      How to Calculate ROI: Formula, Example &amp; Free ROI Calculator
+    </h1>
+
+    <p>
+      Learn how to calculate Return on Investment (ROI) using a simple
+      formula and practical example. Then use ToolVault's free ROI Calculator
+      to calculate ROI, net gain and return multiple.
+    </p>
+
+
+    <!-- Visible Breadcrumb -->
+    <div class="breadcrumb">
+
+      <a href="../index.html">ToolVault</a>
+
+      &nbsp;›&nbsp;
+
+      <a href="./">Articles</a>
+
+      &nbsp;›&nbsp;
+
+      How to Calculate ROI
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<main class="container article-wrap">
+
+<article class="article">
+
+
+  <p>
+    Return on Investment, commonly called ROI, is a simple way to measure
+    the gain or loss generated by an investment compared with its total cost.
+  </p>
+
+  <p>
+    Whether you are evaluating a marketing campaign, business project,
+    product investment or another financial activity, calculating ROI can
+    help you understand the return generated from the money invested.
+  </p>
+
+  <p>
+    In this guide, you'll learn the basic ROI formula, how to calculate ROI
+    step by step, and how to use a free online ROI calculator.
+  </p>
+
+
+
+  <h2>What Is ROI?</h2>
+
+  <p>
+    ROI stands for <strong>Return on Investment</strong>.
+  </p>
+
+  <p>
+    It expresses the gain or loss from an investment as a percentage of
+    the investment cost.
+  </p>
+
+  <p>
+    A positive ROI means the return is greater than the investment cost,
+    while a negative ROI means the calculated return is lower than the
+    investment cost.
+  </p>
+
+
+
+  <h2>ROI Formula</h2>
+
+  <p>
+    The basic ROI formula is:
+  </p>
+
+  <div class="formula">
+    ROI = (Net Gain ÷ Total Investment Cost) × 100
+  </div>
+
+  <p>
+    First calculate the net gain:
+  </p>
+
+  <div class="formula">
+    Net Gain = Total Return − Total Investment Cost
+  </div>
+
+  <p>
+    For example, suppose an investment has the following figures:
+  </p>
+
+  <div class="example">
+
+    <p>
+      <strong>Initial investment:</strong> $1,000
+    </p>
+
+    <p>
+      <strong>Additional costs:</strong> $100
+    </p>
+
+    <p>
+      <strong>Total return:</strong> $1,500
+    </p>
+
+  </div>
+
+  <p>
+    The total investment cost is:
+  </p>
+
+  <div class="formula">
+    $1,000 + $100 = $1,100
+  </div>
+
+  <p>
+    The net gain is:
+  </p>
+
+  <div class="formula">
+    $1,500 − $1,100 = $400
+  </div>
+
+  <p>
+    Therefore:
+  </p>
+
+  <div class="formula">
+    ($400 ÷ $1,100) × 100 = 36.36%
+  </div>
+
+  <p>
+    The calculated ROI in this example is approximately
+    <strong>36.36%</strong>.
+  </p>
+
+
+
+  <h2>How to Calculate ROI Step by Step</h2>
+
+
+  <h3>Step 1: Determine the Initial Investment</h3>
+
+  <p>
+    Start with the amount originally invested in the project, product,
+    campaign or activity.
+  </p>
+
+
+  <h3>Step 2: Add Additional Costs</h3>
+
+  <p>
+    Include other costs that are relevant to the investment calculation.
+  </p>
+
+
+  <h3>Step 3: Calculate Total Investment Cost</h3>
+
+  <div class="formula">
+    Total Investment Cost =
+    Initial Investment + Additional Costs
+  </div>
+
+
+  <h3>Step 4: Determine the Total Return</h3>
+
+  <p>
+    Enter the total amount generated or received from the investment.
+  </p>
+
+
+  <h3>Step 5: Calculate Net Gain</h3>
+
+  <div class="formula">
+    Net Gain =
+    Total Return − Total Investment Cost
+  </div>
+
+
+  <h3>Step 6: Calculate ROI</h3>
+
+  <div class="formula">
+    ROI =
+    (Net Gain ÷ Total Investment Cost) × 100
+  </div>
+
+
+
+  <div class="cta">
+
+    <h2>Calculate Your ROI Online</h2>
+
+    <p>
+      Enter your investment cost and return to calculate ROI,
+      net gain and return multiple.
+    </p>
+
+    <a href="../tools/roi-calculator.html">
+      Use the Free ROI Calculator →
+    </a>
+
+  </div>
+
+
+
+  <h2>What Does an ROI Calculator Show?</h2>
+
+  <p>
+    A useful ROI calculator can simplify the calculation by taking the
+    investment figures and producing several related results.
+  </p>
+
+  <p>
+    The ToolVault ROI Calculator provides:
+  </p>
+
+  <ul>
+
+    <li>Total investment cost</li>
+
+    <li>Net gain</li>
+
+    <li>ROI percentage</li>
+
+    <li>Return multiple</li>
+
+  </ul>
+
+
+
+  <h2>What Is a Good ROI?</h2>
+
+  <p>
+    There is no single ROI percentage that applies to every investment.
+    ROI needs to be interpreted in context because results can vary
+    depending on the investment type, time period, risk, industry and
+    total costs involved.
+  </p>
+
+  <p>
+    An ROI percentage is therefore most useful when considered alongside
+    the circumstances and objectives of the investment.
+  </p>
+
+
+
+  <h2>ROI vs Return Multiple</h2>
+
+  <p>
+    ROI and return multiple describe investment performance in different
+    ways.
+  </p>
+
+  <p>
+    For example, if the total investment cost is $1,000 and the total
+    return is $1,500:
+  </p>
+
+  <div class="example">
+
+    <p>
+      <strong>Total investment cost:</strong> $1,000
+    </p>
+
+    <p>
+      <strong>Total return:</strong> $1,500
+    </p>
+
+    <p>
+      <strong>Net gain:</strong> $500
+    </p>
+
+    <p>
+      <strong>ROI:</strong> 50%
+    </p>
+
+    <p>
+      <strong>Return multiple:</strong> 1.50x
+    </p>
+
+  </div>
+
+
+
+  <h2>Common ROI Calculation Mistakes</h2>
+
+
+  <h3>1. Ignoring Additional Costs</h3>
+
+  <p>
+    Using only the initial investment can produce a different result when
+    additional costs are part of the investment.
+  </p>
+
+
+  <h3>2. Confusing Return With Profit</h3>
+
+  <p>
+    Total return and net gain are different figures. Net gain is calculated
+    after subtracting the total investment cost from the total return.
+  </p>
+
+
+  <h3>3. Forgetting the Time Period</h3>
+
+  <p>
+    ROI percentages should be considered alongside the period over which
+    the return was generated.
+  </p>
+
+
+  <h3>4. Using Inconsistent Figures</h3>
+
+  <p>
+    Investment and return figures should represent comparable periods and
+    relevant costs.
+  </p>
+
+
+
+  <h2>Who Can Use an ROI Calculator?</h2>
+
+  <p>
+    An ROI calculator can be useful for:
+  </p>
+
+  <ul>
+
+    <li>Small-business owners</li>
+
+    <li>Entrepreneurs</li>
+
+    <li>Marketers</li>
+
+    <li>Investors</li>
+
+    <li>Freelancers</li>
+
+    <li>Project managers</li>
+
+    <li>Business professionals</li>
+
+  </ul>
+
+  <p>
+    It can be used whenever the relevant investment costs and returns
+    are available for calculation.
+  </p>
+
+
+
+  <h2>Frequently Asked Questions</h2>
+
+
+  <h3>What does ROI stand for?</h3>
+
+  <p>
+    ROI stands for Return on Investment.
+  </p>
+
+
+  <h3>What is the ROI formula?</h3>
+
+  <p>
+    The basic formula is:
+  </p>
+
+  <div class="formula">
+    ROI = (Net Gain ÷ Total Investment Cost) × 100
+  </div>
+
+
+  <h3>Can ROI be negative?</h3>
+
+  <p>
+    Yes. A negative ROI occurs when the calculated return is lower than
+    the total investment cost.
+  </p>
+
+
+  <h3>Is ROI the same as profit?</h3>
+
+  <p>
+    No. Profit is a monetary gain, while ROI expresses the gain relative
+    to the investment cost as a percentage.
+  </p>
+
+
+  <h3>How can I calculate ROI quickly?</h3>
+
+  <p>
+    You can use an online ROI calculator by entering the relevant
+    investment cost and return figures.
+  </p>
+
+
+
+  <h2>Calculate Your ROI</h2>
+
+  <p>
+    Understanding ROI does not require complicated calculations.
+    Determine your total investment cost, calculate the net gain, and
+    divide the net gain by the total investment cost.
+  </p>
+
+  <p>
+    If you want to calculate the figures quickly, use the
+    <a href="../tools/roi-calculator.html">
+      ToolVault ROI Calculator
+    </a>
+    to calculate ROI, net gain and return multiple online.
+  </p>
+
+
+
+  <div class="related">
+
+    <h2>Related ToolVault Resources</h2>
+
+    <a href="../tools/roi-calculator.html">
+      ROI Calculator
+    </a>
+
+    <a href="../tools/profit-calculator.html">
+      Profit Calculator
+    </a>
+
+    <a href="../tools/pricing-calculator.html">
+      Pricing Calculator
+    </a>
+
+    <a href="../tools/expense-calculator.html">
+      Expense Calculator
+    </a>
+
+    <a href="how-to-calculate-selling-price.html">
+      How to Calculate Selling Price
+    </a>
+
+    <a href="../index.html">
+      Explore All Tools
+    </a>
+
+  </div>
+
+
+
+  <a class="back-link" href="../index.html">
+    ← Back to ToolVault
+  </a>
+
+
+</article>
+
+</main>
+
+
+
+<footer>
+
+  <div class="container">
+
+    <span>© 2026 ToolVault</span>
+
+    <span>Practical digital tools for smarter work.</span>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>

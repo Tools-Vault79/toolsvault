@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MGV8BY8PVJ');
+</script>
+
+<title>How to Calculate Selling Price: Formula, Examples & Pricing Guide | ToolVault</title>
+
+<meta name="description" content="Learn how to calculate selling price using cost and profit margin. Includes the selling price formula, examples, markup vs margin and practical pricing tips.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://toolsvault.shop/articles/how-to-calculate-selling-price.html">
+
+<meta property="og:title" content="How to Calculate Selling Price: Formula, Examples & Pricing Guide | ToolVault">
+<meta property="og:description" content="Learn how to calculate selling price using cost and profit margin, with formulas, examples and practical pricing guidance.">
+<meta property="og:url" content="https://toolsvault.shop/articles/how-to-calculate-selling-price.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolVault">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../css/style.css" rel="stylesheet">
+
+<style>
+
+.article-hero{
+    text-align:center;
+    padding:55px 0 30px;
+}
+
+.article-hero h1{
+    max-width:850px;
+    margin:0 auto 14px;
+    font-size:clamp(34px,5vw,48px);
+    line-height:1.12;
+    color:#0B1220;
+}
+
+.article-hero p{
+    max-width:700px;
+    margin:0 auto;
+    color:#64748B;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.breadcrumb{
+    max-width:850px;
+    margin:25px auto 0;
+    font-size:13px;
+    color:#64748B;
+}
+
+.breadcrumb a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.article{
+    max-width:850px;
+    margin:25px auto 70px;
+    background:#fff;
+    border:1px solid #E2E8F0;
+    border-radius:18px;
+    padding:35px;
+}
+
+.article h2{
+    font-size:27px;
+    line-height:1.3;
+    color:#0B1220;
+    margin:35px 0 12px;
+}
+
+.article h3{
+    font-size:20px;
+    color:#0B1220;
+    margin:25px 0 8px;
+}
+
+.article p{
+    color:#334155;
+    font-size:15px;
+    line-height:1.8;
+    margin:0 0 17px;
+}
+
+.article ul{
+    color:#334155;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.formula{
+    background:#EFF6FF;
+    border:1px solid #DBEAFE;
+    border-radius:12px;
+    padding:18px;
+    margin:20px 0;
+    text-align:center;
+    font-weight:700;
+    color:#0B1220;
+    font-size:17px;
+}
+
+.example{
+    background:#F8FAFC;
+    border:1px solid #E2E8F0;
+    border-radius:12px;
+    padding:20px;
+    margin:20px 0;
+}
+
+.example strong{
+    color:#0B1220;
+}
+
+.data-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+.data-table th,
+.data-table td{
+    border:1px solid #E2E8F0;
+    padding:12px;
+    text-align:left;
+}
+
+.data-table th{
+    background:#F8FAFC;
+    color:#0B1220;
+}
+
+.data-table td{
+    color:#334155;
+}
+
+.cta{
+    margin:35px 0;
+    padding:25px;
+    background:#0B1220;
+    border-radius:16px;
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    color:#fff;
+    margin-top:0;
+}
+
+.cta p{
+    color:#CBD5E1;
+}
+
+.cta a{
+    display:inline-block;
+    background:#2563EB;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.related{
+    margin-top:40px;
+    padding-top:25px;
+    border-top:1px solid #E2E8F0;
+}
+
+.related-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.related-links a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:700;
+    font-size:13px;
+    border:1px solid #DBEAFE;
+    background:#EFF6FF;
+    padding:9px 12px;
+    border-radius:9px;
+}
+
+@media(max-width:600px){
+
+.article{
+    padding:23px;
+}
+
+.article h2{
+    font-size:23px;
+}
+
+.data-table{
+    font-size:13px;
+}
+
+}
+
+</style>
+
+<!-- Article Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How to Calculate Selling Price: Formula, Examples & Pricing Guide",
+  "description":"Learn how to calculate selling price using cost and profit margin, with formulas, examples and practical pricing guidance.",
+  "url":"https://toolsvault.shop/articles/how-to-calculate-selling-price.html",
+  "publisher":{
+    "@type":"Organization",
+    "name":"ToolVault",
+    "url":"https://toolsvault.shop/"
+  },
+  "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://toolsvault.shop/articles/how-to-calculate-selling-price.html"
+  }
+}
+</script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"ToolVault",
+      "item":"https://toolsvault.shop/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Articles",
+      "item":"https://toolsvault.shop/articles/"
+    },
+    {
+      "@type":"ListItem",
+      "position":3,
+      "name":"How to Calculate Selling Price",
+      "item":"https://toolsvault.shop/articles/how-to-calculate-selling-price.html"
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<a class="logo" href="../index.html">
+<span>T</span>ToolVault
+</a>
+
+<a href="../index.html"
+style="color:#2563EB;font-weight:700;text-decoration:none;font-size:14px">
+← Back to ToolVault
+</a>
+
+</div>
+</header>
+
+
+<section class="article-hero">
+
+<div class="container">
+
+<div class="badge">BUSINESS & PRICING GUIDE</div>
+
+<h1>How to Calculate Selling Price: Formula, Examples & Pricing Guide</h1>
+
+<p>
+Learn how to calculate selling price using total cost and desired profit margin, with simple formulas and practical examples.
+</p>
+
+<div class="breadcrumb">
+<a href="../index.html">ToolVault</a>
+&nbsp;›&nbsp;
+<a href="./">Articles</a>
+&nbsp;›&nbsp;
+How to Calculate Selling Price
+</div>
+
+</div>
+
+</section>
+
+
+<main class="article">
+
+
+<p>
+Setting the right selling price is important for any business that sells products or services. A price that is too low may leave little room for profit, while a price that is too high can make a product difficult to sell.
+</p>
+
+<p>
+The calculation can be straightforward when you know your total cost and desired profit margin. This guide explains the selling price formula, provides examples and explains the difference between markup and profit margin.
+</p>
+
+
+<h2>What Is Selling Price?</h2>
+
+<p>
+The <strong>selling price</strong> is the amount a customer pays for a product or service.
+</p>
+
+<p>
+It is different from your cost. Your cost represents what the business spends to produce or acquire the product, while the selling price is the amount charged to the customer.
+</p>
+
+<p>
+The difference between selling price and total cost contributes to the business's profit, although other business expenses may also affect the final profit.
+</p>
+
+
+<h2>Selling Price Formula</h2>
+
+<p>
+When you know your total cost and desired profit margin, a useful formula is:
+</p>
+
+<div class="formula">
+Selling Price = Total Cost ÷ (1 − Profit Margin)
+</div>
+
+<p>
+The profit margin should be expressed as a decimal. For example, a 25% profit margin is written as 0.25.
+</p>
+
+<p>
+If your total cost is $40 and your desired profit margin is 25%:
+</p>
+
+<div class="formula">
+$40 ÷ (1 − 0.25) = $53.33
+</div>
+
+<p>
+The calculated selling price would therefore be approximately <strong>$53.33</strong>.
+</p>
+
+
+<h2>How to Calculate Selling Price Step by Step</h2>
+
+
+<h3>Step 1 — Calculate Your Total Cost</h3>
+
+<p>
+First determine how much the product actually costs your business.
+</p>
+
+<p>Depending on the product, this may include:</p>
+
+<ul>
+<li>Purchase or production cost</li>
+<li>Packaging</li>
+<li>Shipping</li>
+<li>Transaction fees</li>
+<li>Direct labor</li>
+<li>Other directly related expenses</li>
+</ul>
+
+<p>
+For a more accurate calculation, include the relevant costs before deciding on the final price.
+</p>
+
+
+<h3>Step 2 — Determine Your Desired Profit Margin</h3>
+
+<p>
+Next, decide what profit margin you want to achieve.
+</p>
+
+<ul>
+<li>10% margin = 0.10</li>
+<li>20% margin = 0.20</li>
+<li>25% margin = 0.25</li>
+<li>30% margin = 0.30</li>
+</ul>
+
+<p>
+Your target margin directly affects the required selling price.
+</p>
+
+
+<h3>Step 3 — Calculate the Selling Price</h3>
+
+<p>
+Apply the selling price formula:
+</p>
+
+<div class="formula">
+Selling Price = Total Cost ÷ (1 − Profit Margin)
+</div>
+
+<p>
+For example, suppose your total cost is $60 and you want a 30% margin:
+</p>
+
+<div class="formula">
+$60 ÷ (1 − 0.30) = $85.71
+</div>
+
+<p>
+The calculated selling price is approximately <strong>$85.71</strong>.
+</p>
+
+
+<h2>Selling Price Example</h2>
+
+<p>
+Imagine a small business sells a product with the following costs:
+</p>
+
+<table class="data-table">
+
+<thead>
+<tr>
+<th>Cost</th>
+<th>Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Product cost</td>
+<td>$30</td>
+</tr>
+
+<tr>
+<td>Packaging</td>
+<td>$5</td>
+</tr>
+
+<tr>
+<td>Other direct costs</td>
+<td>$5</td>
+</tr>
+
+<tr>
+<th>Total cost</th>
+<th>$40</th>
+</tr>
+</tbody>
+
+</table>
+
+<p>
+The business wants a <strong>25% profit margin</strong>.
+</p>
+
+<div class="formula">
+$40 ÷ (1 − 0.25) = $53.33
+</div>
+
+<p>
+The calculated selling price is therefore approximately <strong>$53.33</strong>.
+</p>
+
+<p>
+The business can then consider other factors such as competitors, customer demand, taxes, marketplace fees and overall pricing strategy before establishing the final customer price.
+</p>
+
+
+<div class="cta">
+
+<h2>Calculate Your Selling Price</h2>
+
+<p>
+Want to perform the calculation quickly? Use the free ToolVault Pricing Calculator.
+</p>
+
+<a href="../tools/pricing-calculator.html">
+Open Pricing Calculator →
+</a>
+
+</div>
+
+
+<h2>Selling Price vs Cost Price</h2>
+
+<p>
+<strong>Cost price</strong> is what the business pays to acquire or produce a product.
+</p>
+
+<p>
+<strong>Selling price</strong> is what the customer pays.
+</p>
+
+<p>
+For example:
+</p>
+
+<div class="example">
+
+<strong>Cost price:</strong> $40<br>
+<strong>Selling price:</strong> $53.33
+
+</div>
+
+<p>
+The difference between these amounts is important when evaluating profitability. However, the difference alone does not necessarily represent final business profit because other expenses may still need to be considered.
+</p>
+
+
+<h2>Selling Price vs Markup</h2>
+
+<p>
+Markup and profit margin are related but they are not the same calculation.
+</p>
+
+<p>
+<strong>Markup</strong> measures the increase over cost, while <strong>profit margin</strong> measures profit as a percentage of the selling price.
+</p>
+
+<p>
+For example, if an item costs $40 and is sold for $50:
+</p>
+
+<div class="example">
+
+<strong>Markup:</strong><br>
+$10 ÷ $40 = 25%
+
+<br><br>
+
+<strong>Profit margin:</strong><br>
+$10 ÷ $50 = 20%
+
+</div>
+
+<p>
+This is why businesses should be clear about whether they are targeting a markup percentage or a profit-margin percentage when calculating prices.
+</p>
+
+
+<h2>Common Pricing Mistakes</h2>
+
+<h3>Ignoring Additional Costs</h3>
+
+<p>
+A business may calculate the price using only the purchase or production cost while overlooking packaging, shipping, transaction fees or other relevant expenses.
+</p>
+
+<h3>Confusing Markup With Margin</h3>
+
+<p>
+A 25% markup does not produce a 25% profit margin. The two percentages use different bases for calculation.
+</p>
+
+<h3>Copying Competitors Without Calculating Costs</h3>
+
+<p>
+Competitor prices can provide useful market context, but your own costs still need to be understood.
+</p>
+
+<h3>Setting a Price Without Considering the Customer</h3>
+
+<p>
+A mathematically calculated price is only a starting point. Market demand, positioning and customer expectations can also affect the final price.
+</p>
+
+
+<h2>Use a Pricing Calculator</h2>
+
+<p>
+If you don't want to perform the calculation manually, an online pricing calculator can make it easier to test different cost and pricing scenarios.
+</p>
+
+<p>
+Use the <a href="../tools/pricing-calculator.html">ToolVault Pricing Calculator</a> to work through your pricing calculations.
+</p>
+
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the selling price formula?</h3>
+
+<p>
+For a target profit margin, the formula is:
+</p>
+
+<div class="formula">
+Selling Price = Total Cost ÷ (1 − Profit Margin)
+</div>
+
+
+<h3>How do I calculate selling price from cost?</h3>
+
+<p>
+First calculate your total relevant cost. Then determine your desired profit margin and apply the selling-price formula.
+</p>
+
+
+<h3>What is the difference between markup and profit margin?</h3>
+
+<p>
+Markup compares profit with cost, while profit margin compares profit with selling price.
+</p>
+
+
+<h3>Can I calculate selling price online?</h3>
+
+<p>
+Yes. An online pricing calculator can make it easier to test different cost and pricing scenarios without performing the calculations manually.
+</p>
+
+
+<h2>Conclusion</h2>
+
+<p>
+Calculating selling price starts with understanding your total cost and deciding what profit margin you want to achieve.
+</p>
+
+<p>
+The basic formula is:
+</p>
+
+<div class="formula">
+Selling Price = Total Cost ÷ (1 − Profit Margin)
+</div>
+
+<p>
+The calculated result is a useful starting point, but businesses should also consider market conditions, competitors, customer expectations and other relevant expenses before establishing a final price.
+</p>
+
+<p>
+For a faster calculation, use the <a href="../tools/pricing-calculator.html">ToolVault Pricing Calculator</a>.
+</p>
+
+
+<div class="related">
+
+<h2>Related ToolVault Tools</h2>
+
+<div class="related-links">
+
+<a href="../tools/pricing-calculator.html">
+Pricing Calculator
+</a>
+
+<a href="../tools/profit-calculator.html">
+Profit Calculator
+</a>
+
+<a href="../tools/expense-calculator.html">
+Expense Calculator
+</a>
+
+<a href="../tools/roi-calculator.html">
+ROI Calculator
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<span>© 2026 ToolVault</span>
+
+<span>Practical digital tools for smarter work.</span>
+
+</div>
+
+</footer>
+
+</body>
+</html>
