@@ -19,7 +19,7 @@
 
   <meta
     name="description"
-    content="Use ToolVault's free Expense Calculator to calculate monthly business expenses, remaining budget, expense ratio and largest expense online."
+    content="Use ToolVault's free expense calculator to calculate monthly business expenses, remaining budget, expense ratio and largest expense online."
   >
 
   <meta
@@ -201,7 +201,7 @@
         "name": "What is an expense ratio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "An expense ratio in this calculator represents total listed expenses as a percentage of the monthly budget entered."
+          "text": "The expense ratio in this calculator represents total listed expenses as a percentage of the monthly budget entered."
         }
       }
     ]
@@ -213,6 +213,7 @@
     :root {
       --navy: #0B1220;
       --blue: #2563EB;
+      --blue-dark: #1D4ED8;
       --cyan: #06B6D4;
       --bg: #F8FAFC;
       --white: #FFFFFF;
@@ -221,7 +222,11 @@
       --border: #E2E8F0;
       --soft: #EFF6FF;
       --green: #047857;
+      --green-bg: #ECFDF5;
+      --green-border: #A7F3D0;
       --red: #B91C1C;
+      --red-bg: #FEF2F2;
+      --red-border: #FECACA;
     }
 
     * {
@@ -264,10 +269,11 @@
       position: sticky;
       top: 0;
       z-index: 20;
+      backdrop-filter: blur(8px);
     }
 
     .nav {
-      height: 70px;
+      min-height: 70px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -321,6 +327,10 @@
       text-decoration: none;
     }
 
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
     .breadcrumb span {
       margin: 0 5px;
     }
@@ -343,6 +353,7 @@
       font-size: 11px;
       font-weight: 800;
       margin-bottom: 14px;
+      letter-spacing: 0.04em;
     }
 
     .hero h1 {
@@ -432,10 +443,15 @@
       cursor: pointer;
       margin-top: 7px;
       font-size: 14px;
+      transition: background 0.2s ease, transform 0.1s ease;
     }
 
     .btn:hover {
-      background: #1D4ED8;
+      background: var(--blue-dark);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
     }
 
     .secondary {
@@ -461,6 +477,7 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       background: #F8FAFC;
+      min-height: 96px;
     }
 
     .stat span {
@@ -473,11 +490,13 @@
     .stat strong {
       font-size: 23px;
       color: var(--navy);
+      display: block;
+      line-height: 1.3;
     }
 
     .stat.positive {
-      background: #ECFDF5;
-      border-color: #A7F3D0;
+      background: var(--green-bg);
+      border-color: var(--green-border);
     }
 
     .stat.positive strong {
@@ -485,8 +504,8 @@
     }
 
     .stat.negative {
-      background: #FEF2F2;
-      border-color: #FECACA;
+      background: var(--red-bg);
+      border-color: var(--red-border);
     }
 
     .stat.negative strong {
@@ -573,6 +592,7 @@
       border-radius: 12px;
       padding: 15px;
       text-decoration: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .related-grid a:hover {
@@ -769,7 +789,7 @@
     @media (max-width: 560px) {
 
       .nav {
-        height: 62px;
+        min-height: 62px;
       }
 
       .logo {
@@ -804,6 +824,10 @@
         padding: 28px 20px;
       }
 
+      .breadcrumb {
+        font-size: 12px;
+      }
+
     }
 
   </style>
@@ -814,11 +838,17 @@
 
   <!-- Breadcrumb -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
+
     <a href="../index.html">ToolVault</a>
-    <span>›</span>
+
+    <span aria-hidden="true">›</span>
+
     <a href="../index.html">Business Tools</a>
-    <span>›</span>
+
+    <span aria-hidden="true">›</span>
+
     <span aria-current="page">Expense Calculator</span>
+
   </nav>
 
   <!-- Header -->
@@ -826,12 +856,19 @@
 
     <div class="container nav">
 
-      <a class="logo" href="../index.html" aria-label="ToolVault home">
-        <span>T</span>
+      <a
+        class="logo"
+        href="../index.html"
+        aria-label="ToolVault home"
+      >
+        <span aria-hidden="true">T</span>
         ToolVault
       </a>
 
-      <a class="back" href="../index.html">
+      <a
+        class="back"
+        href="../index.html"
+      >
         ← Back to Tools
       </a>
 
@@ -866,9 +903,12 @@
   <main class="container workspace">
 
     <!-- Inputs -->
-    <div class="panel">
+    <section
+      class="panel"
+      aria-labelledby="calculator-heading"
+    >
 
-      <h2>
+      <h2 id="calculator-heading">
         Monthly Expenses
       </h2>
 
@@ -885,6 +925,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
         <div class="help">
@@ -907,6 +948,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
       </div>
@@ -925,6 +967,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
       </div>
@@ -943,6 +986,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
       </div>
@@ -961,6 +1005,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
       </div>
@@ -979,6 +1024,7 @@
           min="0"
           step="0.01"
           inputmode="decimal"
+          autocomplete="off"
         >
 
       </div>
@@ -999,12 +1045,15 @@
         Reset
       </button>
 
-    </div>
+    </section>
 
     <!-- Results -->
-    <div class="result">
+    <section
+      class="result"
+      aria-labelledby="results-heading"
+    >
 
-      <h2>
+      <h2 id="results-heading">
         Expense Summary
       </h2>
 
@@ -1016,19 +1065,28 @@
             Total Expenses
           </span>
 
-          <strong id="total">
+          <strong
+            id="total"
+            aria-live="polite"
+          >
             $0.00
           </strong>
 
         </div>
 
-        <div class="stat" id="remainingBox">
+        <div
+          class="stat"
+          id="remainingBox"
+        >
 
           <span>
             Remaining Budget
           </span>
 
-          <strong id="remaining">
+          <strong
+            id="remaining"
+            aria-live="polite"
+          >
             $0.00
           </strong>
 
@@ -1040,7 +1098,10 @@
             Expense Ratio
           </span>
 
-          <strong id="ratio">
+          <strong
+            id="ratio"
+            aria-live="polite"
+          >
             0.0%
           </strong>
 
@@ -1052,7 +1113,10 @@
             Largest Expense
           </span>
 
-          <strong id="largest">
+          <strong
+            id="largest"
+            aria-live="polite"
+          >
             —
           </strong>
 
@@ -1065,7 +1129,7 @@
         It does not provide accounting, tax or financial advice.
       </p>
 
-    </div>
+    </section>
 
   </main>
 
@@ -1298,6 +1362,7 @@
     <div class="related-grid">
 
       <a href="business-profit-calculator.html">
+
         <strong>
           Business Profit Calculator
         </strong>
@@ -1305,9 +1370,11 @@
         <span>
           Review revenue, costs and estimated business profit.
         </span>
+
       </a>
 
       <a href="profit-calculator.html">
+
         <strong>
           Profit Calculator
         </strong>
@@ -1315,9 +1382,11 @@
         <span>
           Calculate profit, profit margin, costs and break-even units.
         </span>
+
       </a>
 
       <a href="pricing-calculator.html">
+
         <strong>
           Pricing Calculator
         </strong>
@@ -1325,9 +1394,11 @@
         <span>
           Calculate pricing, costs and target profit margins.
         </span>
+
       </a>
 
       <a href="roi-calculator.html">
+
         <strong>
           ROI Calculator
         </strong>
@@ -1335,9 +1406,11 @@
         <span>
           Calculate return on investment and compare investment results.
         </span>
+
       </a>
 
       <a href="invoice-generator.html">
+
         <strong>
           Invoice Generator
         </strong>
@@ -1345,9 +1418,11 @@
         <span>
           Create professional invoices for products and services.
         </span>
+
       </a>
 
       <a href="../index.html">
+
         <strong>
           More Business Tools
         </strong>
@@ -1355,6 +1430,7 @@
         <span>
           Explore additional ToolVault calculators and productivity tools.
         </span>
+
       </a>
 
     </div>
@@ -1393,39 +1469,35 @@
 
       const budget = getValue("budget");
 
-      const rent = getValue("rent");
-      const utilities = getValue("utilities");
-      const software = getValue("software");
-      const marketing = getValue("marketing");
-      const other = getValue("other");
-
       const expenses = [
         {
           name: "Rent / Office",
-          value: rent
+          value: getValue("rent")
         },
         {
           name: "Utilities",
-          value: utilities
+          value: getValue("utilities")
         },
         {
           name: "Software",
-          value: software
+          value: getValue("software")
         },
         {
           name: "Marketing",
-          value: marketing
+          value: getValue("marketing")
         },
         {
           name: "Other",
-          value: other
+          value: getValue("other")
         }
       ];
 
-      const totalExpenses =
-        expenses.reduce(function(total, expense) {
+      const totalExpenses = expenses.reduce(
+        function(total, expense) {
           return total + expense.value;
-        }, 0);
+        },
+        0
+      );
 
       const remainingBudget =
         budget - totalExpenses;
@@ -1436,16 +1508,19 @@
           : 0;
 
       const largestExpense =
-        expenses.reduce(function(largest, expense) {
+        expenses.reduce(
+          function(largest, expense) {
 
-          return expense.value > largest.value
-            ? expense
-            : largest;
+            return expense.value > largest.value
+              ? expense
+              : largest;
 
-        }, {
-          name: "—",
-          value: 0
-        });
+          },
+          {
+            name: "—",
+            value: 0
+          }
+        );
 
       document.getElementById("total").textContent =
         money(totalExpenses);
@@ -1484,21 +1559,31 @@
     function resetCalculator() {
 
       document.getElementById("budget").value = 3000;
+
       document.getElementById("rent").value = 500;
+
       document.getElementById("utilities").value = 150;
+
       document.getElementById("software").value = 100;
+
       document.getElementById("marketing").value = 200;
+
       document.getElementById("other").value = 100;
 
       calculate();
 
     }
 
-    document.querySelectorAll("input").forEach(function(input) {
+    document.querySelectorAll("input").forEach(
+      function(input) {
 
-      input.addEventListener("input", calculate);
+        input.addEventListener(
+          "input",
+          calculate
+        );
 
-    });
+      }
+    );
 
     calculate();
 
