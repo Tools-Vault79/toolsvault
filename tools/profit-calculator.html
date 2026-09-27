@@ -22,7 +22,6 @@
     content="Use ToolVault's free profit calculator to calculate business profit, net profit, profit margin, total costs and break-even units from revenue and expenses."
   >
 
-  <!-- Keyword Demand Map / Semantic Keywords -->
   <meta
     name="keywords"
     content="profit calculator, business profit calculator, profit margin calculator, net profit calculator, small business profit calculator, business profitability calculator, break even calculator, calculate business profit, online profit calculator, revenue and profit calculator"
@@ -80,7 +79,10 @@
     rel="stylesheet"
   >
 
-  <!-- Breadcrumb Schema -->
+  <!-- =========================================================
+       BREADCRUMB SCHEMA
+  ========================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -108,7 +110,10 @@
   }
   </script>
 
-  <!-- WebApplication Schema -->
+  <!-- =========================================================
+       WEB APPLICATION SCHEMA
+  ========================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -133,7 +138,10 @@
   }
   </script>
 
-  <!-- WebPage Schema -->
+  <!-- =========================================================
+       WEBPAGE SCHEMA
+  ========================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -158,6 +166,55 @@
   }
   </script>
 
+  <!-- =========================================================
+       FAQ SCHEMA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a profit calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A profit calculator estimates business profit by comparing total revenue with variable costs, fixed costs and other expenses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate business profit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Business profit is generally calculated by subtracting total business costs from total revenue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is profit margin calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Profit margin is commonly calculated by dividing net profit by total revenue and multiplying the result by 100."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are break-even units?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Break-even units represent the estimated number of units that need to be sold for contribution from sales to cover fixed and other applicable costs."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- =========================================================
+       STYLES
+  ========================================================== -->
+
   <style>
 
     :root{
@@ -165,7 +222,7 @@
       --blue:#2563EB;
       --cyan:#06B6D4;
       --bg:#F8FAFC;
-      --white:#fff;
+      --white:#FFFFFF;
       --text:#111827;
       --muted:#64748B;
       --border:#E2E8F0;
@@ -193,7 +250,9 @@
       line-height:1.6;
     }
 
-    h1,h2,h3{
+    h1,
+    h2,
+    h3{
       font-family:"Space Grotesk",Arial,sans-serif;
     }
 
@@ -206,7 +265,7 @@
       margin:0 auto;
     }
 
-    /* Header */
+    /* HEADER */
 
     header{
       background:rgba(255,255,255,.97);
@@ -255,7 +314,7 @@
       text-decoration:underline;
     }
 
-    /* Breadcrumb */
+    /* BREADCRUMB */
 
     .breadcrumb{
       max-width:1000px;
@@ -275,7 +334,7 @@
       margin:0 5px;
     }
 
-    /* Hero */
+    /* HERO */
 
     .hero{
       text-align:center;
@@ -309,7 +368,7 @@
       font-size:16px;
     }
 
-    /* Calculator */
+    /* CALCULATOR */
 
     .calculator{
       display:grid;
@@ -395,7 +454,7 @@
       background:#F8FAFC;
     }
 
-    /* Results */
+    /* RESULTS */
 
     .results{
       display:grid;
@@ -445,7 +504,7 @@
       color:var(--muted);
     }
 
-    /* SEO Content */
+    /* SEO CONTENT */
 
     .seo-content{
       max-width:900px;
@@ -491,7 +550,7 @@
       margin-bottom:7px;
     }
 
-    /* Search Intent Map */
+    /* SEARCH INTENT MAP */
 
     .intent-map{
       display:grid;
@@ -520,7 +579,7 @@
       line-height:1.5;
     }
 
-    /* Related Tools */
+    /* RELATED TOOLS */
 
     .related-tools{
       max-width:900px;
@@ -567,7 +626,7 @@
       line-height:1.5;
     }
 
-    /* Footer */
+    /* FOOTER */
 
     footer{
       background:var(--navy);
@@ -577,7 +636,9 @@
       font-size:12px;
     }
 
-    /* Paywall */
+    /* =========================================================
+       PAYWALL
+    ========================================================== */
 
     .tv-protected-output{
       position:relative;
@@ -722,7 +783,7 @@
       overflow:hidden;
     }
 
-    /* Responsive */
+    /* RESPONSIVE */
 
     @media(max-width:760px){
 
@@ -782,39 +843,69 @@
 
 <body>
 
-  <!-- Breadcrumb Navigation -->
+  <!-- =========================================================
+       BREADCRUMB
+  ========================================================== -->
+
   <nav class="breadcrumb" aria-label="Breadcrumb">
+
     <a href="../index.html">ToolVault</a>
+
     <span>›</span>
+
     <a href="../index.html">Business Tools</a>
+
     <span>›</span>
+
     <span aria-current="page">Profit Calculator</span>
+
   </nav>
 
-  <!-- Header -->
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
   <header>
+
     <div class="container nav">
 
-      <a class="logo" href="../index.html" aria-label="ToolVault home">
+      <a
+        class="logo"
+        href="../index.html"
+        aria-label="ToolVault home"
+      >
         <span>T</span>
         ToolVault
       </a>
 
-      <a class="back" href="../index.html">
+      <a
+        class="back"
+        href="../index.html"
+      >
         ← Back to Tools
       </a>
 
     </div>
+
   </header>
 
-  <!-- Hero -->
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+
   <section class="hero">
 
     <div class="container">
 
-      <div class="badge">FREE BUSINESS PROFIT TOOL</div>
+      <div class="badge">
+        FREE BUSINESS PROFIT TOOL
+      </div>
 
-      <h1>Free Profit Calculator</h1>
+      <h1>
+        Free Profit Calculator
+      </h1>
 
       <p>
         Calculate business profit, net profit, profit margin, total costs
@@ -825,13 +916,20 @@
 
   </section>
 
-  <!-- Calculator -->
+
+  <!-- =========================================================
+       CALCULATOR
+  ========================================================== -->
+
   <section class="container calculator">
 
-    <!-- Inputs -->
+    <!-- INPUT PANEL -->
+
     <div class="panel">
 
-      <h2>Calculate Your Business Profit</h2>
+      <h2>
+        Calculate Your Business Profit
+      </h2>
 
       <div class="field">
 
@@ -854,6 +952,7 @@
 
       </div>
 
+
       <div class="field">
 
         <label for="price">
@@ -870,6 +969,7 @@
         >
 
       </div>
+
 
       <div class="field">
 
@@ -892,6 +992,7 @@
 
       </div>
 
+
       <div class="field">
 
         <label for="fixed">
@@ -913,6 +1014,7 @@
 
       </div>
 
+
       <div class="field">
 
         <label for="other">
@@ -930,6 +1032,7 @@
 
       </div>
 
+
       <button
         class="btn"
         type="button"
@@ -937,6 +1040,7 @@
       >
         Calculate Profit
       </button>
+
 
       <button
         class="btn secondary"
@@ -948,16 +1052,22 @@
 
     </div>
 
-    <!-- Results -->
+
+    <!-- RESULTS PANEL -->
+
     <div class="panel">
 
-      <h2>Profit &amp; Margin Results</h2>
+      <h2>
+        Profit &amp; Margin Results
+      </h2>
 
       <div class="results">
 
         <div class="result">
 
-          <span>Total Revenue</span>
+          <span>
+            Total Revenue
+          </span>
 
           <strong id="revenue">
             $0.00
@@ -965,9 +1075,12 @@
 
         </div>
 
+
         <div class="result">
 
-          <span>Variable Costs</span>
+          <span>
+            Variable Costs
+          </span>
 
           <strong id="variableTotal">
             $0.00
@@ -975,9 +1088,12 @@
 
         </div>
 
+
         <div class="result">
 
-          <span>Total Costs</span>
+          <span>
+            Total Costs
+          </span>
 
           <strong id="totalCosts">
             $0.00
@@ -985,12 +1101,15 @@
 
         </div>
 
+
         <div
           class="result profit"
           id="profitBox"
         >
 
-          <span>Net Profit</span>
+          <span>
+            Net Profit
+          </span>
 
           <strong id="profit">
             $0.00
@@ -998,9 +1117,12 @@
 
         </div>
 
+
         <div class="result">
 
-          <span>Profit Margin</span>
+          <span>
+            Profit Margin
+          </span>
 
           <strong id="margin">
             0.00%
@@ -1008,9 +1130,12 @@
 
         </div>
 
+
         <div class="result">
 
-          <span>Break-even Units</span>
+          <span>
+            Break-even Units
+          </span>
 
           <strong id="breakEven">
             0
@@ -1019,6 +1144,7 @@
         </div>
 
       </div>
+
 
       <p class="note">
         This calculator is intended for business planning and estimation.
@@ -1029,7 +1155,11 @@
 
   </section>
 
-  <!-- SEO / Search Intent Content -->
+
+  <!-- =========================================================
+       SEO CONTENT
+  ========================================================== -->
+
   <section
     class="seo-content"
     aria-labelledby="profit-calculator-guide"
@@ -1053,6 +1183,7 @@
       affect their bottom-line profit.
     </p>
 
+
     <h2>
       How to Calculate Business Profit
     </h2>
@@ -1069,7 +1200,9 @@
     </p>
 
     <p>
-      <strong>Net Profit = Total Revenue − Total Costs</strong>
+      <strong>
+        Net Profit = Total Revenue − Total Costs
+      </strong>
     </p>
 
     <p>
@@ -1077,6 +1210,7 @@
       unit, variable cost per unit, fixed costs and other costs to
       estimate your business profit.
     </p>
+
 
     <h2>
       Profit Margin Calculator
@@ -1100,6 +1234,7 @@
       </strong>
     </p>
 
+
     <h2>
       Break-even Calculator
     </h2>
@@ -1116,6 +1251,7 @@
       per unit, variable cost per unit and fixed costs.
     </p>
 
+
     <h2>
       Small Business Profit Calculator
     </h2>
@@ -1127,25 +1263,39 @@
       or sales-volume scenarios.
     </p>
 
+
     <h2>
       What Does This Profit Calculator Calculate?
     </h2>
 
     <ul>
 
-      <li>Total sales revenue</li>
+      <li>
+        Total sales revenue
+      </li>
 
-      <li>Total variable costs</li>
+      <li>
+        Total variable costs
+      </li>
 
-      <li>Total business costs</li>
+      <li>
+        Total business costs
+      </li>
 
-      <li>Net business profit</li>
+      <li>
+        Net business profit
+      </li>
 
-      <li>Profit margin percentage</li>
+      <li>
+        Profit margin percentage
+      </li>
 
-      <li>Estimated break-even units</li>
+      <li>
+        Estimated break-even units
+      </li>
 
     </ul>
+
 
     <h2>
       Profit Calculator Search Intent
@@ -1157,11 +1307,14 @@
       ways this tool can be used.
     </p>
 
+
     <div class="intent-map">
 
       <div class="intent-card">
 
-        <strong>Tool Intent</strong>
+        <strong>
+          Tool Intent
+        </strong>
 
         <span>
           Profit calculator, business profit calculator, online profit
@@ -1170,9 +1323,12 @@
 
       </div>
 
+
       <div class="intent-card">
 
-        <strong>Margin Intent</strong>
+        <strong>
+          Margin Intent
+        </strong>
 
         <span>
           Profit margin calculator, calculate profit margin and business
@@ -1181,9 +1337,12 @@
 
       </div>
 
+
       <div class="intent-card">
 
-        <strong>Small Business Intent</strong>
+        <strong>
+          Small Business Intent
+        </strong>
 
         <span>
           Small business profit calculator, startup profitability and
@@ -1192,9 +1351,12 @@
 
       </div>
 
+
       <div class="intent-card">
 
-        <strong>Break-even Intent</strong>
+        <strong>
+          Break-even Intent
+        </strong>
 
         <span>
           Break-even calculator, break-even units and sales volume
@@ -1204,6 +1366,7 @@
       </div>
 
     </div>
+
 
     <h2>
       Profit Calculator for Online Sellers
@@ -1216,6 +1379,7 @@
       calculations with a pricing calculator to estimate an appropriate
       selling price.
     </p>
+
 
     <h2>
       Revenue vs Profit
@@ -1233,6 +1397,7 @@
       revenue and profit therefore provides a clearer picture of business
       performance.
     </p>
+
 
     <h2>
       How to Use This Business Profit Calculator
@@ -1266,6 +1431,53 @@
 
     </ol>
 
+
+    <h2>
+      Frequently Asked Questions About Profit
+    </h2>
+
+
+    <h3>
+      What is a profit calculator?
+    </h3>
+
+    <p>
+      A profit calculator estimates business profit by comparing total
+      revenue with variable costs, fixed costs and other expenses.
+    </p>
+
+
+    <h3>
+      How do you calculate business profit?
+    </h3>
+
+    <p>
+      Business profit is generally calculated by subtracting total
+      business costs from total revenue.
+    </p>
+
+
+    <h3>
+      How is profit margin calculated?
+    </h3>
+
+    <p>
+      Profit margin is commonly calculated by dividing net profit by
+      total revenue and multiplying the result by 100.
+    </p>
+
+
+    <h3>
+      What are break-even units?
+    </h3>
+
+    <p>
+      Break-even units represent the estimated number of units that need
+      to be sold for contribution from sales to cover fixed and other
+      applicable costs.
+    </p>
+
+
     <h2>
       Related Business Calculators
     </h2>
@@ -1277,7 +1489,11 @@
 
   </section>
 
-  <!-- Related Tools -->
+
+  <!-- =========================================================
+       RELATED TOOLS
+  ========================================================== -->
+
   <section
     class="related-tools"
     aria-labelledby="related-tools-heading"
@@ -1290,57 +1506,100 @@
     <div class="related-grid">
 
       <a href="pricing-calculator.html">
-        <strong>Pricing Calculator</strong>
+
+        <strong>
+          Pricing Calculator
+        </strong>
+
         <span>
           Calculate selling prices, costs, fees and target profit margins.
         </span>
+
       </a>
 
+
       <a href="expense-calculator.html">
-        <strong>Expense Calculator</strong>
+
+        <strong>
+          Expense Calculator
+        </strong>
+
         <span>
           Calculate and review business expenses and operating costs.
         </span>
+
       </a>
 
+
       <a href="roi-calculator.html">
-        <strong>ROI Calculator</strong>
+
+        <strong>
+          ROI Calculator
+        </strong>
+
         <span>
           Calculate return on investment and compare investment results.
         </span>
+
       </a>
 
+
       <a href="invoice-generator.html">
-        <strong>Invoice Generator</strong>
+
+        <strong>
+          Invoice Generator
+        </strong>
+
         <span>
           Create professional invoices for products and services.
         </span>
+
       </a>
 
+
       <a href="quote-generator.html">
-        <strong>Quote Generator</strong>
+
+        <strong>
+          Quote Generator
+        </strong>
+
         <span>
           Create business quotations and customer price estimates.
         </span>
+
       </a>
 
+
       <a href="business-profit-calculator.html">
-        <strong>Business Tools</strong>
+
+        <strong>
+          Business Profit Calculator
+        </strong>
+
         <span>
           Explore additional tools for business planning and calculations.
         </span>
+
       </a>
 
     </div>
 
   </section>
 
-  <!-- Footer -->
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
   <footer>
     © 2026 ToolVault — Practical digital tools for smarter work.
   </footer>
 
-  <!-- Calculator JavaScript -->
+
+  <!-- =========================================================
+       CALCULATOR JAVASCRIPT
+  ========================================================== -->
+
   <script>
 
     function money(value){
@@ -1351,6 +1610,7 @@
       }).format(value);
 
     }
+
 
     function calculate(){
 
@@ -1384,65 +1644,85 @@
           Number(document.getElementById("other").value) || 0
         );
 
+
       const revenue =
         units * price;
+
 
       const variableTotal =
         units * variable;
 
+
       const totalCosts =
         variableTotal + fixed + other;
 
+
       const profit =
         revenue - totalCosts;
+
 
       const margin =
         revenue > 0
           ? (profit / revenue) * 100
           : 0;
 
+
       const contribution =
         price - variable;
+
 
       const breakEven =
         contribution > 0
           ? Math.ceil((fixed + other) / contribution)
           : 0;
 
+
       document.getElementById("revenue").textContent =
         money(revenue);
+
 
       document.getElementById("variableTotal").textContent =
         money(variableTotal);
 
+
       document.getElementById("totalCosts").textContent =
         money(totalCosts);
+
 
       document.getElementById("profit").textContent =
         money(profit);
 
+
       document.getElementById("margin").textContent =
         margin.toFixed(2) + "%";
+
 
       document.getElementById("breakEven").textContent =
         contribution > 0
           ? breakEven.toLocaleString("en-US")
           : "N/A";
 
+
       const box =
         document.getElementById("profitBox");
 
-      box.classList.toggle(
-        "profit",
-        profit >= 0
-      );
 
-      box.classList.toggle(
-        "loss",
-        profit < 0
-      );
+      box.classList.remove("profit");
+      box.classList.remove("loss");
+
+
+      if(profit >= 0){
+
+        box.classList.add("profit");
+
+      }else{
+
+        box.classList.add("loss");
+
+      }
 
     }
+
 
     function resetCalculator(){
 
@@ -1460,26 +1740,36 @@
 
     }
 
+
     document.getElementById("units")
       .addEventListener("input", calculate);
+
 
     document.getElementById("price")
       .addEventListener("input", calculate);
 
+
     document.getElementById("variable")
       .addEventListener("input", calculate);
+
 
     document.getElementById("fixed")
       .addEventListener("input", calculate);
 
+
     document.getElementById("other")
       .addEventListener("input", calculate);
+
 
     calculate();
 
   </script>
 
-  <!-- ToolVault Paywall -->
+
+  <!-- =========================================================
+       TOOLVAULT PAYWALL
+  ========================================================== -->
+
   <script>
 
     window.TOOLVAULT_PAYWALL = {
@@ -1493,6 +1783,7 @@
     };
 
   </script>
+
 
   <script src="../js/paywall.js"></script>
 
