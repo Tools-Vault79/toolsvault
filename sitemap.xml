@@ -5,6 +5,18 @@
     <loc>https://toolsvault.shop/</loc>
   </url>
 
+  <!-- Articles -->
+
+  <url>
+    <loc>https://toolsvault.shop/Articles/how-to-calculate-selling-price.html</loc>
+  </url>
+
+  <url>
+    <loc>https://toolsvault.shop/Articles/how-to-calculate-roi.html</loc>
+  </url>
+
+  <!-- Tools -->
+
   <url>
     <loc>https://toolsvault.shop/tools/ai-prompt-generator.html</loc>
   </url>
