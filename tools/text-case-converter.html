@@ -6,7 +6,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
     gtag('config', 'G-MGV8BY8PVJ');
   </script>
@@ -14,799 +18,1301 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Primary SEO -->
   <title>Text Case Converter Online – Uppercase, Lowercase & Title Case | ToolVault</title>
 
-  <meta name="description"
-    content="Free text case converter online. Convert text to UPPERCASE, lowercase, Title Case and Sentence case instantly. Fix capitalization and format text quickly with ToolVault.">
+  <meta
+    name="description"
+    content="Free text case converter online. Convert text to UPPERCASE, lowercase, Title Case or Sentence case instantly. Fix capitalization and format text with ToolVault."
+  >
 
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical"
-    href="https://toolsvault.shop/tools/text-case-converter.html">
+  <link
+    rel="canonical"
+    href="https://toolsvault.shop/tools/text-case-converter.html"
+  >
+
+  <meta name="theme-color" content="#0B1220">
 
   <!-- Open Graph -->
-  <meta property="og:title"
-    content="Text Case Converter Online – Uppercase, Lowercase & Title Case | ToolVault">
+  <meta
+    property="og:title"
+    content="Text Case Converter Online – Uppercase, Lowercase & Title Case | ToolVault"
+  >
 
-  <meta property="og:description"
-    content="Convert text to uppercase, lowercase, title case and sentence case instantly with ToolVault's free online text case converter.">
+  <meta
+    property="og:description"
+    content="Convert text to uppercase, lowercase, Title Case and Sentence case instantly with ToolVault's free online text case converter."
+  >
 
-  <meta property="og:url"
-    content="https://toolsvault.shop/tools/text-case-converter.html">
+  <meta
+    property="og:url"
+    content="https://toolsvault.shop/tools/text-case-converter.html"
+  >
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ToolVault">
 
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="Free Text Case Converter Online | ToolVault"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Convert text to uppercase, lowercase, Title Case and Sentence case instantly with ToolVault."
+  >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link href="../css/style.css" rel="stylesheet">
 
-  <style>
+  <!-- =========================================================
+       WEB APPLICATION SCHEMA
+  ========================================================== -->
 
-    .toolhero{
-      text-align:center;
-      padding:50px 0 25px
-    }
-
-    .toolhero h1{
-      font-size:clamp(34px,5vw,48px);
-      color:#0B1220;
-      margin-bottom:10px
-    }
-
-    .toolhero p{
-      max-width:720px;
-      margin:10px auto;
-      color:#64748B;
-      font-size:15px
-    }
-
-    .workspace{
-      max-width:900px;
-      margin:20px auto 70px
-    }
-
-    .panel{
-      background:#fff;
-      border:1px solid #E2E8F0;
-      border-radius:18px;
-      padding:25px
-    }
-
-    .panel h2{
-      color:#0B1220;
-      margin:0 0 15px;
-      font-size:22px
-    }
-
-    textarea{
-      width:100%;
-      min-height:260px;
-      padding:14px;
-      border:1px solid #CBD5E1;
-      border-radius:10px;
-      font:inherit;
-      font-size:15px;
-      resize:vertical;
-      line-height:1.6
-    }
-
-    textarea:focus{
-      outline:none;
-      border-color:#2563EB;
-      box-shadow:0 0 0 3px rgba(37,99,235,.10)
-    }
-
-    .buttons{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:12px
-    }
-
-    .btnfull{
-      border:0;
-      border-radius:10px;
-      padding:12px 16px;
-      background:#2563EB;
-      color:#fff;
-      font-weight:700;
-      cursor:pointer
-    }
-
-    .btnfull:hover{
-      opacity:.92
-    }
-
-    .secondary{
-      background:#fff;
-      color:#0B1220;
-      border:1px solid #E2E8F0
-    }
-
-    .copy-btn{
-      background:#0B1220
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:10px;
-      margin-top:18px
-    }
-
-    .stat{
-      background:#F8FAFC;
-      border:1px solid #E2E8F0;
-      border-radius:11px;
-      padding:13px;
-      text-align:center
-    }
-
-    .stat span{
-      display:block;
-      font-size:11px;
-      color:#64748B;
-      margin-bottom:3px
-    }
-
-    .stat strong{
-      font-size:22px;
-      color:#0B1220
-    }
-
-    .privacy-note{
-      margin-top:15px;
-      padding:12px;
-      border-radius:10px;
-      background:#EFF6FF;
-      border:1px solid #DBEAFE;
-      color:#334155;
-      font-size:12px;
-      text-align:center
-    }
-
-    .seo-content{
-      max-width:900px;
-      margin:0 auto 70px;
-      padding:30px 24px;
-      background:#fff;
-      border:1px solid #E2E8F0;
-      border-radius:18px
-    }
-
-    .seo-content h2{
-      font-size:24px;
-      color:#0B1220;
-      margin:0 0 10px
-    }
-
-    .seo-content h3{
-      font-size:18px;
-      color:#0B1220;
-      margin:22px 0 8px
-    }
-
-    .seo-content p{
-      color:#64748B;
-      font-size:14px;
-      line-height:1.8;
-      margin:0 0 15px
-    }
-
-    .seo-content ul{
-      color:#64748B;
-      font-size:14px;
-      line-height:1.8;
-      margin-bottom:18px
-    }
-
-    .seo-content li{
-      margin-bottom:5px
-    }
-
-    .seo-related{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:16px
-    }
-
-    .seo-related a{
-      color:#2563EB;
-      text-decoration:none;
-      font-weight:700;
-      font-size:13px;
-      border:1px solid #DBEAFE;
-      background:#EFF6FF;
-      padding:8px 11px;
-      border-radius:9px
-    }
-
-    .faq{
-      margin-top:25px
-    }
-
-    .faq details{
-      border:1px solid #E2E8F0;
-      border-radius:10px;
-      margin-bottom:10px;
-      background:#F8FAFC
-    }
-
-    .faq summary{
-      cursor:pointer;
-      padding:14px;
-      font-weight:700;
-      color:#0B1220;
-      font-size:14px
-    }
-
-    .faq details p{
-      padding:0 14px 14px;
-      margin:0
-    }
-
-    footer{
-      background:#0B1220;
-      color:#94A3B8;
-      padding:25px 0;
-      font-size:12px
-    }
-
-    footer .container{
-      display:flex;
-      justify-content:space-between;
-      gap:15px
-    }
-
-    @media(max-width:650px){
-
-      .stats{
-        grid-template-columns:1fr 1fr
-      }
-
-      .buttons{
-        display:grid;
-        grid-template-columns:1fr 1fr
-      }
-
-      .btnfull{
-        width:100%
-      }
-
-      footer .container{
-        flex-direction:column;
-        text-align:center
-      }
-    }
-
-    @media(max-width:430px){
-
-      .buttons{
-        grid-template-columns:1fr
-      }
-    }
-
-  </style>
-
-  <!-- WebApplication Schema -->
-  <script id="toolvault-schema" type="application/ld+json">
+  <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebApplication",
-    "name":"Text Case Converter",
-    "url":"https://toolsvault.shop/tools/text-case-converter.html",
-    "applicationCategory":"UtilityApplication",
-    "operatingSystem":"Web Browser",
-    "browserRequirements":"Requires JavaScript",
-    "description":"Free online text case converter for changing text to uppercase, lowercase, title case and sentence case.",
-    "publisher":{
-      "@type":"Organization",
-      "name":"ToolVault",
-      "url":"https://toolsvault.shop/"
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Text Case Converter",
+    "url": "https://toolsvault.shop/tools/text-case-converter.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web Browser",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Free online text case converter for changing text to uppercase, lowercase, title case and sentence case.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ToolVault",
+      "url": "https://toolsvault.shop/"
     },
-    "offers":{
-      "@type":"Offer",
-      "price":"0",
-      "priceCurrency":"USD"
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
     }
   }
   </script>
 
-  <!-- FAQ Schema -->
-  <script id="toolvault-faq-schema" type="application/ld+json">
+  <!-- =========================================================
+       BREADCRUMB SCHEMA
+  ========================================================== -->
+
+  <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@type":"Question",
-        "name":"What is a text case converter?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"A text case converter is an online tool that changes text capitalization between formats such as uppercase, lowercase, title case and sentence case."
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ToolVault",
+        "item": "https://toolsvault.shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Text Case Converter",
+        "item": "https://toolsvault.shop/tools/text-case-converter.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- =========================================================
+       FAQ SCHEMA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a text case converter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A text case converter is an online tool that changes text capitalization between formats such as uppercase, lowercase, Title Case and Sentence case."
         }
       },
       {
-        "@type":"Question",
-        "name":"How do I convert text to uppercase?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Paste your text into the ToolVault Text Case Converter and click the UPPERCASE button. The text will immediately be converted to capital letters."
+        "@type": "Question",
+        "name": "How do I convert text to uppercase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Paste your text into the ToolVault Text Case Converter and click the UPPERCASE button. The text will be converted to capital letters."
         }
       },
       {
-        "@type":"Question",
-        "name":"How do I convert uppercase text to lowercase?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Paste the uppercase text into the converter and select the lowercase option. The converter changes the letters to lowercase instantly."
+        "@type": "Question",
+        "name": "How do I convert uppercase text to lowercase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Paste the uppercase text into the converter and select the lowercase option. The converter changes the letters to lowercase instantly."
         }
       },
       {
-        "@type":"Question",
-        "name":"What is the difference between title case and sentence case?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Title Case generally capitalizes the first letter of words in a title, while Sentence case capitalizes the first letter of a sentence and keeps the remaining words in normal lowercase formatting."
+        "@type": "Question",
+        "name": "What is the difference between Title Case and Sentence Case?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Title Case capitalizes words for titles and headings, while Sentence case uses normal sentence capitalization."
         }
       },
       {
-        "@type":"Question",
-        "name":"Is the ToolVault text case converter free?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The ToolVault Text Case Converter is available as a free online text formatting tool."
+        "@type": "Question",
+        "name": "Is the ToolVault Text Case Converter free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The ToolVault Text Case Converter is available as a free online text formatting tool."
         }
       },
       {
-        "@type":"Question",
-        "name":"Does the text case converter upload my text?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"The conversion functions on this page run directly in your browser using JavaScript. The page does not need to send the text to a server for case conversion."
+        "@type": "Question",
+        "name": "Does the text case converter upload my text?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The conversion functions on this page run directly in your browser using JavaScript. The page does not need to send your text to a server for case conversion."
         }
       }
     ]
   }
   </script>
 
+  <style>
+
+    :root {
+      --navy: #0B1220;
+      --blue: #2563EB;
+      --cyan: #06B6D4;
+      --bg: #F8FAFC;
+      --white: #FFFFFF;
+      --text: #111827;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --soft: #EFF6FF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", Arial, sans-serif;
+    }
+
+    .container {
+      width: min(1050px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font: 700 23px "Space Grotesk", Arial, sans-serif;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .logo span {
+      display: inline-flex;
+      width: 31px;
+      height: 31px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #FFFFFF;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+    }
+
+    .back {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* HERO */
+
+    .toolhero {
+      text-align: center;
+      padding: 50px 0 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--blue);
+      border: 1px solid #DBEAFE;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .toolhero h1 {
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.1;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+
+    .toolhero p {
+      max-width: 720px;
+      margin: 10px auto;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* TOOL */
+
+    .workspace {
+      max-width: 900px;
+      margin: 20px auto 70px;
+    }
+
+    .panel {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .panel h2 {
+      color: var(--navy);
+      margin: 0 0 15px;
+      font-size: 22px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 260px;
+      padding: 14px;
+      border: 1px solid #CBD5E1;
+      border-radius: 10px;
+      font: inherit;
+      font-size: 15px;
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .btnfull {
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 16px;
+      background: var(--blue);
+      color: #FFFFFF;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btnfull:hover {
+      opacity: 0.92;
+    }
+
+    .secondary {
+      background: #FFFFFF;
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .copy-btn {
+      background: var(--navy);
+    }
+
+    /* STATS */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .stat {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 13px;
+      text-align: center;
+    }
+
+    .stat span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .stat strong {
+      font-size: 22px;
+      color: var(--navy);
+    }
+
+    .privacy-note {
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      background: var(--soft);
+      border: 1px solid #DBEAFE;
+      color: #334155;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* SEO CONTENT */
+
+    .seo-content {
+      max-width: 900px;
+      margin: 0 auto 70px;
+      padding: 30px 24px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .seo-content h2 {
+      font-size: 24px;
+      color: var(--navy);
+      margin: 30px 0 10px;
+    }
+
+    .seo-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .seo-content h3 {
+      font-size: 18px;
+      color: var(--navy);
+      margin: 22px 0 8px;
+    }
+
+    .seo-content p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 0 15px;
+    }
+
+    .seo-content ul,
+    .seo-content ol {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .seo-content li {
+      margin-bottom: 5px;
+    }
+
+    /* KEYWORD MAP */
+
+    .keyword-map {
+      margin: 25px 0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .keyword-map table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .keyword-map th {
+      background: #F8FAFC;
+      color: var(--navy);
+      text-align: left;
+      padding: 11px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .keyword-map td {
+      padding: 10px 11px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .keyword-map tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .intent {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 20px;
+      background: var(--soft);
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* FAQ */
+
+    .faq {
+      margin-top: 25px;
+    }
+
+    .faq details {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background: #F8FAFC;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      padding: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .faq details p {
+      padding: 0 14px 14px;
+      margin: 0;
+    }
+
+    /* RELATED TOOLS */
+
+    .seo-related {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .seo-related a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      border: 1px solid #DBEAFE;
+      background: var(--soft);
+      padding: 8px 11px;
+      border-radius: 9px;
+    }
+
+    .seo-related a:hover {
+      background: #DBEAFE;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--navy);
+      color: #94A3B8;
+      padding: 25px 0;
+      font-size: 12px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 650px) {
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .btnfull {
+        width: 100%;
+      }
+
+      footer .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .keyword-map {
+        overflow-x: auto;
+      }
+
+      .keyword-map table {
+        min-width: 650px;
+      }
+    }
+
+    @media (max-width: 430px) {
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .toolhero {
+        padding-top: 35px;
+      }
+
+      .seo-content {
+        padding: 24px 18px;
+      }
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-<header>
-  <div class="container nav">
+  <!-- HEADER -->
 
-    <a class="logo" href="../index.html">
-      <span>T</span>ToolVault
-    </a>
+  <header>
+    <div class="container nav">
 
-    <a href="../index.html"
-       style="color:#2563EB;font-weight:700;text-decoration:none;font-size:14px">
-      ← Back to Tools
-    </a>
+      <a class="logo" href="../index.html" aria-label="ToolVault Home">
+        <span>T</span>ToolVault
+      </a>
 
-  </div>
-</header>
+      <a
+        class="back"
+        href="../index.html"
+        aria-label="Back to ToolVault tools"
+      >
+        ← Back to Tools
+      </a>
 
-<section class="toolhero">
+    </div>
+  </header>
 
-  <div class="container">
 
-    <div class="badge">FREE TEXT FORMATTING TOOL</div>
+  <!-- HERO -->
 
-    <h1>Text Case Converter Online</h1>
+  <section class="toolhero">
+
+    <div class="container">
+
+      <div class="badge">
+        FREE TEXT FORMATTING TOOL
+      </div>
+
+      <h1>Text Case Converter Online</h1>
+
+      <p>
+        Convert text to UPPERCASE, lowercase, Title Case or Sentence case instantly.
+        Use this free online text case converter to fix capitalization and format text quickly.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- TOOL -->
+
+  <main class="container workspace">
+
+    <div class="panel">
+
+      <h2>Convert Your Text</h2>
+
+      <textarea
+        id="text"
+        placeholder="Type or paste your text here..."
+        aria-label="Text to convert"
+        spellcheck="true"
+      ></textarea>
+
+      <div class="buttons">
+
+        <button
+          type="button"
+          class="btnfull"
+          onclick="convert('upper')"
+        >
+          UPPERCASE
+        </button>
+
+        <button
+          type="button"
+          class="btnfull"
+          onclick="convert('lower')"
+        >
+          lowercase
+        </button>
+
+        <button
+          type="button"
+          class="btnfull"
+          onclick="convert('title')"
+        >
+          Title Case
+        </button>
+
+        <button
+          type="button"
+          class="btnfull"
+          onclick="convert('sentence')"
+        >
+          Sentence case
+        </button>
+
+        <button
+          type="button"
+          class="btnfull copy-btn"
+          onclick="copyText()"
+        >
+          Copy Result
+        </button>
+
+        <button
+          type="button"
+          class="btnfull secondary"
+          onclick="clearText()"
+        >
+          Clear
+        </button>
+
+      </div>
+
+      <div class="stats">
+
+        <div class="stat">
+          <span>Characters</span>
+          <strong id="characters">0</strong>
+        </div>
+
+        <div class="stat">
+          <span>Words</span>
+          <strong id="words">0</strong>
+        </div>
+
+        <div class="stat">
+          <span>Lines</span>
+          <strong id="lines">0</strong>
+        </div>
+
+        <div class="stat">
+          <span>Sentences</span>
+          <strong id="sentences">0</strong>
+        </div>
+
+      </div>
+
+      <div class="privacy-note">
+        🔒 Your text is processed directly in your browser for these conversions.
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================================================
+       SEO CONTENT
+  ========================================================== -->
+
+  <section
+    aria-label="Text Case Converter information"
+    class="seo-content"
+  >
+
+    <h2>Free Text Case Converter Online</h2>
 
     <p>
-      Convert text to UPPERCASE, lowercase, Title Case or Sentence case instantly.
-      Use this free online case converter to fix capitalization and format text quickly.
+      ToolVault's free <strong>Text Case Converter</strong> lets you change
+      text capitalization instantly. Convert text to uppercase, lowercase,
+      Title Case or Sentence case without manually editing every word.
     </p>
 
-  </div>
+    <p>
+      This <strong>text case converter online</strong> is useful when you need
+      to fix capitalization, format headings, clean copied text or quickly
+      change the appearance of written content.
+    </p>
 
-</section>
 
-<main class="container workspace">
+    <h2>Text Case Converter Features</h2>
 
-  <div class="panel">
+    <ul>
+      <li>Convert text to UPPERCASE</li>
+      <li>Convert text to lowercase</li>
+      <li>Convert text to Title Case</li>
+      <li>Convert text to Sentence case</li>
+      <li>Copy converted text with one click</li>
+      <li>View character, word, line and sentence counts</li>
+      <li>Works directly in a modern web browser</li>
+      <li>No account required to use the converter</li>
+    </ul>
 
-    <h2>Convert Your Text</h2>
 
-    <textarea
-      id="text"
-      placeholder="Type or paste your text here..."
-      aria-label="Text to convert"></textarea>
+    <h2>Uppercase Converter</h2>
 
-    <div class="buttons">
+    <p>
+      Use the <strong>uppercase converter</strong> to turn text into capital
+      letters. It can be useful for headings, labels, announcements,
+      document sections and other text that needs uppercase formatting.
+    </p>
 
-      <button class="btnfull"
-              onclick="convert('upper')">
-        UPPERCASE
-      </button>
 
-      <button class="btnfull"
-              onclick="convert('lower')">
-        lowercase
-      </button>
+    <h2>Lowercase Converter</h2>
 
-      <button class="btnfull"
-              onclick="convert('title')">
-        Title Case
-      </button>
+    <p>
+      The <strong>lowercase converter</strong> changes all letters in your
+      text to lowercase. This is useful for standardizing copied text,
+      correcting accidental capitalization and preparing text for consistent
+      formatting.
+    </p>
 
-      <button class="btnfull"
-              onclick="convert('sentence')">
-        Sentence case
-      </button>
 
-      <button class="btnfull copy-btn"
-              onclick="copyText()">
-        Copy Result
-      </button>
+    <h2>Title Case Converter</h2>
 
-      <button class="btnfull secondary"
-              onclick="clearText()">
-        Clear
-      </button>
+    <p>
+      Use the <strong>Title Case converter</strong> when you need to
+      capitalize words for a title or heading. It can be useful for article
+      titles, blog headings, document titles and marketing content.
+    </p>
+
+
+    <h2>Sentence Case Converter</h2>
+
+    <p>
+      The <strong>Sentence Case converter</strong> changes text into a
+      sentence-style format. It is useful for paragraphs, descriptions,
+      emails, labels and content that has been copied with inconsistent
+      capitalization.
+    </p>
+
+
+    <h2>How to Change Text Case Online</h2>
+
+    <p>
+      Changing text case with ToolVault takes only a few steps:
+    </p>
+
+    <ol>
+      <li>Paste or type your text into the text box.</li>
+      <li>Select UPPERCASE, lowercase, Title Case or Sentence case.</li>
+      <li>Review the converted text.</li>
+      <li>Click Copy Result to copy the formatted text.</li>
+    </ol>
+
+
+    <h2>Fix Text Typed in ALL CAPS</h2>
+
+    <p>
+      If text was accidentally typed using Caps Lock, paste it into the
+      converter and use the lowercase or Sentence case option to make it
+      easier to read. This can be particularly useful for copied documents,
+      emails, notes and online content.
+    </p>
+
+
+    <h2>Text Case Changer for Writers and Content Creators</h2>
+
+    <p>
+      A text case changer can help writers, bloggers and content creators
+      quickly standardize headings, paragraphs and copied content. Instead
+      of manually changing individual letters, you can transform an entire
+      block of text with one click.
+    </p>
+
+
+    <h2>Text Case Converter for Students and Professionals</h2>
+
+    <p>
+      Students and professionals can use an online text case converter when
+      preparing assignments, reports, presentations, emails, notes and other
+      documents that require consistent capitalization.
+    </p>
+
+
+    <h2>Who Is This Text Case Converter For?</h2>
+
+    <p>
+      This free online text case converter is useful for writers, students,
+      bloggers, marketers, content creators, editors, developers, teachers,
+      freelancers and anyone who needs to change text capitalization quickly.
+    </p>
+
+
+    <h2>Text Case Converter vs. Manual Formatting</h2>
+
+    <p>
+      Manually changing capitalization can be slow when working with long
+      paragraphs or copied content. A text case converter allows you to
+      transform the entire text quickly with a single click, making routine
+      formatting easier.
+    </p>
+
+
+    <!-- KEYWORD / INTENT MAP -->
+
+    <h2>Text Case Converter Keyword &amp; Search Intent</h2>
+
+    <p>
+      The following keyword structure organizes the main topics and search
+      intents covered by this page. It is used for topical SEO planning and
+      does not represent search-volume estimates.
+    </p>
+
+    <div class="keyword-map">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Intent</th>
+            <th>SEO Role</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td><strong>text case converter</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Primary keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>text case converter online</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Primary supporting keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>free text case converter</strong></td>
+            <td><span class="intent">Commercial</span></td>
+            <td>Conversion support</td>
+          </tr>
+
+          <tr>
+            <td><strong>uppercase converter</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Secondary keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>lowercase converter</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Secondary keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>title case converter</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Secondary keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>sentence case converter</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Secondary keyword</td>
+          </tr>
+
+          <tr>
+            <td><strong>text case changer</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Semantic support</td>
+          </tr>
+
+          <tr>
+            <td><strong>convert text to uppercase</strong></td>
+            <td><span class="intent">Informational</span></td>
+            <td>Long-tail support</td>
+          </tr>
+
+          <tr>
+            <td><strong>convert uppercase to lowercase</strong></td>
+            <td><span class="intent">Informational</span></td>
+            <td>Long-tail support</td>
+          </tr>
+
+          <tr>
+            <td><strong>change text to title case</strong></td>
+            <td><span class="intent">Informational</span></td>
+            <td>Long-tail support</td>
+          </tr>
+
+          <tr>
+            <td><strong>online capitalization tool</strong></td>
+            <td><span class="intent">Tool</span></td>
+            <td>Semantic support</td>
+          </tr>
+
+        </tbody>
+
+      </table>
 
     </div>
 
-    <div class="stats">
 
-      <div class="stat">
-        <span>Characters</span>
-        <strong id="characters">0</strong>
-      </div>
+    <h2>Frequently Asked Questions</h2>
 
-      <div class="stat">
-        <span>Words</span>
-        <strong id="words">0</strong>
-      </div>
+    <div class="faq">
 
-      <div class="stat">
-        <span>Lines</span>
-        <strong id="lines">0</strong>
-      </div>
+      <details>
+        <summary>What is a text case converter?</summary>
 
-      <div class="stat">
-        <span>Sentences</span>
-        <strong id="sentences">0</strong>
-      </div>
+        <p>
+          A text case converter is an online tool that changes text
+          capitalization between formats such as uppercase, lowercase,
+          Title Case and Sentence case.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>How do I convert text to uppercase?</summary>
+
+        <p>
+          Paste your text into the converter and click UPPERCASE.
+          The text will immediately be converted to capital letters.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>How do I change uppercase text to lowercase?</summary>
+
+        <p>
+          Paste your text into the converter and click lowercase.
+          All letters will be changed to lowercase.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>What is Title Case?</summary>
+
+        <p>
+          Title Case is a capitalization format commonly used for
+          headings and titles where words are formatted with initial
+          capital letters.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>What is Sentence Case?</summary>
+
+        <p>
+          Sentence case uses normal sentence capitalization, with the
+          first letter of a sentence capitalized and the remaining text
+          normally formatted in lowercase.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Is this text case converter free?</summary>
+
+        <p>
+          Yes. ToolVault provides this text case converter as a free
+          online utility.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Does the converter upload my text?</summary>
+
+        <p>
+          The case conversion functions on this page run directly in
+          your browser using JavaScript. The page does not need to send
+          your text to a server for these conversions.
+        </p>
+      </details>
 
     </div>
 
-    <div class="privacy-note">
-      🔒 Your text is processed directly in your browser for these conversions.
+
+    <!-- RELATED TOOLS -->
+
+    <h2>Explore Related ToolVault Tools</h2>
+
+    <div class="seo-related">
+
+      <a href="text-cleaner.html">
+        Text Cleaner
+      </a>
+
+      <a href="word-counter.html">
+        Word Counter
+      </a>
+
+      <a href="ai-prompt-generator.html">
+        AI Prompt Generator
+      </a>
+
+      <a href="content-generator.html">
+        Content Generator
+      </a>
+
+      <a href="content-calendar.html">
+        Content Calendar Generator
+      </a>
+
     </div>
 
-  </div>
-
-</main>
-
-<section aria-label="About the Text Case Converter"
-         class="seo-content">
-
-  <h2>Free Text Case Converter Online</h2>
+  </section>
 
-  <p>
-    ToolVault's free Text Case Converter lets you change text capitalization
-    instantly. Convert text to uppercase, lowercase, Title Case or Sentence
-    case without manually editing every word.
-  </p>
-
-  <p>
-    This online case converter is useful when you need to fix capitalization,
-    format headings, clean copied text or quickly change the appearance of
-    written content.
-  </p>
-
-  <h2>Text Case Converter Features</h2>
-
-  <ul>
-    <li>Convert text to UPPERCASE</li>
-    <li>Convert text to lowercase</li>
-    <li>Convert text to Title Case</li>
-    <li>Convert text to Sentence case</li>
-    <li>Copy converted text with one click</li>
-    <li>View character, word, line and sentence counts</li>
-    <li>Works directly in a modern web browser</li>
-  </ul>
-
-  <h2>Uppercase Converter</h2>
-
-  <p>
-    Use the uppercase converter to turn text into capital letters. It can be
-    useful for headings, labels, announcements, document sections and other
-    text that needs uppercase formatting.
-  </p>
-
-  <h2>Lowercase Converter</h2>
-
-  <p>
-    The lowercase converter changes all letters in your text to lowercase.
-    This is useful for standardizing copied text, correcting accidental
-    capitalization and preparing text for consistent formatting.
-  </p>
-
-  <h2>Title Case Converter</h2>
-
-  <p>
-    Use the Title Case converter when you need to capitalize the first letter
-    of words in a title or heading. It can be useful for article titles,
-    blog headings, document titles and marketing content.
-  </p>
-
-  <h2>Sentence Case Converter</h2>
-
-  <p>
-    The Sentence Case converter changes text into a sentence-style format.
-    It is useful for paragraphs, descriptions, emails, labels and content
-    that has been copied in inconsistent capitalization.
-  </p>
-
-  <h2>How to Change Text Case Online</h2>
-
-  <p>
-    Changing text case with ToolVault takes only a few steps:
-  </p>
-
-  <ol>
-    <li>Paste or type your text into the text box.</li>
-    <li>Select UPPERCASE, lowercase, Title Case or Sentence case.</li>
-    <li>Review the converted text.</li>
-    <li>Click Copy Result to copy the formatted text.</li>
-  </ol>
-
-  <h2>Fix Text Typed in ALL CAPS</h2>
-
-  <p>
-    If text was accidentally typed using Caps Lock, paste it into the
-    converter and use the lowercase or Sentence case option to make it
-    easier to read. This can be particularly useful for copied documents,
-    emails, notes and online content.
-  </p>
-
-  <h2>Who Is This Text Case Converter For?</h2>
-
-  <p>
-    This free online text case changer is useful for writers, students,
-    bloggers, marketers, content creators, editors, developers, teachers
-    and anyone who needs to change text capitalization quickly.
-  </p>
-
-  <h2>Text Case Converter vs. Manual Formatting</h2>
-
-  <p>
-    Manually changing capitalization can be slow when working with long
-    paragraphs or copied content. A text case converter allows you to
-    transform the entire text quickly with a single click.
-  </p>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq">
-
-    <details>
-      <summary>What is a text case converter?</summary>
-      <p>
-        A text case converter is an online tool that changes text
-        capitalization between formats such as uppercase, lowercase,
-        Title Case and Sentence case.
-      </p>
-    </details>
 
-    <details>
-      <summary>How do I convert text to uppercase?</summary>
-      <p>
-        Paste your text into the converter and click UPPERCASE. The text
-        will immediately be converted to capital letters.
-      </p>
-    </details>
+  <!-- FOOTER -->
 
-    <details>
-      <summary>How do I change uppercase text to lowercase?</summary>
-      <p>
-        Paste your text into the converter and click lowercase. All letters
-        will be changed to lowercase.
-      </p>
-    </details>
+  <footer>
 
-    <details>
-      <summary>What is Title Case?</summary>
-      <p>
-        Title Case is a capitalization format commonly used for headings
-        and titles where the first letter of words is capitalized.
-      </p>
-    </details>
+    <div class="container">
 
-    <details>
-      <summary>What is Sentence Case?</summary>
-      <p>
-        Sentence case uses normal sentence capitalization, with the first
-        letter of a sentence capitalized and the remaining letters normally
-        lowercase.
-      </p>
-    </details>
+      <span>
+        © 2026 ToolVault
+      </span>
 
-    <details>
-      <summary>Is this text case converter free?</summary>
-      <p>
-        Yes. ToolVault provides this text case converter as a free online
-        utility.
-      </p>
-    </details>
+      <span>
+        Practical digital tools for smarter work.
+      </span>
 
-    <details>
-      <summary>Does the converter upload my text?</summary>
-      <p>
-        The case conversion functions on this page run directly in your
-        browser using JavaScript.
-      </p>
-    </details>
+    </div>
 
-  </div>
+  </footer>
 
-  <h2>Explore Related Text Tools</h2>
 
-  <div class="seo-related">
+  <!-- =========================================================
+       TOOL JAVASCRIPT
+  ========================================================== -->
 
-    <a href="text-cleaner.html">
-      Text Cleaner
-    </a>
+  <script>
 
-    <a href="word-counter.html">
-      Word Counter
-    </a>
+    const textArea = document.getElementById("text");
 
-    <a href="ai-prompt-generator.html">
-      AI Prompt Generator
-    </a>
 
-  </div>
+    /* =========================================================
+       UPDATE STATISTICS
+    ========================================================== */
 
-</section>
+    function updateStats() {
 
-<footer>
+      const value = textArea.value;
 
-  <div class="container">
+      document.getElementById("characters").textContent =
+        value.length.toLocaleString();
 
-    <span>© 2026 ToolVault</span>
+      const words = value.trim()
+        ? value.trim().split(/\s+/).length
+        : 0;
 
-    <span>
-      Practical digital tools for smarter work.
-    </span>
+      document.getElementById("words").textContent =
+        words.toLocaleString();
 
-  </div>
+      const lines = value
+        ? value.split(/\r?\n/).length
+        : 0;
 
-</footer>
+      document.getElementById("lines").textContent =
+        lines.toLocaleString();
 
-<script>
+      const sentences = value
+        .split(/[.!?]+/)
+        .filter(function (sentence) {
+          return sentence.trim().length > 0;
+        })
+        .length;
 
-const t = document.getElementById("text");
+      document.getElementById("sentences").textContent =
+        sentences.toLocaleString();
+    }
 
-function updateStats(){
 
-  const value = t.value;
+    /* =========================================================
+       TITLE CASE
+    ========================================================== */
 
-  document.getElementById("characters").textContent =
-    value.length.toLocaleString();
+    function toTitleCase(value) {
 
-  const words = value.trim()
-    ? value.trim().split(/\s+/).length
-    : 0;
+      return value
+        .toLowerCase()
+        .replace(/\b([a-z])/g, function (match) {
+          return match.toUpperCase();
+        });
 
-  document.getElementById("words").textContent =
-    words.toLocaleString();
+    }
 
-  const lines = value
-    ? value.split(/\r?\n/).length
-    : 0;
 
-  document.getElementById("lines").textContent =
-    lines.toLocaleString();
+    /* =========================================================
+       SENTENCE CASE
+    ========================================================== */
 
-  const sentences = value
-    .split(/[.!?]+/)
-    .filter(x => x.trim().length > 0)
-    .length;
+    function toSentenceCase(value) {
 
-  document.getElementById("sentences").textContent =
-    sentences.toLocaleString();
-}
+      const lower = value.toLowerCase();
 
+      return lower.replace(
+        /(^\s*[a-z])|([.!?]\s+[a-z])/g,
+        function (match) {
 
-function convert(type){
+          if (match.length === 1) {
+            return match.toUpperCase();
+          }
 
-  let v = t.value;
+          return match.slice(0, -1) +
+                 match.slice(-1).toUpperCase();
 
-  if(!v.trim()){
-    return;
-  }
-
-  if(type === "upper"){
-    t.value = v.toUpperCase();
-  }
-
-  if(type === "lower"){
-    t.value = v.toLowerCase();
-  }
-
-  if(type === "title"){
-
-    t.value = v
-      .toLowerCase()
-      .replace(/\b([a-z])/g, function(match){
-        return match.toUpperCase();
-      });
-
-  }
-
-  if(type === "sentence"){
-
-    t.value = v
-      .toLowerCase()
-      .replace(
-        /(^|[.!?]\s+)([a-z])/g,
-        function(match, separator, letter){
-          return separator + letter.toUpperCase();
         }
       );
 
-  }
-
-  updateStats();
-
-}
+    }
 
 
-async function copyText(){
+    /* =========================================================
+       CONVERT TEXT
+    ========================================================== */
 
-  if(!t.value.trim()){
-    return;
-  }
+    function convert(type) {
 
-  try{
+      const value = textArea.value;
 
-    await navigator.clipboard.writeText(t.value);
+      if (!value.trim()) {
+        textArea.focus();
+        return;
+      }
 
-    const button =
-      document.querySelector(".copy-btn");
+      if (type === "upper") {
+        textArea.value = value.toUpperCase();
+      }
 
-    const original =
-      button.textContent;
+      if (type === "lower") {
+        textArea.value = value.toLowerCase();
+      }
 
-    button.textContent = "Copied ✓";
+      if (type === "title") {
+        textArea.value = toTitleCase(value);
+      }
 
-    setTimeout(function(){
-      button.textContent = original;
-    },1500);
+      if (type === "sentence") {
+        textArea.value = toSentenceCase(value);
+      }
 
-  }catch(error){
+      updateStats();
 
-    t.select();
-    document.execCommand("copy");
-
-  }
-
-}
-
-
-function clearText(){
-
-  t.value = "";
-
-  updateStats();
-
-  t.focus();
-
-}
+    }
 
 
-t.addEventListener("input", updateStats);
+    /* =========================================================
+       COPY RESULT
+    ========================================================== */
 
-updateStats();
+    async function copyText() {
 
-</script>
+      if (!textArea.value.trim()) {
+        return;
+      }
+
+      try {
+
+        await navigator.clipboard.writeText(textArea.value);
+
+        const button =
+          document.querySelector(".copy-btn");
+
+        const original =
+          button.textContent;
+
+        button.textContent = "Copied ✓";
+
+        setTimeout(function () {
+          button.textContent = original;
+        }, 1500);
+
+      } catch (error) {
+
+        textArea.select();
+        document.execCommand("copy");
+
+      }
+
+    }
+
+
+    /* =========================================================
+       CLEAR
+    ========================================================== */
+
+    function clearText() {
+
+      textArea.value = "";
+
+      updateStats();
+
+      textArea.focus();
+
+    }
+
+
+    /* =========================================================
+       LIVE STATISTICS
+    ========================================================== */
+
+    textArea.addEventListener(
+      "input",
+      updateStats
+    );
+
+
+    updateStats();
+
+  </script>
 
 </body>
 </html>
