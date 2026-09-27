@@ -11,960 +11,1515 @@
     gtag('config', 'G-MGV8BY8PVJ');
   </script>
 
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Primary SEO -->
   <title>Expense Calculator – Free Business & Monthly Expense Calculator | ToolVault</title>
 
   <meta
     name="description"
     content="Use ToolVault's free Expense Calculator to calculate monthly business expenses, remaining budget, expense ratio and largest expense online."
-  />
+  >
 
   <meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
-  />
+    name="keywords"
+    content="expense calculator, business expense calculator, monthly expense calculator, business expenses calculator, expense ratio calculator, budget expense calculator, online expense calculator, small business expense calculator, monthly business expenses"
+  >
 
+  <meta name="author" content="ToolVault">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#2563EB">
+
+  <!-- Canonical -->
   <link
     rel="canonical"
     href="https://toolsvault.shop/tools/expense-calculator.html"
-  />
+  >
 
   <!-- Open Graph -->
   <meta
     property="og:title"
     content="Expense Calculator – Free Business & Monthly Expense Calculator | ToolVault"
-  />
+  >
 
   <meta
     property="og:description"
-    content="Calculate monthly business expenses, remaining budget and expense ratio with ToolVault's free online Expense Calculator."
-  />
+    content="Calculate monthly business expenses, remaining budget, expense ratio and largest expense with ToolVault's free online Expense Calculator."
+  >
 
   <meta
     property="og:url"
     content="https://toolsvault.shop/tools/expense-calculator.html"
-  />
+  >
 
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="ToolVault"/>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ToolVault">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary">
 
   <meta
     name="twitter:title"
     content="Expense Calculator – Free Business & Monthly Expense Calculator | ToolVault"
-  />
+  >
 
   <meta
     name="twitter:description"
     content="Calculate business expenses, remaining budget and expense ratio with ToolVault's online Expense Calculator."
-  />
+  >
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
-  />
+  >
 
-  <style>
-    :root{
-      --navy:#0B1220;
-      --blue:#2563EB;
-      --cyan:#06B6D4;
-      --bg:#F8FAFC;
-      --white:#fff;
-      --text:#111827;
-      --muted:#64748B;
-      --border:#E2E8F0;
-    }
-
-    *{
-      box-sizing:border-box;
-    }
-
-    body{
-      margin:0;
-      font-family:Inter,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-    }
-
-    h1,h2,h3{
-      font-family:"Space Grotesk",Arial,sans-serif;
-    }
-
-    .container{
-      width:min(1050px,92%);
-      margin:auto;
-    }
-
-    header{
-      background:#fff;
-      border-bottom:1px solid var(--border);
-    }
-
-    .nav{
-      height:70px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-    }
-
-    .logo{
-      font:700 23px "Space Grotesk";
-      color:var(--navy);
-      text-decoration:none;
-    }
-
-    .logo span{
-      display:inline-flex;
-      width:31px;
-      height:31px;
-      border-radius:9px;
-      background:linear-gradient(135deg,var(--blue),var(--cyan));
-      color:#fff;
-      align-items:center;
-      justify-content:center;
-      margin-right:8px;
-    }
-
-    .back{
-      color:var(--blue);
-      font-weight:700;
-      text-decoration:none;
-      font-size:14px;
-    }
-
-    .hero{
-      text-align:center;
-      padding:50px 0 25px;
-    }
-
-    .badge{
-      display:inline-block;
-      background:#EFF6FF;
-      color:var(--blue);
-      border:1px solid #DBEAFE;
-      padding:7px 13px;
-      border-radius:30px;
-      font-size:11px;
-      font-weight:800;
-      margin-bottom:13px;
-    }
-
-    .hero h1{
-      font-size:clamp(34px,5vw,48px);
-      line-height:1.1;
-      color:var(--navy);
-      margin:0 0 10px;
-    }
-
-    .hero p{
-      max-width:700px;
-      margin:auto;
-      color:var(--muted);
-      line-height:1.7;
-    }
-
-    .workspace{
-      display:grid;
-      grid-template-columns:370px 1fr;
-      gap:22px;
-      margin:20px auto 70px;
-      align-items:start;
-    }
-
-    .panel{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:23px;
-    }
-
-    .panel h2{
-      margin:0 0 18px;
-      color:var(--navy);
-      font-size:21px;
-    }
-
-    .field{
-      margin-bottom:13px;
-    }
-
-    label{
-      display:block;
-      font-size:12px;
-      font-weight:700;
-      margin-bottom:5px;
-    }
-
-    input,
-    textarea,
-    select{
-      width:100%;
-      padding:11px;
-      border:1px solid #CBD5E1;
-      border-radius:9px;
-      font:inherit;
-      font-size:13px;
-    }
-
-    textarea{
-      min-height:90px;
-      resize:vertical;
-    }
-
-    input:focus,
-    textarea:focus,
-    select:focus{
-      outline:none;
-      border-color:var(--blue);
-      box-shadow:0 0 0 3px rgba(37,99,235,.1);
-    }
-
-    .row{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:10px;
-    }
-
-    .btn{
-      width:100%;
-      border:0;
-      border-radius:10px;
-      padding:12px;
-      background:var(--blue);
-      color:#fff;
-      font-weight:700;
-      cursor:pointer;
-      margin-top:7px;
-    }
-
-    .secondary{
-      background:#fff;
-      color:var(--navy);
-      border:1px solid var(--border);
-    }
-
-    .result{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:23px;
-    }
-
-    .result h2{
-      margin:0 0 17px;
-      color:var(--navy);
-      font-size:21px;
-    }
-
-    .output{
-      white-space:pre-wrap;
-      background:#F8FAFC;
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:17px;
-      min-height:220px;
-      font-size:13px;
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
-
-    .stat{
-      padding:15px;
-      border:1px solid var(--border);
-      border-radius:12px;
-      background:#F8FAFC;
-    }
-
-    .stat span{
-      display:block;
-      color:var(--muted);
-      font-size:11px;
-    }
-
-    .stat strong{
-      font-size:23px;
-      color:var(--navy);
-    }
-
-    footer{
-      background:var(--navy);
-      color:#94A3B8;
-      padding:25px 0;
-      font-size:12px;
-    }
-
-    footer .container{
-      display:flex;
-      justify-content:space-between;
-    }
-
-    /* Paywall */
-    .tv-protected-output{
-      position:relative;
-      overflow:hidden;
-    }
-
-    .tv-output-mask{
-      position:absolute;
-      inset:0;
-      z-index:50;
-      background:rgba(248,250,252,.97);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:24px;
-      min-height:180px;
-    }
-
-    .tv-output-lock{
-      max-width:430px;
-    }
-
-    .tv-output-lock span{
-      display:block;
-      font-size:30px;
-      margin-bottom:8px;
-    }
-
-    .tv-output-lock strong{
-      display:block;
-      font-size:20px;
-      color:#0B1220;
-      margin-bottom:7px;
-    }
-
-    .tv-output-lock small{
-      display:block;
-      color:#64748B;
-      line-height:1.5;
-      margin-bottom:16px;
-    }
-
-    .tv-output-lock button,
-    .tv-buy{
-      display:inline-block;
-      border:0;
-      border-radius:10px;
-      padding:12px 18px;
-      background:#2563EB;
-      color:#fff;
-      font-weight:700;
-      text-decoration:none;
-      cursor:pointer;
-    }
-
-    .tv-modal{
-      display:none;
-      position:fixed;
-      inset:0;
-      z-index:9999;
-    }
-
-    .tv-modal.open{
-      display:block;
-    }
-
-    .tv-modal-backdrop{
-      position:absolute;
-      inset:0;
-      background:rgba(11,18,32,.65);
-      backdrop-filter:blur(3px);
-    }
-
-    .tv-modal-card{
-      position:relative;
-      width:min(520px,calc(100% - 32px));
-      margin:10vh auto 0;
-      background:#fff;
-      border-radius:20px;
-      padding:32px;
-      box-shadow:0 24px 80px rgba(0,0,0,.25);
-      text-align:center;
-    }
-
-    .tv-modal-close{
-      position:absolute;
-      right:14px;
-      top:10px;
-      border:0;
-      background:none;
-      font-size:28px;
-      color:#64748B;
-      cursor:pointer;
-    }
-
-    .tv-lock{
-      font-size:34px;
-    }
-
-    .tv-kicker{
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:.12em;
-      color:#2563EB;
-      margin:8px 0;
-    }
-
-    .tv-modal-card h2{
-      margin:5px 0 10px;
-      color:#0B1220;
-    }
-
-    .tv-modal-card p{
-      color:#64748B;
-      line-height:1.6;
-      margin:0 auto 18px;
-      max-width:430px;
-    }
-
-    .tv-benefits{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:9px;
-      text-align:left;
-      background:#F8FAFC;
-      border:1px solid #E2E8F0;
-      border-radius:12px;
-      padding:14px;
-      margin:18px 0 20px;
-      color:#334155;
-      font-size:14px;
-    }
-
-    .tv-note{
-      font-size:12px;
-      color:#94A3B8;
-      margin-top:12px;
-    }
-
-    body.tv-modal-open{
-      overflow:hidden;
-    }
-
-    /* SEO Content */
-    .seo-content{
-      max-width:900px;
-      margin:0 auto 70px;
-      padding:28px 24px;
-      background:#fff;
-      border:1px solid #E2E8F0;
-      border-radius:18px;
-    }
-
-    .seo-content h2{
-      font-size:24px;
-      color:#0B1220;
-      margin:0 0 10px;
-    }
-
-    .seo-content h3{
-      font-size:18px;
-      color:#0B1220;
-      margin:22px 0 8px;
-    }
-
-    .seo-content p{
-      color:#64748B;
-      font-size:14px;
-      line-height:1.75;
-      margin:0 0 14px;
-    }
-
-    .seo-content ul{
-      margin:0 0 18px 20px;
-      color:#64748B;
-      font-size:14px;
-      line-height:1.75;
-    }
-
-    .seo-related{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:16px;
-    }
-
-    .seo-related a{
-      color:#2563EB;
-      text-decoration:none;
-      font-weight:700;
-      font-size:13px;
-      border:1px solid #DBEAFE;
-      background:#EFF6FF;
-      padding:8px 11px;
-      border-radius:9px;
-    }
-
-    @media(max-width:820px){
-      .workspace{
-        grid-template-columns:1fr;
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ToolVault",
+        "item": "https://toolsvault.shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Business Tools",
+        "item": "https://toolsvault.shop/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Expense Calculator",
+        "item": "https://toolsvault.shop/tools/expense-calculator.html"
       }
-    }
-
-    @media(max-width:560px){
-      .row,
-      .stats{
-        grid-template-columns:1fr;
-      }
-
-      .tv-benefits{
-        grid-template-columns:1fr;
-      }
-
-      .tv-modal-card{
-        padding:28px 20px;
-      }
-    }
-  </style>
+    ]
+  }
+  </script>
 
   <!-- WebApplication Schema -->
-  <script id="toolvault-schema-v4" type="application/ld+json">
+  <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"WebApplication",
-    "name":"Expense Calculator",
-    "url":"https://toolsvault.shop/tools/expense-calculator.html",
-    "applicationCategory":"BusinessApplication",
-    "operatingSystem":"Web Browser",
-    "description":"Free online expense calculator for calculating monthly business expenses, remaining budget, expense ratio and largest expense.",
-    "isAccessibleForFree":true,
-    "publisher":{
-      "@type":"Organization",
-      "name":"ToolVault",
-      "url":"https://toolsvault.shop/"
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ToolVault Expense Calculator",
+    "url": "https://toolsvault.shop/tools/expense-calculator.html",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Expense Calculator",
+    "operatingSystem": "Web Browser",
+    "browserRequirements": "Requires JavaScript",
+    "description": "Free online expense calculator for calculating monthly business expenses, remaining budget, expense ratio and largest expense.",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ToolVault",
+      "url": "https://toolsvault.shop/"
+    }
+  }
+  </script>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Free Expense Calculator",
+    "url": "https://toolsvault.shop/tools/expense-calculator.html",
+    "description": "Calculate monthly business expenses, remaining budget, expense ratio and largest expense with ToolVault's free online expense calculator.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ToolVault",
+      "url": "https://toolsvault.shop/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Business Expense Calculation"
+    },
+    "mainEntity": {
+      "@type": "WebApplication",
+      "name": "ToolVault Expense Calculator",
+      "url": "https://toolsvault.shop/tools/expense-calculator.html"
     }
   }
   </script>
 
   <!-- FAQ Schema -->
-  <script id="toolvault-faq-schema" type="application/ld+json">
+  <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@type":"Question",
-        "name":"What is an expense calculator?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"An expense calculator helps you add and review different costs to calculate total expenses and compare them with a budget."
+        "@type": "Question",
+        "name": "What is an expense calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An expense calculator helps you add and review different costs to calculate total expenses and compare them with a budget."
         }
       },
       {
-        "@type":"Question",
-        "name":"How does the ToolVault Expense Calculator work?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Enter your monthly budget and expense amounts such as rent, utilities, software, marketing and other costs. The calculator provides total expenses, remaining budget, expense ratio and largest expense."
+        "@type": "Question",
+        "name": "How does the ToolVault Expense Calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter your monthly budget and expense amounts such as rent, utilities, software, marketing and other costs. The calculator provides total expenses, remaining budget, expense ratio and largest expense."
         }
       },
       {
-        "@type":"Question",
-        "name":"Can I use this as a business expense calculator?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The calculator can be used to review common monthly business expenses and compare total spending with a monthly budget."
+        "@type": "Question",
+        "name": "Can I use this as a business expense calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The calculator can be used to review common monthly business expenses and compare total spending with a monthly budget."
         }
       },
       {
-        "@type":"Question",
-        "name":"Can I use this as a monthly expense calculator?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. The calculator is designed for monthly budgeting and recurring expense planning."
+        "@type": "Question",
+        "name": "Can I use this as a monthly expense calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The calculator is designed for monthly budgeting and recurring expense planning."
         }
       },
       {
-        "@type":"Question",
-        "name":"What is an expense ratio?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"An expense ratio in this calculator represents total listed expenses as a percentage of the monthly budget entered."
+        "@type": "Question",
+        "name": "What is an expense ratio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An expense ratio in this calculator represents total listed expenses as a percentage of the monthly budget entered."
         }
       }
     ]
   }
   </script>
 
+  <style>
+
+    :root {
+      --navy: #0B1220;
+      --blue: #2563EB;
+      --cyan: #06B6D4;
+      --bg: #F8FAFC;
+      --white: #FFFFFF;
+      --text: #111827;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --soft: #EFF6FF;
+      --green: #047857;
+      --red: #B91C1C;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Space Grotesk", Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1050px, 92%);
+      margin: 0 auto;
+    }
+
+    /* Header */
+
+    header {
+      background: rgba(255, 255, 255, 0.97);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font: 700 23px "Space Grotesk", Arial, sans-serif;
+      color: var(--navy);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      display: inline-flex;
+      width: 31px;
+      height: 31px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+    }
+
+    .back {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    /* Breadcrumb */
+
+    .breadcrumb {
+      max-width: 1050px;
+      width: 92%;
+      margin: 0 auto;
+      padding: 14px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .breadcrumb span {
+      margin: 0 5px;
+    }
+
+    /* Hero */
+
+    .hero {
+      text-align: center;
+      padding: 50px 0 28px;
+      background: linear-gradient(180deg, #fff, #F8FAFC);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--blue);
+      border: 1px solid #DBEAFE;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 48px);
+      line-height: 1.1;
+      color: var(--navy);
+      margin-bottom: 11px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 720px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Calculator Workspace */
+
+    .workspace {
+      display: grid;
+      grid-template-columns: 370px 1fr;
+      gap: 22px;
+      margin: 25px auto 65px;
+      align-items: start;
+    }
+
+    .panel,
+    .result {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 23px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .panel h2,
+    .result h2 {
+      margin: 0 0 18px;
+      color: var(--navy);
+      font-size: 21px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1px solid #CBD5E1;
+      border-radius: 9px;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+      font-size: 13px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .help {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .btn {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 7px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #1D4ED8;
+    }
+
+    .secondary {
+      background: #fff;
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+
+    .secondary:hover {
+      background: #F8FAFC;
+    }
+
+    /* Results */
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .stat {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #F8FAFC;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .stat strong {
+      font-size: 23px;
+      color: var(--navy);
+    }
+
+    .stat.positive {
+      background: #ECFDF5;
+      border-color: #A7F3D0;
+    }
+
+    .stat.positive strong {
+      color: var(--green);
+    }
+
+    .stat.negative {
+      background: #FEF2F2;
+      border-color: #FECACA;
+    }
+
+    .stat.negative strong {
+      color: var(--red);
+    }
+
+    .result-note {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* SEO Content */
+
+    .seo-content {
+      max-width: 900px;
+      width: 92%;
+      margin: 0 auto 70px;
+      padding: 30px 26px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .seo-content h2 {
+      font-size: 25px;
+      color: var(--navy);
+      margin: 0 0 11px;
+    }
+
+    .seo-content h2:not(:first-child) {
+      margin-top: 32px;
+    }
+
+    .seo-content h3 {
+      font-size: 18px;
+      color: var(--navy);
+      margin: 22px 0 8px;
+    }
+
+    .seo-content p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .seo-content ul,
+    .seo-content ol {
+      margin: 0 0 17px 21px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .seo-content li {
+      margin-bottom: 7px;
+    }
+
+    /* Related Tools */
+
+    .related-tools {
+      max-width: 900px;
+      width: 92%;
+      margin: 0 auto 70px;
+    }
+
+    .related-tools h2 {
+      color: var(--navy);
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .related-grid a {
+      display: block;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 15px;
+      text-decoration: none;
+    }
+
+    .related-grid a:hover {
+      border-color: #BFDBFE;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+    }
+
+    .related-grid strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .related-grid span {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+
+    footer {
+      background: var(--navy);
+      color: #94A3B8;
+      text-align: center;
+      padding: 25px;
+      font-size: 12px;
+    }
+
+    /* Paywall */
+
+    .tv-protected-output {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tv-output-mask {
+      position: absolute;
+      inset: 0;
+      z-index: 50;
+      background: rgba(248, 250, 252, 0.97);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      min-height: 180px;
+    }
+
+    .tv-output-lock {
+      max-width: 430px;
+    }
+
+    .tv-output-lock span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .tv-output-lock strong {
+      display: block;
+      font-size: 20px;
+      color: var(--navy);
+      margin-bottom: 7px;
+    }
+
+    .tv-output-lock small {
+      display: block;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .tv-output-lock button,
+    .tv-buy {
+      display: inline-block;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 18px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .tv-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+    }
+
+    .tv-modal.open {
+      display: block;
+    }
+
+    .tv-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 18, 32, 0.65);
+      backdrop-filter: blur(3px);
+    }
+
+    .tv-modal-card {
+      position: relative;
+      width: min(520px, calc(100% - 32px));
+      margin: 10vh auto 0;
+      background: #fff;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+      text-align: center;
+    }
+
+    .tv-modal-close {
+      position: absolute;
+      right: 14px;
+      top: 10px;
+      border: 0;
+      background: none;
+      font-size: 28px;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .tv-lock {
+      font-size: 34px;
+    }
+
+    .tv-kicker {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--blue);
+      margin: 8px 0;
+    }
+
+    .tv-modal-card h2 {
+      margin: 5px 0 10px;
+      color: var(--navy);
+    }
+
+    .tv-modal-card p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0 auto 18px;
+      max-width: 430px;
+    }
+
+    .tv-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      text-align: left;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 18px 0 20px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    .tv-note {
+      font-size: 12px;
+      color: #94A3B8;
+      margin-top: 12px;
+    }
+
+    body.tv-modal-open {
+      overflow: hidden;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 820px) {
+
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 760px) {
+
+      .related-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+    @media (max-width: 560px) {
+
+      .nav {
+        height: 62px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .back {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tv-benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .tv-modal-card {
+        padding: 28px 20px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-<header>
-  <div class="container nav">
-    <a class="logo" href="../index.html">
-      <span>T</span>ToolVault
-    </a>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">ToolVault</a>
+    <span>›</span>
+    <a href="../index.html">Business Tools</a>
+    <span>›</span>
+    <span aria-current="page">Expense Calculator</span>
+  </nav>
 
-    <a class="back" href="../index.html">
-      ← Back to Tools
-    </a>
-  </div>
-</header>
+  <!-- Header -->
+  <header>
 
-<section class="hero">
-  <div class="container">
+    <div class="container nav">
 
-    <div class="badge">BUSINESS EXPENSE CALCULATOR</div>
+      <a class="logo" href="../index.html" aria-label="ToolVault home">
+        <span>T</span>
+        ToolVault
+      </a>
 
-    <h1>Expense Calculator</h1>
+      <a class="back" href="../index.html">
+        ← Back to Tools
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="badge">
+        BUSINESS EXPENSE CALCULATOR
+      </div>
+
+      <h1>
+        Free Expense Calculator
+      </h1>
+
+      <p>
+        Calculate monthly expenses, compare your spending with a budget,
+        and review total expenses, remaining budget, expense ratio and
+        largest expense with ToolVault's online Expense Calculator.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Calculator -->
+  <main class="container workspace">
+
+    <!-- Inputs -->
+    <div class="panel">
+
+      <h2>
+        Monthly Expenses
+      </h2>
+
+      <div class="field">
+
+        <label for="budget">
+          Monthly Budget ($)
+        </label>
+
+        <input
+          id="budget"
+          type="number"
+          value="3000"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+        <div class="help">
+          Enter your planned monthly budget.
+        </div>
+
+      </div>
+
+      <div class="field">
+
+        <label for="rent">
+          Rent / Office ($)
+        </label>
+
+        <input
+          id="rent"
+          class="expense-input"
+          type="number"
+          value="500"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+      </div>
+
+      <div class="field">
+
+        <label for="utilities">
+          Utilities ($)
+        </label>
+
+        <input
+          id="utilities"
+          class="expense-input"
+          type="number"
+          value="150"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+      </div>
+
+      <div class="field">
+
+        <label for="software">
+          Software ($)
+        </label>
+
+        <input
+          id="software"
+          class="expense-input"
+          type="number"
+          value="100"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+      </div>
+
+      <div class="field">
+
+        <label for="marketing">
+          Marketing ($)
+        </label>
+
+        <input
+          id="marketing"
+          class="expense-input"
+          type="number"
+          value="200"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+      </div>
+
+      <div class="field">
+
+        <label for="other">
+          Other ($)
+        </label>
+
+        <input
+          id="other"
+          class="expense-input"
+          type="number"
+          value="100"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+        >
+
+      </div>
+
+      <button
+        class="btn"
+        type="button"
+        onclick="ToolVaultPaywall.show()"
+      >
+        Calculate Expenses
+      </button>
+
+      <button
+        class="btn secondary"
+        type="button"
+        onclick="resetCalculator()"
+      >
+        Reset
+      </button>
+
+    </div>
+
+    <!-- Results -->
+    <div class="result">
+
+      <h2>
+        Expense Summary
+      </h2>
+
+      <div class="stats">
+
+        <div class="stat">
+
+          <span>
+            Total Expenses
+          </span>
+
+          <strong id="total">
+            $0.00
+          </strong>
+
+        </div>
+
+        <div class="stat" id="remainingBox">
+
+          <span>
+            Remaining Budget
+          </span>
+
+          <strong id="remaining">
+            $0.00
+          </strong>
+
+        </div>
+
+        <div class="stat">
+
+          <span>
+            Expense Ratio
+          </span>
+
+          <strong id="ratio">
+            0.0%
+          </strong>
+
+        </div>
+
+        <div class="stat">
+
+          <span>
+            Largest Expense
+          </span>
+
+          <strong id="largest">
+            —
+          </strong>
+
+        </div>
+
+      </div>
+
+      <p class="result-note">
+        This calculator is intended for general budgeting and planning.
+        It does not provide accounting, tax or financial advice.
+      </p>
+
+    </div>
+
+  </main>
+
+  <!-- SEO Content -->
+  <section
+    class="seo-content"
+    aria-label="Expense Calculator information"
+  >
+
+    <h2>
+      Free Expense Calculator
+    </h2>
 
     <p>
-      Calculate monthly expenses, compare your spending with a budget,
-      and review your total expenses, remaining budget and expense ratio
-      with ToolVault's online Expense Calculator.
+      ToolVault's free Expense Calculator helps you calculate and review
+      recurring monthly expenses in one place. Enter your monthly budget
+      and common costs such as rent, utilities, software, marketing and
+      other expenses to see your total spending and remaining budget.
     </p>
 
-  </div>
-</section>
+    <p>
+      This online expense calculator can be useful for small businesses,
+      freelancers, entrepreneurs and individuals who want a simple way
+      to organize recurring monthly expenses.
+    </p>
 
-<main class="container workspace">
+    <h2>
+      Business Expense Calculator
+    </h2>
 
-  <div class="panel">
+    <p>
+      A business expense calculator provides a quick way to organize
+      common operating costs and compare them with a planned monthly
+      budget. Use ToolVault to review expenses such as office costs,
+      utilities, software subscriptions and marketing.
+    </p>
 
-    <h2>Monthly Expenses</h2>
+    <h2>
+      How to Use the Expense Calculator
+    </h2>
 
-    <div class="field">
-      <label for="budget">Monthly Budget ($)</label>
-      <input id="budget" type="number" value="3000" min="0"/>
+    <p>
+      Enter your monthly budget and the recurring expenses you want to
+      review. The calculator summarizes the values entered into the
+      expense fields.
+    </p>
+
+    <ol>
+
+      <li>
+        Enter your monthly budget.
+      </li>
+
+      <li>
+        Add rent or office expenses.
+      </li>
+
+      <li>
+        Enter utility costs.
+      </li>
+
+      <li>
+        Add software and subscription expenses.
+      </li>
+
+      <li>
+        Enter marketing expenses.
+      </li>
+
+      <li>
+        Add other recurring expenses.
+      </li>
+
+      <li>
+        Select Calculate Expenses to review the results.
+      </li>
+
+    </ol>
+
+    <h2>
+      What Does the Expense Calculator Calculate?
+    </h2>
+
+    <h3>
+      Total Expenses
+    </h3>
+
+    <p>
+      Total expenses are calculated by adding all expense amounts entered
+      into the calculator. This gives you a quick view of your planned
+      monthly spending.
+    </p>
+
+    <h3>
+      Remaining Budget
+    </h3>
+
+    <p>
+      Remaining budget is calculated by subtracting total listed expenses
+      from the monthly budget. A positive result indicates that part of
+      the entered budget remains after the listed expenses.
+    </p>
+
+    <h3>
+      Expense Ratio
+    </h3>
+
+    <p>
+      The expense ratio shows total expenses as a percentage of the
+      monthly budget entered into the calculator. It provides another
+      way to compare planned expenses with the available budget.
+    </p>
+
+    <h3>
+      Largest Expense
+    </h3>
+
+    <p>
+      The largest expense identifies the highest-value category among
+      the expense amounts entered into the calculator.
+    </p>
+
+    <h2>
+      Monthly Expense Calculator
+    </h2>
+
+    <p>
+      A monthly expense calculator can help organize recurring costs
+      before preparing a basic monthly spending overview. By entering
+      expenses in one place, you can calculate the total and compare it
+      with your planned budget.
+    </p>
+
+    <h2>
+      Expense Calculator for Small Businesses
+    </h2>
+
+    <p>
+      Small businesses may have recurring costs for office space,
+      utilities, software, marketing and other operating activities.
+      Using an expense calculator can make it easier to organize these
+      costs and review them against a monthly budget.
+    </p>
+
+    <h2>
+      Online Expense Calculator for Budget Planning
+    </h2>
+
+    <p>
+      ToolVault's online Expense Calculator provides a simple way to
+      review recurring expenses and compare them with a planned monthly
+      budget. The results can be used as part of a basic budgeting
+      workflow.
+    </p>
+
+    <h2>
+      Frequently Asked Questions
+    </h2>
+
+    <h3>
+      What is an expense calculator?
+    </h3>
+
+    <p>
+      An expense calculator helps you add and review different costs to
+      calculate total expenses and compare them with a budget.
+    </p>
+
+    <h3>
+      How does the ToolVault Expense Calculator work?
+    </h3>
+
+    <p>
+      Enter your monthly budget and expense amounts such as rent,
+      utilities, software, marketing and other costs. The calculator
+      provides total expenses, remaining budget, expense ratio and
+      largest expense.
+    </p>
+
+    <h3>
+      Can I use this as a business expense calculator?
+    </h3>
+
+    <p>
+      Yes. You can use the calculator to review common monthly business
+      expenses and compare total spending with your monthly budget.
+    </p>
+
+    <h3>
+      Can I use this as a monthly expense calculator?
+    </h3>
+
+    <p>
+      Yes. The calculator is designed around monthly budgeting and
+      includes fields for common recurring expenses such as rent,
+      utilities, software, marketing and other costs.
+    </p>
+
+    <h3>
+      What is an expense ratio?
+    </h3>
+
+    <p>
+      In this calculator, the expense ratio represents total listed
+      expenses as a percentage of the monthly budget entered.
+    </p>
+
+    <h3>
+      Who can use this expense calculator?
+    </h3>
+
+    <p>
+      Freelancers, small business owners, entrepreneurs, managers and
+      individuals can use this online expense calculator to review
+      recurring costs.
+    </p>
+
+  </section>
+
+  <!-- Related Tools -->
+  <section
+    class="related-tools"
+    aria-labelledby="related-tools-heading"
+  >
+
+    <h2 id="related-tools-heading">
+      Related Business Tools
+    </h2>
+
+    <div class="related-grid">
+
+      <a href="business-profit-calculator.html">
+        <strong>
+          Business Profit Calculator
+        </strong>
+
+        <span>
+          Review revenue, costs and estimated business profit.
+        </span>
+      </a>
+
+      <a href="profit-calculator.html">
+        <strong>
+          Profit Calculator
+        </strong>
+
+        <span>
+          Calculate profit, profit margin, costs and break-even units.
+        </span>
+      </a>
+
+      <a href="pricing-calculator.html">
+        <strong>
+          Pricing Calculator
+        </strong>
+
+        <span>
+          Calculate pricing, costs and target profit margins.
+        </span>
+      </a>
+
+      <a href="roi-calculator.html">
+        <strong>
+          ROI Calculator
+        </strong>
+
+        <span>
+          Calculate return on investment and compare investment results.
+        </span>
+      </a>
+
+      <a href="invoice-generator.html">
+        <strong>
+          Invoice Generator
+        </strong>
+
+        <span>
+          Create professional invoices for products and services.
+        </span>
+      </a>
+
+      <a href="../index.html">
+        <strong>
+          More Business Tools
+        </strong>
+
+        <span>
+          Explore additional ToolVault calculators and productivity tools.
+        </span>
+      </a>
+
     </div>
 
-    <div class="field">
-      <label for="rent">Rent / Office ($)</label>
-      <input id="rent" class="e" type="number" value="500" min="0"/>
-    </div>
-
-    <div class="field">
-      <label for="utilities">Utilities ($)</label>
-      <input id="utilities" class="e" type="number" value="150" min="0"/>
-    </div>
-
-    <div class="field">
-      <label for="software">Software ($)</label>
-      <input id="software" class="e" type="number" value="100" min="0"/>
-    </div>
-
-    <div class="field">
-      <label for="marketing">Marketing ($)</label>
-      <input id="marketing" class="e" type="number" value="200" min="0"/>
-    </div>
-
-    <div class="field">
-      <label for="other">Other ($)</label>
-      <input id="other" class="e" type="number" value="100" min="0"/>
-    </div>
-
-    <button class="btn" onclick="ToolVaultPaywall.show()">
-      Calculate
-    </button>
-
-  </div>
-
-  <div class="result">
-
-    <h2>Expense Summary</h2>
-
-    <div class="stats">
-
-      <div class="stat">
-        <span>Total Expenses</span>
-        <strong id="total">$0</strong>
-      </div>
-
-      <div class="stat">
-        <span>Remaining Budget</span>
-        <strong id="remaining">$0</strong>
-      </div>
-
-      <div class="stat">
-        <span>Expense Ratio</span>
-        <strong id="ratio">0%</strong>
-      </div>
-
-      <div class="stat">
-        <span>Largest Expense</span>
-        <strong id="largest">—</strong>
-      </div>
-
-    </div>
-
-  </div>
-
-</main>
-
-<section
-  aria-label="Expense Calculator information"
-  class="seo-content"
->
-
-  <h2>Free Expense Calculator</h2>
-
-  <p>
-    ToolVault's Expense Calculator helps you calculate and review
-    recurring monthly expenses in one place. Enter your monthly budget
-    and common costs such as rent, utilities, software, marketing and
-    other expenses to see your total spending and remaining budget.
-  </p>
-
-  <p>
-    This online expense calculator can be useful for small businesses,
-    freelancers, entrepreneurs and anyone who wants a simple way to
-    organize recurring monthly expenses.
-  </p>
-
-  <h2>Business Expense Calculator</h2>
-
-  <p>
-    A business expense calculator provides a quick way to organize
-    common operating costs and compare them with a planned monthly
-    budget. Use ToolVault to review expenses such as office costs,
-    utilities, software subscriptions and marketing.
-  </p>
-
-  <h2>How to Use the Expense Calculator</h2>
-
-  <p>
-    Enter your monthly budget and the recurring expenses you want to
-    review. The calculator then summarizes the values entered into the
-    expense fields.
-  </p>
-
-  <ul>
-    <li>Enter your monthly budget.</li>
-    <li>Add rent or office expenses.</li>
-    <li>Enter utility costs.</li>
-    <li>Add software and subscription expenses.</li>
-    <li>Enter marketing expenses.</li>
-    <li>Add other recurring expenses.</li>
-    <li>Review the calculated expense summary.</li>
-  </ul>
-
-  <h2>What Does the Expense Calculator Calculate?</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 ToolVault — Practical digital tools for smarter work.
+  </footer>
+
+  <!-- Calculator JavaScript -->
+  <script>
+
+    function money(value) {
+
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+      }).format(value);
 
-  <h3>Total Expenses</h3>
+    }
 
-  <p>
-    Total expenses are calculated by adding all of the expense amounts
-    entered into the calculator. This gives you a quick view of your
-    planned monthly spending.
-  </p>
+    function getValue(id) {
 
-  <h3>Remaining Budget</h3>
+      const element = document.getElementById(id);
 
-  <p>
-    Remaining budget is calculated by subtracting total listed expenses
-    from the monthly budget. A positive result indicates that part of
-    the entered budget remains after the listed expenses.
-  </p>
+      return Math.max(
+        0,
+        Number(element.value) || 0
+      );
 
-  <h3>Expense Ratio</h3>
+    }
 
-  <p>
-    The expense ratio shows total expenses as a percentage of the
-    monthly budget entered into the calculator. It provides another
-    way to compare planned expenses with the available budget.
-  </p>
+    function calculate() {
 
-  <h3>Largest Expense</h3>
+      const budget = getValue("budget");
 
-  <p>
-    The largest expense identifies the highest value among the expense
-    categories entered into the calculator.
-  </p>
+      const rent = getValue("rent");
+      const utilities = getValue("utilities");
+      const software = getValue("software");
+      const marketing = getValue("marketing");
+      const other = getValue("other");
 
-  <h2>Monthly Expense Calculator</h2>
+      const expenses = [
+        {
+          name: "Rent / Office",
+          value: rent
+        },
+        {
+          name: "Utilities",
+          value: utilities
+        },
+        {
+          name: "Software",
+          value: software
+        },
+        {
+          name: "Marketing",
+          value: marketing
+        },
+        {
+          name: "Other",
+          value: other
+        }
+      ];
 
-  <p>
-    A monthly expense calculator can help organize recurring costs
-    before preparing a basic monthly spending overview. By entering
-    expenses in one place, you can calculate the total and compare it
-    with your planned budget.
-  </p>
-
-  <h2>Expense Calculator for Small Businesses</h2>
-
-  <p>
-    Small businesses may have recurring costs for office space,
-    utilities, software, marketing and other operating activities.
-    Using an expense calculator can make it easier to organize these
-    costs and review them against a monthly budget.
-  </p>
+      const totalExpenses =
+        expenses.reduce(function(total, expense) {
+          return total + expense.value;
+        }, 0);
 
-  <h2>Online Expense Calculator for Budget Planning</h2>
-
-  <p>
-    ToolVault's online Expense Calculator provides a simple way to
-    review recurring expenses and compare them with a planned monthly
-    budget. The results can be used as part of a basic budgeting
-    workflow.
-  </p>
-
-  <h2>Frequently Asked Questions</h2>
-
-  <h3>What is an expense calculator?</h3>
-
-  <p>
-    An expense calculator helps you add and review different costs to
-    calculate total expenses and compare them with a budget.
-  </p>
-
-  <h3>Can I use this as a business expense calculator?</h3>
-
-  <p>
-    Yes. You can use the calculator to review common monthly business
-    expenses and compare total spending with your monthly budget.
-  </p>
-
-  <h3>Can I use this as a monthly expense calculator?</h3>
-
-  <p>
-    Yes. The calculator is designed around monthly budgeting and
-    includes fields for common recurring expenses such as rent,
-    utilities, software, marketing and other costs.
-  </p>
-
-  <h3>What is an expense ratio?</h3>
-
-  <p>
-    In this calculator, the expense ratio represents total listed
-    expenses as a percentage of the monthly budget entered.
-  </p>
-
-  <h3>Who can use this expense calculator?</h3>
-
-  <p>
-    Freelancers, small business owners, entrepreneurs, managers and
-    individuals can use this online expense calculator to review
-    recurring costs.
-  </p>
-
-  <h2>Explore Related ToolVault Tools</h2>
-
-  <div class="seo-related">
-
-    <a href="business-profit-calculator.html">
-      Business Profit Calculator
-    </a>
-
-    <a href="profit-calculator.html">
-      Profit Calculator
-    </a>
-
-    <a href="pricing-calculator.html">
-      Pricing Calculator
-    </a>
-
-    <a href="roi-calculator.html">
-      ROI Calculator
-    </a>
-
-    <a href="invoice-generator.html">
-      Invoice Generator
-    </a>
-
-  </div>
-
-</section>
-
-<footer>
-  <div class="container">
-    <span>© 2026 ToolVault</span>
-    <span>Practical digital tools for smarter work.</span>
-  </div>
-</footer>
-
-<script>
-  function money(x){
-    return new Intl.NumberFormat("en-US", {
-      style:"currency",
-      currency:"USD"
-    }).format(x);
-  }
-
-  function calc(){
-
-    const budgetEl = document.getElementById("budget");
-
-    const expenseEls = [
-      document.getElementById("rent"),
-      document.getElementById("utilities"),
-      document.getElementById("software"),
-      document.getElementById("marketing"),
-      document.getElementById("other")
-    ];
-
-    const names = [
-      "Rent / Office",
-      "Utilities",
-      "Software",
-      "Marketing",
-      "Other"
-    ];
-
-    const budget = Number(budgetEl.value) || 0;
-
-    const values = expenseEls.map(function(el){
-      return Number(el.value) || 0;
+      const remainingBudget =
+        budget - totalExpenses;
+
+      const expenseRatio =
+        budget > 0
+          ? (totalExpenses / budget) * 100
+          : 0;
+
+      const largestExpense =
+        expenses.reduce(function(largest, expense) {
+
+          return expense.value > largest.value
+            ? expense
+            : largest;
+
+        }, {
+          name: "—",
+          value: 0
+        });
+
+      document.getElementById("total").textContent =
+        money(totalExpenses);
+
+      document.getElementById("remaining").textContent =
+        money(remainingBudget);
+
+      document.getElementById("ratio").textContent =
+        expenseRatio.toFixed(1) + "%";
+
+      document.getElementById("largest").textContent =
+        largestExpense.value > 0
+          ? largestExpense.name
+          : "—";
+
+      const remainingBox =
+        document.getElementById("remainingBox");
+
+      remainingBox.classList.remove(
+        "positive",
+        "negative"
+      );
+
+      if (remainingBudget >= 0) {
+
+        remainingBox.classList.add("positive");
+
+      } else {
+
+        remainingBox.classList.add("negative");
+
+      }
+
+    }
+
+    function resetCalculator() {
+
+      document.getElementById("budget").value = 3000;
+      document.getElementById("rent").value = 500;
+      document.getElementById("utilities").value = 150;
+      document.getElementById("software").value = 100;
+      document.getElementById("marketing").value = 200;
+      document.getElementById("other").value = 100;
+
+      calculate();
+
+    }
+
+    document.querySelectorAll("input").forEach(function(input) {
+
+      input.addEventListener("input", calculate);
+
     });
 
-    const totalExpenses = values.reduce(function(sum,value){
-      return sum + value;
-    },0);
+    calculate();
 
-    const remainingBudget = budget - totalExpenses;
+  </script>
 
-    const expenseRatio =
-      budget > 0
-      ? (totalExpenses / budget) * 100
-      : 0;
+  <!-- ToolVault Paywall -->
+  <script>
 
-    const largestExpense =
-      values.length
-      ? Math.max.apply(null, values)
-      : 0;
+    window.TOOLVAULT_PAYWALL = {
 
-    document.getElementById("total").textContent =
-      money(totalExpenses);
+      checkout:
+        "https://zafcommander.gumroad.com/l/expense-calculator?wanted=true",
 
-    document.getElementById("remaining").textContent =
-      money(remainingBudget);
+      toolName:
+        "Expense Calculator"
 
-    document.getElementById("ratio").textContent =
-      expenseRatio.toFixed(1) + "%";
+    };
 
-    document.getElementById("largest").textContent =
-      largestExpense > 0
-      ? names[values.indexOf(largestExpense)]
-      : "—";
-  }
+  </script>
 
-  calc();
-</script>
-
-<script>
-  window.TOOLVAULT_PAYWALL = {
-    checkout:
-      "https://zafcommander.gumroad.com/l/expense-calculator?wanted=true",
-    toolName:
-      "Expense Calculator"
-  };
-</script>
-
-<script src="../js/paywall.js"></script>
+  <script src="../js/paywall.js"></script>
 
 </body>
 </html>
