@@ -23,6 +23,15 @@
     content="Use ToolVault's free ROI Calculator to calculate return on investment, ROI percentage, net gain and return multiple from your investment costs and returns."
   >
 
+  <meta
+    name="keywords"
+    content="ROI calculator, return on investment calculator, ROI calculator online, investment return calculator, ROI percentage calculator, business ROI calculator, ROI formula, calculate ROI"
+  >
+
+  <meta name="author" content="ToolVault">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#2563EB">
+
   <link
     rel="canonical"
     href="https://toolsvault.shop/tools/roi-calculator.html"
@@ -46,6 +55,17 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ToolVault">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta
+    name="twitter:title"
+    content="ROI Calculator – Free Return on Investment Calculator | ToolVault"
+  >
+  <meta
+    name="twitter:description"
+    content="Calculate ROI, return on investment percentage, net gain and return multiple with ToolVault's free online ROI Calculator."
+  >
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,6 +102,10 @@
       box-sizing:border-box;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
       font-family:Inter,Arial,sans-serif;
@@ -92,6 +116,10 @@
 
     h1,h2,h3{
       font-family:"Space Grotesk",Arial,sans-serif;
+    }
+
+    a{
+      color:var(--blue);
     }
 
     .container{
@@ -134,6 +162,10 @@
       font-weight:700;
       text-decoration:none;
       font-size:14px;
+    }
+
+    .back:hover{
+      text-decoration:underline;
     }
 
     /* HERO */
@@ -238,10 +270,18 @@
       margin-top:7px;
     }
 
+    .btn:hover{
+      background:#1D4ED8;
+    }
+
     .secondary{
       background:#fff;
       color:var(--navy);
       border:1px solid var(--border);
+    }
+
+    .secondary:hover{
+      background:#F8FAFC;
     }
 
     .stats{
@@ -330,6 +370,20 @@
       padding-left:22px;
     }
 
+    .seo-content li{
+      margin-bottom:6px;
+    }
+
+    .seo-content a{
+      color:var(--blue);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    .seo-content a:hover{
+      text-decoration:underline;
+    }
+
     .formula{
       background:#F8FAFC;
       border:1px solid var(--border);
@@ -377,6 +431,24 @@
       font-weight:700;
     }
 
+    /* CONNECTION CLUSTER */
+
+    .cluster-box{
+      background:#F8FAFC;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:20px;
+      margin:18px 0 25px;
+    }
+
+    .cluster-box h3{
+      margin-top:0;
+    }
+
+    .cluster-box ul{
+      margin-bottom:0;
+    }
+
     /* RELATED LINKS */
 
     .seo-related{
@@ -397,6 +469,10 @@
       border-radius:9px;
     }
 
+    .seo-related a:hover{
+      background:#DBEAFE;
+    }
+
     /* FOOTER */
 
     footer{
@@ -411,38 +487,7 @@
       justify-content:space-between;
     }
 
-    /* RESPONSIVE */
-
-    @media(max-width:820px){
-
-      .workspace{
-        grid-template-columns:1fr;
-      }
-
-    }
-
-    @media(max-width:520px){
-
-      .stats{
-        grid-template-columns:1fr;
-      }
-
-      footer .container{
-        flex-direction:column;
-        gap:7px;
-        text-align:center;
-      }
-
-    }
-
-  </style>
-
-
-  <!-- =========================================================
-       TOOLVAULT PAYWALL CSS
-  ========================================================== -->
-
-  <style id="toolvault-paywall-css">
+    /* PAYWALL */
 
     .tv-protected-output{
       position:relative;
@@ -587,6 +632,30 @@
       overflow:hidden;
     }
 
+    /* RESPONSIVE */
+
+    @media(max-width:820px){
+
+      .workspace{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+    @media(max-width:520px){
+
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+      footer .container{
+        flex-direction:column;
+        gap:7px;
+        text-align:center;
+      }
+
+    }
+
     @media(max-width:560px){
 
       .tv-benefits{
@@ -683,7 +752,7 @@
 
   <div class="container nav">
 
-    <a class="logo" href="../index.html">
+    <a class="logo" href="../index.html" aria-label="ToolVault home">
       <span>T</span>ToolVault
     </a>
 
@@ -713,7 +782,8 @@
     </h1>
 
     <p>
-      Calculate return on investment, ROI percentage, net gain and return multiple with this free online ROI Calculator.
+      Calculate return on investment, ROI percentage, net gain and return
+      multiple with this free online ROI Calculator.
     </p>
 
   </div>
@@ -732,7 +802,6 @@
     <h2>
       Calculate Your Return on Investment
     </h2>
-
 
     <div class="field">
 
@@ -799,6 +868,7 @@
 
     <button
       class="btn"
+      type="button"
       onclick="ToolVaultPaywall.show()"
     >
       Calculate ROI
@@ -807,6 +877,7 @@
 
     <button
       class="btn secondary"
+      type="button"
       onclick="resetCalculator()"
     >
       Reset
@@ -820,7 +891,6 @@
     <h2>
       ROI Results
     </h2>
-
 
     <div class="stats">
 
@@ -879,7 +949,8 @@
 
 
     <p class="calculator-note">
-      Results are estimates based on the values entered and are intended for general planning purposes only.
+      Results are estimates based on the values entered and are intended
+      for general planning purposes only.
     </p>
 
   </div>
@@ -901,11 +972,16 @@
   </h2>
 
   <p>
-    Use ToolVault's free <strong>ROI Calculator</strong> to calculate return on investment, ROI percentage, net gain and return multiple. Enter your initial investment, additional costs and total return to estimate the financial result of an investment.
+    Use ToolVault's free <strong>ROI Calculator</strong> to calculate
+    return on investment, ROI percentage, net gain and return multiple.
+    Enter your initial investment, additional costs and total return to
+    estimate the financial result of an investment.
   </p>
 
   <p>
-    This <strong>return on investment calculator</strong> provides a quick online way to calculate ROI from the total amount invested and the return generated.
+    This <strong>return on investment calculator</strong> provides a
+    quick online way to calculate ROI from the total amount invested
+    and the return generated.
   </p>
 
 
@@ -914,7 +990,10 @@
   </h2>
 
   <p>
-    To calculate return on investment, first determine the total investment cost by adding the initial investment and any additional costs. Then subtract the total investment cost from the total return to determine the net gain.
+    To calculate return on investment, first determine the total
+    investment cost by adding the initial investment and any additional
+    costs. Then subtract the total investment cost from the total return
+    to determine the net gain.
   </p>
 
   <div class="formula">
@@ -922,7 +1001,9 @@
   </div>
 
   <p>
-    For example, if an investment costs $1,100 in total and produces a return of $1,500, the net gain is $400. The ROI is approximately 36.36%.
+    For example, if an investment costs $1,100 in total and produces a
+    return of $1,500, the net gain is $400. The ROI is approximately
+    36.36%.
   </p>
 
 
@@ -931,11 +1012,20 @@
   </h2>
 
   <p>
-    Return on Investment, commonly known as ROI, is a percentage used to express the gain or loss generated by an investment compared with the amount invested.
+    Return on Investment, commonly known as ROI, is a percentage used to
+    express the gain or loss generated by an investment compared with
+    the amount invested.
   </p>
 
   <p>
-    ROI can be used when reviewing investments, marketing campaigns, business projects, equipment purchases and other activities where costs and financial returns can be compared.
+    ROI can be used when reviewing investments, marketing campaigns,
+    business projects, equipment purchases and other activities where
+    costs and financial returns can be compared. When evaluating the
+    profitability of a product or business activity, you can also use
+    the <a href="profit-calculator.html">Profit Calculator</a> to review
+    estimated profit and the
+    <a href="expense-calculator.html">Expense Calculator</a> to review
+    related costs.
   </p>
 
 
@@ -944,7 +1034,10 @@
   </h2>
 
   <p>
-    An <strong>ROI percentage calculator</strong> converts the net gain from an investment into a percentage of the total investment cost. This makes it easier to compare returns from investments with different costs.
+    An <strong>ROI percentage calculator</strong> converts the net gain
+    from an investment into a percentage of the total investment cost.
+    This makes it easier to compare returns from investments with
+    different costs.
   </p>
 
 
@@ -953,7 +1046,12 @@
   </h2>
 
   <p>
-    The ToolVault <strong>investment return calculator</strong> calculates total investment cost, net gain, ROI percentage and return multiple from the values you enter.
+    The ToolVault <strong>investment return calculator</strong>
+    calculates total investment cost, net gain, ROI percentage and
+    return multiple from the values you enter. If you are evaluating
+    the pricing or profitability of a product or service, you can also
+    use the <a href="pricing-calculator.html">Pricing Calculator</a>
+    to estimate a suitable selling price.
   </p>
 
 
@@ -991,7 +1089,29 @@
   </h2>
 
   <p>
-    This online ROI calculator can be useful for entrepreneurs, business owners, marketers, freelancers, investors and professionals evaluating investment performance, business projects or marketing activities.
+    This online ROI calculator can be useful for entrepreneurs, business
+    owners, marketers, freelancers, investors and professionals evaluating
+    investment performance, business projects or marketing activities.
+  </p>
+
+
+  <!-- =======================================================
+       BUSINESS PROFIT CONNECTION
+  ======================================================== -->
+
+  <h3>
+    ROI and Business Profit Analysis
+  </h3>
+
+  <p>
+    ROI and business profit are related but measure different aspects
+    of financial performance. ROI compares net gain with the total
+    investment cost, while profit analysis focuses on revenue, costs
+    and resulting profit. For a broader business profitability review,
+    use the
+    <a href="business-profit-calculator.html">
+      Business Profit Calculator
+    </a>.
   </p>
 
 
@@ -1004,7 +1124,10 @@
   </h2>
 
   <p>
-    The page is designed around several related search intents, including users looking for an ROI calculator, users learning how ROI is calculated, and users searching for an investment return calculator or ROI percentage calculator.
+    The page is designed around several related search intents,
+    including users looking for an ROI calculator, users learning how
+    ROI is calculated, and users searching for an investment return
+    calculator or ROI percentage calculator.
   </p>
 
   <div class="demand-map">
@@ -1103,6 +1226,67 @@
   </div>
 
 
+  <!-- =======================================================
+       BUSINESS & FINANCE CONNECTION CLUSTER
+  ======================================================== -->
+
+  <h2>
+    Complete Business Finance Tool Cluster
+  </h2>
+
+  <p>
+    Different business calculations answer different financial questions.
+    Use the ToolVault tools below according to the type of calculation
+    you need.
+  </p>
+
+  <div class="cluster-box">
+
+    <h3>
+      ToolVault Business &amp; Finance Tools
+    </h3>
+
+    <ul>
+
+      <li>
+        <strong>ROI Calculator:</strong>
+        Measure return on investment and return multiple.
+      </li>
+
+      <li>
+        <strong>Pricing Calculator:</strong>
+        Estimate selling prices using costs, fees and target profit margin.
+      </li>
+
+      <li>
+        <strong>Profit Calculator:</strong>
+        Calculate estimated revenue, costs and profit.
+      </li>
+
+      <li>
+        <strong>Expense Calculator:</strong>
+        Review business and operating expenses.
+      </li>
+
+      <li>
+        <strong>Business Profit Calculator:</strong>
+        Review broader business profitability.
+      </li>
+
+    </ul>
+
+  </div>
+
+  <p>
+    Start with the calculation that matches your objective, then use the
+    related ToolVault calculators to review the other financial factors.
+  </p>
+
+
+  <!-- =======================================================
+       FAQ
+  ======================================================== -->
+
   <h2>
     Frequently Asked Questions About ROI
   </h2>
@@ -1113,7 +1297,8 @@
   </h3>
 
   <p>
-    An ROI calculator calculates return on investment by comparing the net gain from an investment with the total investment cost.
+    An ROI calculator calculates return on investment by comparing the
+    net gain from an investment with the total investment cost.
   </p>
 
 
@@ -1122,7 +1307,9 @@
   </h3>
 
   <p>
-    ROI is commonly calculated by subtracting the total investment cost from the return to determine net gain, dividing the net gain by total investment cost and multiplying the result by 100.
+    ROI is commonly calculated by subtracting the total investment cost
+    from the return to determine net gain, dividing the net gain by
+    total investment cost and multiplying the result by 100.
   </p>
 
 
@@ -1131,7 +1318,8 @@
   </h3>
 
   <p>
-    ROI percentage expresses the net gain from an investment as a percentage of the total investment cost.
+    ROI percentage expresses the net gain from an investment as a
+    percentage of the total investment cost.
   </p>
 
 
@@ -1140,30 +1328,67 @@
   </h3>
 
   <p>
-    Return multiple compares the total return with the total investment cost. For example, a 2x return multiple means the return is twice the total investment cost.
+    Return multiple compares the total return with the total investment
+    cost. For example, a 2x return multiple means the return is twice
+    the total investment cost.
   </p>
 
+
+  <!-- =======================================================
+       RELATED TOOLS
+  ======================================================== -->
 
   <h2>
     Explore Related Business &amp; Finance Tools
   </h2>
 
+  <p>
+    Explore the related ToolVault calculators and business tools to
+    evaluate pricing, profitability, expenses and financial performance.
+  </p>
+
   <div class="seo-related">
 
-    <a href="profit-calculator.html">
-      Profit Calculator
-    </a>
-
-    <a href="pricing-calculator.html">
+    <a
+      href="pricing-calculator.html"
+      title="Free Pricing Calculator"
+    >
       Pricing Calculator
     </a>
 
-    <a href="expense-calculator.html">
+    <a
+      href="profit-calculator.html"
+      title="Free Profit Calculator"
+    >
+      Profit Calculator
+    </a>
+
+    <a
+      href="expense-calculator.html"
+      title="Free Expense Calculator"
+    >
       Expense Calculator
     </a>
 
-    <a href="business-profit-calculator.html">
+    <a
+      href="business-profit-calculator.html"
+      title="Free Business Profit Calculator"
+    >
       Business Profit Calculator
+    </a>
+
+    <a
+      href="invoice-generator.html"
+      title="Free Invoice Generator"
+    >
+      Invoice Generator
+    </a>
+
+    <a
+      href="quote-generator.html"
+      title="Free Quote Generator"
+    >
+      Quote Generator
     </a>
 
   </div>
@@ -1299,6 +1524,16 @@ function resetCalculator(){
   calc();
 
 }
+
+
+document.getElementById("investment")
+  .addEventListener("input", calc);
+
+document.getElementById("costs")
+  .addEventListener("input", calc);
+
+document.getElementById("returns")
+  .addEventListener("input", calc);
 
 
 calc();
