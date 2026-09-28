@@ -2,24 +2,40 @@
 <html lang="en">
 <head>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- =========================================================
+       GOOGLE ANALYTICS
+  ========================================================== -->
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGV8BY8PVJ"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
+    function gtag(){
       dataLayer.push(arguments);
     }
 
     gtag('js', new Date());
+
     gtag('config', 'G-MGV8BY8PVJ');
   </script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Primary SEO -->
-  <title>ROI Calculator – Free Return on Investment Calculator | ToolVault</title>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+
+  <!-- =========================================================
+       PRIMARY SEO
+  ========================================================== -->
+
+  <title>
+    ROI Calculator – Free Return on Investment Calculator | ToolVault
+  </title>
 
   <meta
     name="description"
@@ -28,19 +44,34 @@
 
   <meta
     name="keywords"
-    content="ROI calculator, return on investment calculator, ROI calculator online, investment return calculator, ROI percentage calculator, business ROI calculator, ROI formula, calculate ROI"
+    content="ROI calculator, return on investment calculator, ROI calculator online, investment return calculator, ROI percentage calculator, business ROI calculator"
   >
 
-  <meta name="author" content="ToolVault">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#2563EB">
+  <meta
+    name="author"
+    content="ToolVault"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
+
+  <meta
+    name="theme-color"
+    content="#2563EB"
+  >
 
   <link
     rel="canonical"
     href="https://toolsvault.shop/tools/roi-calculator.html"
   >
 
-  <!-- Open Graph -->
+
+  <!-- =========================================================
+       OPEN GRAPH
+  ========================================================== -->
+
   <meta
     property="og:title"
     content="ROI Calculator – Free Return on Investment Calculator | ToolVault"
@@ -56,11 +87,35 @@
     content="https://toolsvault.shop/tools/roi-calculator.html"
   >
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="ToolVault">
+  <meta
+    property="og:type"
+    content="website"
+  >
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
+  <meta
+    property="og:site_name"
+    content="ToolVault"
+  >
+
+  <meta
+    property="og:image"
+    content="https://toolsvault.shop/assets/roi-calculator-cover.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="ToolVault ROI Calculator"
+  >
+
+
+  <!-- =========================================================
+       TWITTER / X
+  ========================================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
 
   <meta
     name="twitter:title"
@@ -69,624 +124,650 @@
 
   <meta
     name="twitter:description"
-    content="Calculate ROI, return on investment percentage, net gain and return multiple with ToolVault's free online ROI Calculator."
+    content="Calculate return on investment, ROI percentage, net gain and return multiple with ToolVault's free ROI Calculator."
   >
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="twitter:image"
+    content="https://toolsvault.shop/assets/roi-calculator-cover.png"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="ToolVault ROI Calculator"
+  >
+
+
+  <!-- =========================================================
+       FONTS
+  ========================================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
 
+
   <!-- =========================================================
-       TOOLVAULT STYLES
+       STYLES
   ========================================================== -->
 
   <style>
 
-    :root {
-      --navy: #0B1220;
-      --blue: #2563EB;
-      --cyan: #06B6D4;
-      --bg: #F8FAFC;
-      --white: #fff;
-      --text: #111827;
-      --muted: #64748B;
-      --border: #E2E8F0;
-      --soft: #EFF6FF;
-      --green: #047857;
-      --green-bg: #ECFDF5;
-      --red: #B91C1C;
-      --red-bg: #FEF2F2;
+    :root{
+      --navy:#0B1220;
+      --blue:#2563EB;
+      --cyan:#06B6D4;
+      --bg:#F8FAFC;
+      --white:#fff;
+      --text:#111827;
+      --muted:#64748B;
+      --border:#E2E8F0;
+      --soft:#EFF6FF;
+      --green:#047857;
+      --green-bg:#ECFDF5;
+      --red:#B91C1C;
+      --red-bg:#FEF2F2;
     }
 
-    * {
-      box-sizing: border-box;
+    *{
+      box-sizing:border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
+    html{
+      scroll-behavior:smooth;
     }
 
-    body {
-      margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+    body{
+      margin:0;
+      font-family:Inter,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
     }
 
     h1,
     h2,
-    h3 {
-      font-family: "Space Grotesk", Arial, sans-serif;
+    h3{
+      font-family:"Space Grotesk",Arial,sans-serif;
     }
 
-    a {
-      color: var(--blue);
+    a{
+      color:var(--blue);
     }
 
-    .container {
-      width: min(1050px, 92%);
-      margin: auto;
+    .container{
+      width:min(1050px,92%);
+      margin:auto;
     }
 
-    header {
-      background: #fff;
-      border-bottom: 1px solid var(--border);
+
+    /* =========================================================
+       HEADER
+    ========================================================== */
+
+    header{
+      background:#fff;
+      border-bottom:1px solid var(--border);
     }
 
-    .nav {
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .nav{
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
     }
 
-    .logo {
-      font: 700 23px "Space Grotesk";
-      color: var(--navy);
-      text-decoration: none;
+    .logo{
+      font:700 23px "Space Grotesk";
+      color:var(--navy);
+      text-decoration:none;
     }
 
-    .logo span {
-      display: inline-flex;
-      width: 31px;
-      height: 31px;
-      border-radius: 9px;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
-      color: #fff;
-      align-items: center;
-      justify-content: center;
-      margin-right: 8px;
+    .logo span{
+      display:inline-flex;
+      width:31px;
+      height:31px;
+      border-radius:9px;
+      background:linear-gradient(135deg,var(--blue),var(--cyan));
+      color:#fff;
+      align-items:center;
+      justify-content:center;
+      margin-right:8px;
     }
 
-    .back {
-      color: var(--blue);
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 14px;
+    .back{
+      color:var(--blue);
+      font-weight:700;
+      text-decoration:none;
+      font-size:14px;
     }
 
-    .back:hover {
-      text-decoration: underline;
+    .back:hover{
+      text-decoration:underline;
     }
 
-    /* HERO */
 
-    .hero {
-      text-align: center;
-      padding: 50px 0 25px;
+    /* =========================================================
+       BREADCRUMB
+    ========================================================== */
+
+    .breadcrumb{
+      font-size:13px;
+      padding-top:18px;
+      color:var(--muted);
     }
 
-    .badge {
-      display: inline-block;
-      background: var(--soft);
-      color: var(--blue);
-      border: 1px solid #DBEAFE;
-      padding: 7px 13px;
-      border-radius: 30px;
-      font-size: 11px;
-      font-weight: 800;
-      margin-bottom: 13px;
+    .breadcrumb a{
+      color:var(--blue);
+      text-decoration:none;
+      font-weight:600;
     }
 
-    .hero h1 {
-      font-size: clamp(34px, 5vw, 48px);
-      line-height: 1.1;
-      color: var(--navy);
-      margin: 0 0 10px;
+    .breadcrumb a:hover{
+      text-decoration:underline;
     }
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      color: var(--muted);
-      font-size: 15px;
+    .breadcrumb-separator{
+      margin:0 7px;
+      color:#94A3B8;
     }
 
-    /* CALCULATOR */
 
-    .workspace {
-      display: grid;
-      grid-template-columns: 370px 1fr;
-      gap: 22px;
-      margin: 20px auto 70px;
-      align-items: start;
+    /* =========================================================
+       HERO
+    ========================================================== */
+
+    .hero{
+      text-align:center;
+      padding:50px 0 25px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:var(--soft);
+      color:var(--blue);
+      border:1px solid #DBEAFE;
+      padding:7px 13px;
+      border-radius:30px;
+      font-size:11px;
+      font-weight:800;
+      margin-bottom:13px;
+    }
+
+    .hero h1{
+      font-size:clamp(34px,5vw,48px);
+      line-height:1.1;
+      color:var(--navy);
+      margin:0 0 10px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+
+    /* =========================================================
+       CALCULATOR
+    ========================================================== */
+
+    .workspace{
+      display:grid;
+      grid-template-columns:370px 1fr;
+      gap:22px;
+      margin:20px auto 70px;
+      align-items:start;
     }
 
     .panel,
-    .result {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 23px;
+    .result{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:23px;
     }
 
     .panel h2,
-    .result h2 {
-      margin: 0 0 18px;
-      color: var(--navy);
-      font-size: 21px;
+    .result h2{
+      margin:0 0 18px;
+      color:var(--navy);
+      font-size:21px;
     }
 
-    .field {
-      margin-bottom: 14px;
+    .field{
+      margin-bottom:14px;
     }
 
-    label {
-      display: block;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 5px;
+    label{
+      display:block;
+      font-size:12px;
+      font-weight:700;
+      margin-bottom:5px;
     }
 
-    input {
-      width: 100%;
-      padding: 11px;
-      border: 1px solid #CBD5E1;
-      border-radius: 9px;
-      font: inherit;
-      font-size: 13px;
+    input{
+      width:100%;
+      padding:11px;
+      border:1px solid #CBD5E1;
+      border-radius:9px;
+      font:inherit;
+      font-size:13px;
     }
 
-    input:focus {
-      outline: none;
-      border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+    input:focus{
+      outline:none;
+      border-color:var(--blue);
+      box-shadow:0 0 0 3px rgba(37,99,235,.1);
     }
 
-    .help {
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 4px;
+    .help{
+      font-size:11px;
+      color:var(--muted);
+      margin-top:4px;
     }
 
-    .btn {
-      width: 100%;
-      border: 0;
-      border-radius: 10px;
-      padding: 12px;
-      background: var(--blue);
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-      margin-top: 7px;
+    .btn{
+      width:100%;
+      border:0;
+      border-radius:10px;
+      padding:12px;
+      background:var(--blue);
+      color:#fff;
+      font-weight:700;
+      cursor:pointer;
+      margin-top:7px;
     }
 
-    .btn:hover {
-      background: #1D4ED8;
+    .btn:hover{
+      background:#1D4ED8;
     }
 
-    .secondary {
-      background: #fff;
-      color: var(--navy);
-      border: 1px solid var(--border);
+    .secondary{
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--border);
     }
 
-    .secondary:hover {
-      background: #F8FAFC;
+    .secondary:hover{
+      background:#F8FAFC;
     }
 
-    .stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
+    .stats{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
     }
 
-    .stat {
-      padding: 15px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #F8FAFC;
+    .stat{
+      padding:15px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:#F8FAFC;
     }
 
-    .stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 11px;
-      margin-bottom: 3px;
+    .stat span{
+      display:block;
+      color:var(--muted);
+      font-size:11px;
+      margin-bottom:3px;
     }
 
-    .stat strong {
-      font-size: 23px;
-      color: var(--navy);
+    .stat strong{
+      font-size:23px;
+      color:var(--navy);
     }
 
-    .stat.highlight {
-      background: var(--green-bg);
-      border-color: #A7F3D0;
+    .stat.highlight{
+      background:var(--green-bg);
+      border-color:#A7F3D0;
     }
 
-    .stat.highlight strong {
-      color: var(--green);
+    .stat.highlight strong{
+      color:var(--green);
     }
 
-    .stat.loss {
-      background: var(--red-bg);
-      border-color: #FECACA;
+    .stat.loss{
+      background:var(--red-bg);
+      border-color:#FECACA;
     }
 
-    .stat.loss strong {
-      color: var(--red);
+    .stat.loss strong{
+      color:var(--red);
     }
 
-    .calculator-note {
-      margin-top: 15px;
-      color: var(--muted);
-      font-size: 11px;
+    .calculator-note{
+      margin-top:15px;
+      color:var(--muted);
+      font-size:11px;
     }
 
-    /* SEO CONTENT */
 
-    .seo-content {
-      max-width: 900px;
-      margin: 0 auto 70px;
-      padding: 30px 25px;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 18px;
+    /* =========================================================
+       SEO CONTENT
+    ========================================================== */
+
+    .seo-content{
+      max-width:900px;
+      margin:0 auto 70px;
+      padding:30px 25px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
     }
 
-    .seo-content h2 {
-      font-size: 24px;
-      color: var(--navy);
-      margin: 0 0 10px;
+    .seo-content h2{
+      font-size:24px;
+      color:var(--navy);
+      margin:0 0 10px;
     }
 
-    .seo-content h3 {
-      font-size: 19px;
-      color: var(--navy);
-      margin: 25px 0 8px;
+    .seo-content h3{
+      font-size:19px;
+      color:var(--navy);
+      margin:25px 0 8px;
     }
 
-    .seo-content p {
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.8;
-      margin: 0 0 15px;
+    .seo-content p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.8;
+      margin:0 0 15px;
     }
 
-    .seo-content ul {
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.8;
-      padding-left: 22px;
+    .seo-content ul{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.8;
+      padding-left:22px;
     }
 
-    .seo-content li {
-      margin-bottom: 6px;
+    .seo-content li{
+      margin-bottom:6px;
     }
 
-    .seo-content a {
-      color: var(--blue);
-      font-weight: 600;
-      text-decoration: none;
+    .seo-content a{
+      color:var(--blue);
+      font-weight:600;
+      text-decoration:none;
     }
 
-    .seo-content a:hover {
-      text-decoration: underline;
+    .seo-content a:hover{
+      text-decoration:underline;
     }
 
-    .formula {
-      background: #F8FAFC;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
-      margin: 15px 0;
-      font-weight: 700;
-      color: var(--navy);
-      text-align: center;
+    .formula{
+      background:#F8FAFC;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:16px;
+      margin:15px 0;
+      font-weight:700;
+      color:var(--navy);
+      text-align:center;
     }
 
-    /* EXAMPLES */
 
-    .example-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin: 20px 0 25px;
+    /* =========================================================
+       CONNECTION CLUSTER
+    ========================================================== */
+
+    .cluster-box{
+      background:#F8FAFC;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:20px;
+      margin:18px 0 25px;
     }
 
-    .example-card {
-      background: #F8FAFC;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px;
+    .cluster-box h3{
+      margin-top:0;
     }
 
-    .example-card h3 {
-      margin: 0 0 12px;
-      color: var(--navy);
-      font-size: 18px;
+    .cluster-box ul{
+      margin-bottom:0;
     }
 
-    .example-card ul {
-      margin: 0;
-      padding-left: 20px;
+
+    /* =========================================================
+       RELATED LINKS
+    ========================================================== */
+
+    .seo-related{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:16px;
     }
 
-    .example-card li {
-      margin-bottom: 5px;
-      color: var(--muted);
-      font-size: 13px;
+    .seo-related a{
+      color:var(--blue);
+      text-decoration:none;
+      font-weight:700;
+      font-size:13px;
+      border:1px solid #DBEAFE;
+      background:#EFF6FF;
+      padding:8px 11px;
+      border-radius:9px;
     }
 
-    .example-result {
-      margin-top: 12px;
-      padding: 10px;
-      background: #ECFDF5;
-      border: 1px solid #A7F3D0;
-      border-radius: 9px;
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 700;
+    .seo-related a:hover{
+      background:#DBEAFE;
     }
 
-    /* CONNECTION CLUSTER */
 
-    .cluster-box {
-      background: #F8FAFC;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px;
-      margin: 18px 0 25px;
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+
+    footer{
+      background:var(--navy);
+      color:#94A3B8;
+      padding:25px 0;
+      font-size:12px;
     }
 
-    .cluster-box h3 {
-      margin-top: 0;
+    footer .container{
+      display:flex;
+      justify-content:space-between;
     }
 
-    .cluster-box ul {
-      margin-bottom: 0;
+
+    /* =========================================================
+       PAYWALL
+    ========================================================== */
+
+    .tv-protected-output{
+      position:relative;
+      overflow:hidden;
     }
 
-    /* RELATED LINKS */
-
-    .seo-related {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
+    .tv-output-mask{
+      position:absolute;
+      inset:0;
+      z-index:50;
+      background:rgba(248,250,252,.97);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:24px;
+      min-height:180px;
     }
 
-    .seo-related a {
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 13px;
-      border: 1px solid #DBEAFE;
-      background: #EFF6FF;
-      padding: 8px 11px;
-      border-radius: 9px;
+    .tv-output-lock{
+      max-width:430px;
     }
 
-    .seo-related a:hover {
-      background: #DBEAFE;
+    .tv-output-lock span{
+      display:block;
+      font-size:30px;
+      margin-bottom:8px;
     }
 
-    /* FOOTER */
-
-    footer {
-      background: var(--navy);
-      color: #94A3B8;
-      padding: 25px 0;
-      font-size: 12px;
+    .tv-output-lock strong{
+      display:block;
+      font-size:20px;
+      color:#0B1220;
+      margin-bottom:7px;
     }
 
-    footer .container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    /* PAYWALL */
-
-    .tv-protected-output {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .tv-output-mask {
-      position: absolute;
-      inset: 0;
-      z-index: 50;
-      background: rgba(248, 250, 252, .97);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-      min-height: 180px;
-    }
-
-    .tv-output-lock {
-      max-width: 430px;
-    }
-
-    .tv-output-lock span {
-      display: block;
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .tv-output-lock strong {
-      display: block;
-      font-size: 20px;
-      color: #0B1220;
-      margin-bottom: 7px;
-    }
-
-    .tv-output-lock small {
-      display: block;
-      color: #64748B;
-      line-height: 1.5;
-      margin-bottom: 16px;
+    .tv-output-lock small{
+      display:block;
+      color:#64748B;
+      line-height:1.5;
+      margin-bottom:16px;
     }
 
     .tv-output-lock button,
-    .tv-buy {
-      display: inline-block;
-      border: 0;
-      border-radius: 10px;
-      padding: 12px 18px;
-      background: #2563EB;
-      color: #fff;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
+    .tv-buy{
+      display:inline-block;
+      border:0;
+      border-radius:10px;
+      padding:12px 18px;
+      background:#2563EB;
+      color:#fff;
+      font-weight:700;
+      text-decoration:none;
+      cursor:pointer;
     }
 
-    .tv-modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
+    .tv-modal{
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:9999;
     }
 
-    .tv-modal.open {
-      display: block;
+    .tv-modal.open{
+      display:block;
     }
 
-    .tv-modal-backdrop {
-      position: absolute;
-      inset: 0;
-      background: rgba(11, 18, 32, .65);
-      backdrop-filter: blur(3px);
+    .tv-modal-backdrop{
+      position:absolute;
+      inset:0;
+      background:rgba(11,18,32,.65);
+      backdrop-filter:blur(3px);
     }
 
-    .tv-modal-card {
-      position: relative;
-      width: min(520px, calc(100% - 32px));
-      margin: 10vh auto 0;
-      background: #fff;
-      border-radius: 20px;
-      padding: 32px;
-      box-shadow: 0 24px 80px rgba(0, 0, 0, .25);
-      text-align: center;
+    .tv-modal-card{
+      position:relative;
+      width:min(520px,calc(100% - 32px));
+      margin:10vh auto 0;
+      background:#fff;
+      border-radius:20px;
+      padding:32px;
+      box-shadow:0 24px 80px rgba(0,0,0,.25);
+      text-align:center;
     }
 
-    .tv-modal-close {
-      position: absolute;
-      right: 14px;
-      top: 10px;
-      border: 0;
-      background: none;
-      font-size: 28px;
-      color: #64748B;
-      cursor: pointer;
+    .tv-modal-close{
+      position:absolute;
+      right:14px;
+      top:10px;
+      border:0;
+      background:none;
+      font-size:28px;
+      color:#64748B;
+      cursor:pointer;
     }
 
-    .tv-lock {
-      font-size: 34px;
+    .tv-lock{
+      font-size:34px;
     }
 
-    .tv-kicker {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      color: #2563EB;
-      margin: 8px 0;
+    .tv-kicker{
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+      color:#2563EB;
+      margin:8px 0;
     }
 
-    .tv-modal-card h2 {
-      margin: 5px 0 10px;
-      color: #0B1220;
+    .tv-modal-card h2{
+      margin:5px 0 10px;
+      color:#0B1220;
     }
 
-    .tv-modal-card p {
-      color: #64748B;
-      line-height: 1.6;
-      margin: 0 auto 18px;
-      max-width: 430px;
+    .tv-modal-card p{
+      color:#64748B;
+      line-height:1.6;
+      margin:0 auto 18px;
+      max-width:430px;
     }
 
-    .tv-benefits {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 9px;
-      text-align: left;
-      background: #F8FAFC;
-      border: 1px solid #E2E8F0;
-      border-radius: 12px;
-      padding: 14px;
-      margin: 18px 0 20px;
-      color: #334155;
-      font-size: 14px;
+    .tv-benefits{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:9px;
+      text-align:left;
+      background:#F8FAFC;
+      border:1px solid #E2E8F0;
+      border-radius:12px;
+      padding:14px;
+      margin:18px 0 20px;
+      color:#334155;
+      font-size:14px;
     }
 
-    .tv-note {
-      font-size: 12px;
-      color: #94A3B8;
-      margin-top: 12px;
+    .tv-note{
+      font-size:12px;
+      color:#94A3B8;
+      margin-top:12px;
     }
 
-    body.tv-modal-open {
-      overflow: hidden;
+    body.tv-modal-open{
+      overflow:hidden;
     }
 
-    /* RESPONSIVE */
 
-    @media (max-width: 820px) {
+    /* =========================================================
+       RESPONSIVE
+    ========================================================== */
 
-      .workspace {
-        grid-template-columns: 1fr;
+    @media(max-width:820px){
+
+      .workspace{
+        grid-template-columns:1fr;
       }
 
     }
 
-    @media (max-width: 600px) {
+    @media(max-width:520px){
 
-      .example-grid {
-        grid-template-columns: 1fr;
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+      footer .container{
+        flex-direction:column;
+        gap:7px;
+        text-align:center;
       }
 
     }
 
-    @media (max-width: 520px) {
+    @media(max-width:560px){
 
-      .stats {
-        grid-template-columns: 1fr;
+      .tv-benefits{
+        grid-template-columns:1fr;
       }
 
-      footer .container {
-        flex-direction: column;
-        gap: 7px;
-        text-align: center;
-      }
-
-    }
-
-    @media (max-width: 560px) {
-
-      .tv-benefits {
-        grid-template-columns: 1fr;
-      }
-
-      .tv-modal-card {
-        padding: 28px 20px;
+      .tv-modal-card{
+        padding:28px 20px;
       }
 
     }
@@ -700,23 +781,74 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "ROI Calculator",
-    "url": "https://toolsvault.shop/tools/roi-calculator.html",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web Browser",
-    "description": "Free online ROI calculator for calculating return on investment, ROI percentage, net gain and return multiple.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ToolVault",
-      "url": "https://toolsvault.shop/"
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "@id":"https://toolsvault.shop/tools/roi-calculator.html#webapplication",
+    "name":"ROI Calculator",
+    "url":"https://toolsvault.shop/tools/roi-calculator.html",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Web Browser",
+    "description":"Free online ROI calculator for calculating return on investment, ROI percentage, net gain and return multiple.",
+    "isAccessibleForFree":true,
+    "browserRequirements":"Requires JavaScript",
+    "publisher":{
+      "@type":"Organization",
+      "@id":"https://toolsvault.shop/#organization",
+      "name":"ToolVault",
+      "url":"https://toolsvault.shop/"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
+    "offers":{
+      "@type":"Offer",
+      "price":"0",
+      "priceCurrency":"USD"
     }
+  }
+  </script>
+
+
+  <!-- =========================================================
+       ORGANIZATION SCHEMA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "@id":"https://toolsvault.shop/#organization",
+    "name":"ToolVault",
+    "url":"https://toolsvault.shop/"
+  }
+  </script>
+
+
+  <!-- =========================================================
+       BREADCRUMB SCHEMA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"ToolVault",
+        "item":"https://toolsvault.shop/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Tools",
+        "item":"https://toolsvault.shop/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"ROI Calculator",
+        "item":"https://toolsvault.shop/tools/roi-calculator.html"
+      }
+    ]
   }
   </script>
 
@@ -727,39 +859,39 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
       {
-        "@type": "Question",
-        "name": "What is an ROI calculator?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An ROI calculator calculates return on investment by comparing the net gain from an investment with the total investment cost."
+        "@type":"Question",
+        "name":"What is an ROI calculator?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"An ROI calculator calculates return on investment by comparing the net gain from an investment with the total investment cost."
         }
       },
       {
-        "@type": "Question",
-        "name": "How do you calculate ROI?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "ROI is commonly calculated by subtracting the total investment cost from the return to determine net gain, then dividing net gain by total investment cost and multiplying by 100."
+        "@type":"Question",
+        "name":"How do you calculate ROI?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"ROI is commonly calculated by subtracting the total investment cost from the return to determine net gain, then dividing the net gain by total investment cost and multiplying by 100."
         }
       },
       {
-        "@type": "Question",
-        "name": "What does ROI percentage mean?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "ROI percentage expresses the net gain from an investment as a percentage of the total investment cost."
+        "@type":"Question",
+        "name":"What does ROI percentage mean?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"ROI percentage expresses the net gain from an investment as a percentage of the total investment cost."
         }
       },
       {
-        "@type": "Question",
-        "name": "What is return multiple?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Return multiple compares the total return with the total investment cost. For example, a 2x return multiple means the return is twice the total investment cost."
+        "@type":"Question",
+        "name":"What is return multiple?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Return multiple compares the total return with the total investment cost. For example, a 2x return multiple means the return is twice the total investment cost."
         }
       }
     ]
@@ -771,778 +903,846 @@
 
 <body>
 
-<header>
 
-  <div class="container nav">
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
-    <a class="logo" href="../index.html" aria-label="ToolVault home">
-      <span>T</span>ToolVault
-    </a>
+  <header>
 
-    <a class="back" href="../index.html">
-      ← Back to Tools
-    </a>
+    <div class="container nav">
 
-  </div>
+      <a
+        class="logo"
+        href="../index.html"
+        aria-label="ToolVault home"
+      >
+        <span>T</span>ToolVault
+      </a>
 
-</header>
+      <a
+        class="back"
+        href="../index.html"
+      >
+        ← Back to Tools
+      </a>
 
-
-<!-- =========================================================
-     HERO
-========================================================== -->
-
-<section class="hero">
-
-  <div class="container">
-
-    <div class="badge">
-      FINANCE &amp; BUSINESS TOOL
     </div>
 
-    <h1>
+  </header>
+
+
+  <!-- =========================================================
+       BREADCRUMB
+  ========================================================== -->
+
+  <nav
+    class="container breadcrumb"
+    aria-label="Breadcrumb"
+  >
+
+    <a href="../index.html">
+      ToolVault
+    </a>
+
+    <span
+      class="breadcrumb-separator"
+      aria-hidden="true"
+    >
+      ›
+    </span>
+
+    <a href="../index.html">
+      Tools
+    </a>
+
+    <span
+      class="breadcrumb-separator"
+      aria-hidden="true"
+    >
+      ›
+    </span>
+
+    <span>
       ROI Calculator
-    </h1>
+    </span>
+
+  </nav>
+
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="badge">
+        FINANCE &amp; BUSINESS TOOL
+      </div>
+
+      <h1>
+        ROI Calculator
+      </h1>
+
+      <p>
+        Calculate return on investment, ROI percentage, net gain and
+        return multiple with this free online ROI Calculator.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       CALCULATOR
+  ========================================================== -->
+
+  <main
+    class="container workspace"
+    aria-label="ROI Calculator"
+  >
+
+
+    <!-- CALCULATOR INPUT PANEL -->
+
+    <div class="panel">
+
+      <h2>
+        Calculate Your Return on Investment
+      </h2>
+
+
+      <div class="field">
+
+        <label for="investment">
+          Initial Investment ($)
+        </label>
+
+        <input
+          id="investment"
+          type="number"
+          min="0"
+          step="0.01"
+          value="1000"
+          inputmode="decimal"
+          aria-describedby="investment-help"
+        >
+
+        <div
+          class="help"
+          id="investment-help"
+        >
+          Enter the original amount invested.
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="costs">
+          Additional Costs ($)
+        </label>
+
+        <input
+          id="costs"
+          type="number"
+          min="0"
+          step="0.01"
+          value="100"
+          inputmode="decimal"
+          aria-describedby="costs-help"
+        >
+
+        <div
+          class="help"
+          id="costs-help"
+        >
+          Include additional expenses related to the investment.
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="returns">
+          Total Return ($)
+        </label>
+
+        <input
+          id="returns"
+          type="number"
+          min="0"
+          step="0.01"
+          value="1500"
+          inputmode="decimal"
+          aria-describedby="returns-help"
+        >
+
+        <div
+          class="help"
+          id="returns-help"
+        >
+          Enter the total amount returned by the investment.
+        </div>
+
+      </div>
+
+
+      <button
+        class="btn"
+        type="button"
+        onclick="ToolVaultPaywall.show()"
+        aria-label="Calculate ROI"
+      >
+        Calculate ROI
+      </button>
+
+
+      <button
+        class="btn secondary"
+        type="button"
+        onclick="resetCalculator()"
+        aria-label="Reset ROI calculator"
+      >
+        Reset
+      </button>
+
+    </div>
+
+
+    <!-- RESULTS PANEL -->
+
+    <div class="result">
+
+      <h2>
+        ROI Results
+      </h2>
+
+
+      <div
+        class="stats"
+        aria-live="polite"
+      >
+
+
+        <div class="stat">
+
+          <span>
+            Total Investment Cost
+          </span>
+
+          <strong id="total">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span>
+            Net Gain
+          </span>
+
+          <strong id="gain">
+            $0.00
+          </strong>
+
+        </div>
+
+
+        <div
+          class="stat highlight"
+          id="roiBox"
+        >
+
+          <span>
+            Return on Investment (ROI)
+          </span>
+
+          <strong id="roi">
+            0%
+          </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+          <span>
+            Return Multiple
+          </span>
+
+          <strong id="multiple">
+            0x
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <p class="calculator-note">
+        Results are estimates based on the values entered and are intended
+        for general planning purposes only.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================================================
+       SEO / EDUCATIONAL CONTENT
+  ========================================================== -->
+
+  <section
+    aria-label="ROI Calculator information"
+    class="seo-content"
+  >
+
+
+    <h2>
+      Free ROI Calculator
+    </h2>
 
     <p>
-      Calculate return on investment, ROI percentage, net gain and return
-      multiple with this free online ROI Calculator.
+      Use ToolVault's free <strong>ROI Calculator</strong> to calculate
+      return on investment, ROI percentage, net gain and return multiple.
+      Enter your initial investment, additional costs and total return to
+      estimate the financial result of an investment.
     </p>
 
-  </div>
-
-</section>
-
-
-<!-- =========================================================
-     CALCULATOR
-========================================================== -->
-
-<main class="container workspace">
-
-  <div class="panel">
-
-    <h2>
-      Calculate Your Return on Investment
-    </h2>
-
-    <div class="field">
-
-      <label for="investment">
-        Initial Investment ($)
-      </label>
-
-      <input
-        id="investment"
-        type="number"
-        min="0"
-        step="0.01"
-        value="1000"
-      >
-
-      <div class="help">
-        Enter the original amount invested.
-      </div>
-
-    </div>
-
-
-    <div class="field">
-
-      <label for="costs">
-        Additional Costs ($)
-      </label>
-
-      <input
-        id="costs"
-        type="number"
-        min="0"
-        step="0.01"
-        value="100"
-      >
-
-      <div class="help">
-        Include additional expenses related to the investment.
-      </div>
-
-    </div>
-
-
-    <div class="field">
-
-      <label for="returns">
-        Total Return ($)
-      </label>
-
-      <input
-        id="returns"
-        type="number"
-        min="0"
-        step="0.01"
-        value="1500"
-      >
-
-      <div class="help">
-        Enter the total amount returned by the investment.
-      </div>
-
-    </div>
-
-
-    <button
-      class="btn"
-      type="button"
-      onclick="ToolVaultPaywall.show()"
-    >
-      Calculate ROI
-    </button>
-
-
-    <button
-      class="btn secondary"
-      type="button"
-      onclick="resetCalculator()"
-    >
-      Reset
-    </button>
-
-  </div>
-
-
-  <div class="result">
-
-    <h2>
-      ROI Results
-    </h2>
-
-    <div class="stats">
-
-      <div class="stat">
-
-        <span>
-          Total Investment Cost
-        </span>
-
-        <strong id="total">
-          $0.00
-        </strong>
-
-      </div>
-
-
-      <div class="stat">
-
-        <span>
-          Net Gain
-        </span>
-
-        <strong id="gain">
-          $0.00
-        </strong>
-
-      </div>
-
-
-      <div class="stat highlight" id="roiBox">
-
-        <span>
-          Return on Investment (ROI)
-        </span>
-
-        <strong id="roi">
-          0%
-        </strong>
-
-      </div>
-
-
-      <div class="stat">
-
-        <span>
-          Return Multiple
-        </span>
-
-        <strong id="multiple">
-          0x
-        </strong>
-
-      </div>
-
-    </div>
-
-
-    <p class="calculator-note">
-      Results are estimates based on the values entered and are intended
-      for general planning purposes only.
+    <p>
+      This <strong>return on investment calculator</strong> provides a
+      quick online way to calculate ROI from the total amount invested
+      and the return generated.
     </p>
 
-  </div>
 
-</main>
+    <h2>
+      How to Calculate ROI
+    </h2>
 
+    <p>
+      To calculate return on investment, first determine the total
+      investment cost by adding the initial investment and any additional
+      costs. Then subtract the total investment cost from the total return
+      to determine the net gain.
+    </p>
 
-<!-- =========================================================
-     SEO CONTENT
-========================================================== -->
-
-<section
-  aria-label="ROI Calculator information"
-  class="seo-content"
->
-
-  <h2>
-    Free ROI Calculator
-  </h2>
-
-  <p>
-    Use ToolVault's free <strong>ROI Calculator</strong> to calculate
-    return on investment, ROI percentage, net gain and return multiple.
-    Enter your initial investment, additional costs and total return to
-    estimate the financial result of an investment.
-  </p>
-
-  <p>
-    This <strong>return on investment calculator</strong> provides a
-    quick online way to calculate ROI from the total amount invested
-    and the return generated.
-  </p>
-
-
-  <h2>
-    How to Calculate ROI
-  </h2>
-
-  <p>
-    To calculate return on investment, first determine the total
-    investment cost by adding the initial investment and any additional
-    costs. Then subtract the total investment cost from the total return
-    to determine the net gain.
-  </p>
-
-  <div class="formula">
-    ROI = (Net Gain ÷ Total Investment Cost) × 100
-  </div>
-
-  <p>
-    For example, if an investment costs $1,100 in total and produces a
-    return of $1,500, the net gain is $400. The ROI is approximately
-    36.36%.
-  </p>
-
-
-  <!-- =======================================================
-       ROI EXAMPLES
-  ======================================================== -->
-
-  <h2>
-    ROI Calculator Examples
-  </h2>
-
-  <p>
-    Understanding a few practical examples can make it easier to see
-    how an ROI calculation works. The examples below use the same
-    calculation method as this ROI calculator.
-  </p>
-
-  <div class="example-grid">
-
-    <div class="example-card">
-
-      <h3>
-        Business Investment Example
-      </h3>
-
-      <ul>
-        <li><strong>Initial investment:</strong> $1,000</li>
-        <li><strong>Additional costs:</strong> $100</li>
-        <li><strong>Total return:</strong> $1,500</li>
-        <li><strong>Total investment cost:</strong> $1,100</li>
-        <li><strong>Net gain:</strong> $400</li>
-      </ul>
-
-      <div class="example-result">
-        ROI: 36.36% | Return Multiple: 1.36x
-      </div>
-
+    <div class="formula">
+      ROI = (Net Gain ÷ Total Investment Cost) × 100
     </div>
 
-
-    <div class="example-card">
-
-      <h3>
-        Marketing Campaign Example
-      </h3>
-
-      <ul>
-        <li><strong>Initial campaign cost:</strong> $2,000</li>
-        <li><strong>Additional expenses:</strong> $500</li>
-        <li><strong>Total return:</strong> $3,500</li>
-        <li><strong>Total investment cost:</strong> $2,500</li>
-        <li><strong>Net gain:</strong> $1,000</li>
-      </ul>
-
-      <div class="example-result">
-        ROI: 40% | Return Multiple: 1.40x
-      </div>
-
-    </div>
-
-  </div>
+    <p>
+      For example, if an investment costs $1,100 in total and produces a
+      return of $1,500, the net gain is $400. The ROI is approximately
+      36.36%.
+    </p>
 
 
-  <h2>
-    What Is Return on Investment?
-  </h2>
+    <h2>
+      What Is Return on Investment?
+    </h2>
 
-  <p>
-    Return on Investment, commonly known as ROI, is a percentage used to
-    express the gain or loss generated by an investment compared with
-    the amount invested.
-  </p>
+    <p>
+      Return on Investment, commonly known as ROI, is a percentage used to
+      express the gain or loss generated by an investment compared with
+      the amount invested.
+    </p>
 
-  <p>
-    ROI can be used when reviewing investments, marketing campaigns,
-    business projects, equipment purchases and other activities where
-    costs and financial returns can be compared.
-  </p>
+    <p>
+      ROI can be used when reviewing investments, marketing campaigns,
+      business projects, equipment purchases and other activities where
+      costs and financial returns can be compared.
+    </p>
 
-  <p>
-    When evaluating the profitability of a product or business activity,
-    you can also use the
-    <a href="profit-calculator.html">Profit Calculator</a>
-    to review estimated profit and the
-    <a href="expense-calculator.html">Expense Calculator</a>
-    to review related costs.
-  </p>
-
-
-  <h2>
-    ROI Percentage Calculator
-  </h2>
-
-  <p>
-    An <strong>ROI percentage calculator</strong> converts the net gain
-    from an investment into a percentage of the total investment cost.
-    This makes it easier to compare returns from investments with
-    different costs.
-  </p>
+    <p>
+      When evaluating the profitability of a product or business activity,
+      you can also use the
+      <a
+        href="profit-calculator.html"
+        title="Free Profit Calculator"
+      >
+        Profit Calculator
+      </a>
+      to review estimated profit and the
+      <a
+        href="expense-calculator.html"
+        title="Free Expense Calculator"
+      >
+        Expense Calculator
+      </a>
+      to review related costs.
+    </p>
 
 
-  <h2>
-    Investment Return Calculator
-  </h2>
+    <h2>
+      ROI Percentage Calculator
+    </h2>
 
-  <p>
-    The ToolVault <strong>investment return calculator</strong>
-    calculates total investment cost, net gain, ROI percentage and
-    return multiple from the values you enter.
-  </p>
-
-  <p>
-    If you are evaluating the pricing or profitability of a product or
-    service, you can also use the
-    <a href="pricing-calculator.html">Pricing Calculator</a>
-    to estimate a suitable selling price.
-  </p>
+    <p>
+      An <strong>ROI percentage calculator</strong> converts the net gain
+      from an investment into a percentage of the total investment cost.
+      This makes it easier to compare returns from investments with
+      different costs.
+    </p>
 
 
-  <h2>
-    What Does the ROI Calculator Show?
-  </h2>
+    <h2>
+      Investment Return Calculator
+    </h2>
 
-  <ul>
+    <p>
+      The ToolVault <strong>investment return calculator</strong>
+      calculates total investment cost, net gain, ROI percentage and
+      return multiple from the values you enter.
+    </p>
 
-    <li>
-      <strong>Total Investment Cost:</strong>
-      Initial investment plus additional costs.
-    </li>
-
-    <li>
-      <strong>Net Gain:</strong>
-      Total return minus total investment cost.
-    </li>
-
-    <li>
-      <strong>ROI Percentage:</strong>
-      Net gain expressed as a percentage of total investment cost.
-    </li>
-
-    <li>
-      <strong>Return Multiple:</strong>
-      Total return divided by total investment cost.
-    </li>
-
-  </ul>
+    <p>
+      If you are evaluating the pricing or profitability of a product or
+      service, you can also use the
+      <a
+        href="pricing-calculator.html"
+        title="Free Pricing Calculator"
+      >
+        Pricing Calculator
+      </a>
+      to estimate a suitable selling price.
+    </p>
 
 
-  <h2>
-    Who Can Use This ROI Calculator?
-  </h2>
-
-  <p>
-    This online ROI calculator can be useful for entrepreneurs, business
-    owners, marketers, freelancers, investors and professionals evaluating
-    investment performance, business projects or marketing activities.
-  </p>
-
-
-  <!-- =======================================================
-       BUSINESS PROFIT CONNECTION
-  ======================================================== -->
-
-  <h3>
-    ROI and Business Profit Analysis
-  </h3>
-
-  <p>
-    ROI and business profit are related but measure different aspects
-    of financial performance. ROI compares net gain with the total
-    investment cost, while profit analysis focuses on revenue, costs
-    and resulting profit.
-  </p>
-
-  <p>
-    For a broader business profitability review, use the
-    <a href="business-profit-calculator.html">
-      Business Profit Calculator
-    </a>.
-  </p>
-
-
-  <!-- =======================================================
-       BUSINESS & FINANCE CONNECTION CLUSTER
-  ======================================================== -->
-
-  <h2>
-    Business Finance Calculators
-  </h2>
-
-  <p>
-    Different business calculations answer different financial questions.
-    ToolVault provides related calculators that can be used together
-    when reviewing pricing, expenses, profit and investment returns.
-  </p>
-
-  <div class="cluster-box">
-
-    <h3>
-      ToolVault Business &amp; Finance Tools
-    </h3>
+    <h2>
+      What Does the ROI Calculator Show?
+    </h2>
 
     <ul>
 
       <li>
-        <strong>ROI Calculator:</strong>
-        Measure return on investment and return multiple.
+        <strong>Total Investment Cost:</strong>
+        Initial investment plus additional costs.
       </li>
 
       <li>
-        <strong>Pricing Calculator:</strong>
-        Estimate selling prices using costs, fees and target profit margin.
+        <strong>Net Gain:</strong>
+        Total return minus total investment cost.
       </li>
 
       <li>
-        <strong>Profit Calculator:</strong>
-        Calculate estimated revenue, costs and profit.
+        <strong>ROI Percentage:</strong>
+        Net gain expressed as a percentage of total investment cost.
       </li>
 
       <li>
-        <strong>Expense Calculator:</strong>
-        Review business and operating expenses.
-      </li>
-
-      <li>
-        <strong>Business Profit Calculator:</strong>
-        Review broader business profitability.
+        <strong>Return Multiple:</strong>
+        Total return divided by total investment cost.
       </li>
 
     </ul>
 
-  </div>
-
-  <p>
-    Start with the calculation that matches your objective, then use the
-    related ToolVault calculators to review other financial factors.
-  </p>
-
-
-  <!-- =======================================================
-       FAQ
-  ======================================================== -->
-
-  <h2>
-    Frequently Asked Questions About ROI
-  </h2>
-
-
-  <h3>
-    What is an ROI calculator?
-  </h3>
 
-  <p>
-    An ROI calculator calculates return on investment by comparing the
-    net gain from an investment with the total investment cost.
-  </p>
+    <h2>
+      Who Can Use This ROI Calculator?
+    </h2>
 
+    <p>
+      This online ROI calculator can be useful for entrepreneurs, business
+      owners, marketers, freelancers, investors and professionals evaluating
+      investment performance, business projects or marketing activities.
+    </p>
 
-  <h3>
-    How do you calculate ROI?
-  </h3>
 
-  <p>
-    ROI is commonly calculated by subtracting the total investment cost
-    from the return to determine net gain, dividing the net gain by
-    total investment cost and multiplying the result by 100.
-  </p>
+    <!-- =======================================================
+         BUSINESS PROFIT CONNECTION
+    ========================================================= -->
 
+    <h3>
+      ROI and Business Profit Analysis
+    </h3>
 
-  <h3>
-    What does ROI percentage mean?
-  </h3>
+    <p>
+      ROI and business profit are related but measure different aspects
+      of financial performance. ROI compares net gain with the total
+      investment cost, while profit analysis focuses on revenue, costs
+      and resulting profit.
+    </p>
 
-  <p>
-    ROI percentage expresses the net gain from an investment as a
-    percentage of the total investment cost.
-  </p>
+    <p>
+      For a broader business profitability review, use the
+      <a
+        href="business-profit-calculator.html"
+        title="Free Business Profit Calculator"
+      >
+        Business Profit Calculator
+      </a>.
+    </p>
 
 
-  <h3>
-    What is return multiple?
-  </h3>
+    <!-- =======================================================
+         BUSINESS & FINANCE CONNECTION CLUSTER
+    ========================================================= -->
 
-  <p>
-    Return multiple compares the total return with the total investment
-    cost. For example, a 2x return multiple means the return is twice
-    the total investment cost.
-  </p>
+    <h2>
+      Business Finance Calculations
+    </h2>
 
+    <p>
+      Different business calculations answer different financial
+      questions. Use the ToolVault tools below according to the type
+      of calculation you need.
+    </p>
 
-  <!-- =======================================================
-       RELATED TOOLS
-  ======================================================== -->
 
-  <h2>
-    Explore Related Business &amp; Finance Tools
-  </h2>
+    <div class="cluster-box">
 
-  <p>
-    Explore related ToolVault calculators to evaluate pricing,
-    profitability, expenses and financial performance.
-  </p>
+      <h3>
+        ToolVault Business &amp; Finance Tools
+      </h3>
 
-  <div class="seo-related">
+      <ul>
 
-    <a
-      href="pricing-calculator.html"
-      title="Free Pricing Calculator"
-    >
-      Pricing Calculator
-    </a>
+        <li>
+          <strong>ROI Calculator:</strong>
+          Measure return on investment and return multiple.
+        </li>
 
-    <a
-      href="profit-calculator.html"
-      title="Free Profit Calculator"
-    >
-      Profit Calculator
-    </a>
+        <li>
+          <strong>Pricing Calculator:</strong>
+          Estimate selling prices using costs, fees and target profit margin.
+        </li>
 
-    <a
-      href="expense-calculator.html"
-      title="Free Expense Calculator"
-    >
-      Expense Calculator
-    </a>
+        <li>
+          <strong>Profit Calculator:</strong>
+          Calculate estimated revenue, costs and profit.
+        </li>
 
-    <a
-      href="business-profit-calculator.html"
-      title="Free Business Profit Calculator"
-    >
-      Business Profit Calculator
-    </a>
+        <li>
+          <strong>Expense Calculator:</strong>
+          Review business and operating expenses.
+        </li>
 
-    <a
-      href="invoice-generator.html"
-      title="Free Invoice Generator"
-    >
-      Invoice Generator
-    </a>
+        <li>
+          <strong>Business Profit Calculator:</strong>
+          Review broader business profitability.
+        </li>
 
-    <a
-      href="quote-generator.html"
-      title="Free Quote Generator"
-    >
-      Quote Generator
-    </a>
+      </ul>
 
-  </div>
+    </div>
 
-</section>
 
+    <p>
+      Start with the calculation that matches your objective, then use
+      the related ToolVault calculators to review the other financial
+      factors.
+    </p>
 
-<!-- =========================================================
-     FOOTER
-========================================================== -->
 
-<footer>
+    <!-- =======================================================
+         FAQ
+    ========================================================= -->
+
+    <h2>
+      Frequently Asked Questions About ROI
+    </h2>
+
+
+    <h3>
+      What is an ROI calculator?
+    </h3>
+
+    <p>
+      An ROI calculator calculates return on investment by comparing the
+      net gain from an investment with the total investment cost.
+    </p>
 
-  <div class="container">
 
-    <span>
-      © 2026 ToolVault
-    </span>
+    <h3>
+      How do you calculate ROI?
+    </h3>
 
-    <span>
-      Practical digital tools for smarter work.
-    </span>
+    <p>
+      ROI is commonly calculated by subtracting the total investment cost
+      from the return to determine net gain, dividing the net gain by
+      total investment cost and multiplying the result by 100.
+    </p>
 
-  </div>
 
-</footer>
+    <h3>
+      What does ROI percentage mean?
+    </h3>
 
+    <p>
+      ROI percentage expresses the net gain from an investment as a
+      percentage of the total investment cost.
+    </p>
 
-<!-- =========================================================
-     CALCULATOR JAVASCRIPT
-========================================================== -->
 
-<script>
+    <h3>
+      What is return multiple?
+    </h3>
 
-function money(x) {
+    <p>
+      Return multiple compares the total return with the total investment
+      cost. For example, a 2x return multiple means the return is twice
+      the total investment cost.
+    </p>
 
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD"
-  }).format(x);
 
-}
+    <!-- =======================================================
+         RELATED TOOLS
+    ========================================================= -->
 
+    <h2>
+      Explore Related Business &amp; Finance Tools
+    </h2>
 
-function calc() {
+    <p>
+      Explore related ToolVault calculators and business tools to
+      evaluate pricing, profitability, expenses and financial performance.
+    </p>
 
-  const investmentValue =
-    Math.max(
-      0,
-      Number(document.getElementById("investment").value) || 0
-    );
 
-  const additionalCosts =
-    Math.max(
-      0,
-      Number(document.getElementById("costs").value) || 0
-    );
+    <div class="seo-related">
 
-  const totalReturn =
-    Math.max(
-      0,
-      Number(document.getElementById("returns").value) || 0
-    );
+      <a
+        href="pricing-calculator.html"
+        title="Free Pricing Calculator"
+      >
+        Pricing Calculator
+      </a>
 
+      <a
+        href="profit-calculator.html"
+        title="Free Profit Calculator"
+      >
+        Profit Calculator
+      </a>
 
-  const totalInvestment =
-    investmentValue + additionalCosts;
+      <a
+        href="expense-calculator.html"
+        title="Free Expense Calculator"
+      >
+        Expense Calculator
+      </a>
 
-  const netGain =
-    totalReturn - totalInvestment;
+      <a
+        href="business-profit-calculator.html"
+        title="Free Business Profit Calculator"
+      >
+        Business Profit Calculator
+      </a>
 
-  const roiValue =
-    totalInvestment > 0
-      ? (netGain / totalInvestment) * 100
-      : null;
+      <a
+        href="invoice-generator.html"
+        title="Free Invoice Generator"
+      >
+        Invoice Generator
+      </a>
 
-  const returnMultiple =
-    totalInvestment > 0
-      ? totalReturn / totalInvestment
-      : null;
+      <a
+        href="quote-generator.html"
+        title="Free Quote Generator"
+      >
+        Quote Generator
+      </a>
 
+    </div>
 
-  document.getElementById("total").textContent =
-    money(totalInvestment);
+  </section>
 
-  document.getElementById("gain").textContent =
-    money(netGain);
 
-  document.getElementById("roi").textContent =
-    roiValue !== null
-      ? roiValue.toFixed(2) + "%"
-      : "N/A";
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
 
-  document.getElementById("multiple").textContent =
-    returnMultiple !== null
-      ? returnMultiple.toFixed(2) + "x"
-      : "N/A";
+  <footer>
 
+    <div class="container">
 
-  const roiBox =
-    document.getElementById("roiBox");
+      <span>
+        © 2026 ToolVault
+      </span>
 
+      <span>
+        Practical digital tools for smarter work.
+      </span>
 
-  roiBox.classList.remove("highlight");
-  roiBox.classList.remove("loss");
+    </div>
 
+  </footer>
 
-  if (roiValue !== null) {
 
-    if (roiValue >= 0) {
+  <!-- =========================================================
+       CALCULATOR JAVASCRIPT
+  ========================================================== -->
 
-      roiBox.classList.add("highlight");
+  <script>
 
-    } else {
+    function money(x){
 
-      roiBox.classList.add("loss");
+      return new Intl.NumberFormat("en-US",{
+        style:"currency",
+        currency:"USD"
+      }).format(x);
 
     }
 
-  }
 
-}
+    function calc(){
 
-
-function resetCalculator() {
-
-  document.getElementById("investment").value = 1000;
-
-  document.getElementById("costs").value = 100;
-
-  document.getElementById("returns").value = 1500;
-
-  calc();
-
-}
+      const investmentValue =
+        Math.max(
+          0,
+          Number(
+            document.getElementById("investment").value
+          ) || 0
+        );
 
 
-document.getElementById("investment")
-  .addEventListener("input", calc);
-
-document.getElementById("costs")
-  .addEventListener("input", calc);
-
-document.getElementById("returns")
-  .addEventListener("input", calc);
-
-
-calc();
-
-</script>
+      const additionalCosts =
+        Math.max(
+          0,
+          Number(
+            document.getElementById("costs").value
+          ) || 0
+        );
 
 
-<!-- =========================================================
-     TOOLVAULT PAYWALL
-========================================================== -->
+      const totalReturn =
+        Math.max(
+          0,
+          Number(
+            document.getElementById("returns").value
+          ) || 0
+        );
 
-<script>
 
-window.TOOLVAULT_PAYWALL = {
+      const totalInvestment =
+        investmentValue + additionalCosts;
 
-  checkout:
-    "https://zafcommander.gumroad.com/l/roi-calculator?wanted=true",
 
-  toolName:
-    "ROI Calculator"
+      const netGain =
+        totalReturn - totalInvestment;
 
-};
 
-</script>
+      const roiValue =
+        totalInvestment > 0
+          ? (netGain / totalInvestment) * 100
+          : null;
 
-<script src="../js/paywall.js"></script>
+
+      const returnMultiple =
+        totalInvestment > 0
+          ? totalReturn / totalInvestment
+          : null;
+
+
+      document.getElementById("total").textContent =
+        money(totalInvestment);
+
+
+      document.getElementById("gain").textContent =
+        money(netGain);
+
+
+      document.getElementById("roi").textContent =
+        roiValue !== null
+          ? roiValue.toFixed(2) + "%"
+          : "N/A";
+
+
+      document.getElementById("multiple").textContent =
+        returnMultiple !== null
+          ? returnMultiple.toFixed(2) + "x"
+          : "N/A";
+
+
+      const roiBox =
+        document.getElementById("roiBox");
+
+
+      roiBox.classList.remove("highlight");
+      roiBox.classList.remove("loss");
+
+
+      if(roiValue !== null){
+
+        if(roiValue >= 0){
+
+          roiBox.classList.add("highlight");
+
+        }else{
+
+          roiBox.classList.add("loss");
+
+        }
+
+      }
+
+    }
+
+
+    function resetCalculator(){
+
+      document.getElementById("investment").value = 1000;
+
+      document.getElementById("costs").value = 100;
+
+      document.getElementById("returns").value = 1500;
+
+      calc();
+
+    }
+
+
+    document
+      .getElementById("investment")
+      .addEventListener("input", calc);
+
+
+    document
+      .getElementById("costs")
+      .addEventListener("input", calc);
+
+
+    document
+      .getElementById("returns")
+      .addEventListener("input", calc);
+
+
+    calc();
+
+  </script>
+
+
+  <!-- =========================================================
+       TOOLVAULT PAYWALL
+  ========================================================== -->
+
+  <script>
+
+    window.TOOLVAULT_PAYWALL = {
+
+      checkout:
+        "https://zafcommander.gumroad.com/l/roi-calculator?wanted=true",
+
+      toolName:
+        "ROI Calculator"
+
+    };
+
+  </script>
+
+
+  <script src="../js/paywall.js"></script>
+
 
 </body>
 </html>
