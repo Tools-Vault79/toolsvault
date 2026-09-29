@@ -13,7 +13,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Directree Verification -->
   <meta name="directree-verify" content="directree-verify=3ae3fecb64450668e11507adfc9695d4">
+
   <!-- Primary SEO -->
   <title>Free Online Tools for Business, Productivity &amp; Marketing | ToolVault</title>
 
@@ -45,6 +48,7 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+
   <meta
     name="twitter:title"
     content="ToolVault – Free Online Tools for Smarter Work"
@@ -60,7 +64,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
 
@@ -594,17 +598,43 @@
       border-radius:9px
     }
 
+    /* DIRECTREE BADGE */
+
+    .directree-badge-wrapper{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      width:100%;
+      padding:25px 0 10px;
+      background:var(--navy);
+    }
+
+    .directree-badge-wrapper a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+
+    .directree-badge-wrapper img{
+      display:block;
+      width:200px;
+      height:37px;
+      max-width:100%;
+    }
+
     footer{
       background:var(--navy);
       color:#94A3B8;
-      padding:30px 0;
+      padding:0 0 30px;
       font-size:12px
     }
 
     footer .container{
       display:flex;
       justify-content:space-between;
-      gap:20px
+      gap:20px;
+      align-items:center
     }
 
     @media(max-width:800px){
@@ -627,6 +657,11 @@
 
       .feature{
         grid-template-columns:1fr
+      }
+
+      footer .container{
+        flex-direction:column;
+        text-align:center
       }
 
     }
@@ -739,11 +774,9 @@
 
     </div>
 
-
     <div class="grid">
 
       <div class="card tool-card" data-category="AI Tools">
-
         <div class="icon">🤖</div>
 
         <h3>AI Prompt Generator</h3>
@@ -756,8 +789,7 @@
 
           <span class="price">$4.99</span>
 
-          <a class="view"
-             href="tools/ai-prompt-generator.html">
+          <a class="view" href="tools/ai-prompt-generator.html">
             View Tool →
           </a>
 
@@ -768,12 +800,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Business">
-
         <div class="icon">📊</div>
 
         <h3>Business Profit Calculator</h3>
@@ -786,8 +816,7 @@
 
           <span class="price">$3.99</span>
 
-          <a class="view"
-             href="tools/profit-calculator.html">
+          <a class="view" href="tools/profit-calculator.html">
             View Tool →
           </a>
 
@@ -798,12 +827,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Business">
-
         <div class="icon">🧾</div>
 
         <h3>Invoice Generator</h3>
@@ -816,8 +843,7 @@
 
           <span class="price">$4.99</span>
 
-          <a class="view"
-             href="tools/invoice-generator.html">
+          <a class="view" href="tools/invoice-generator.html">
             View Tool →
           </a>
 
@@ -828,12 +854,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Marketing">
-
         <div class="icon">📱</div>
 
         <h3>Social Media Planner</h3>
@@ -846,8 +870,7 @@
 
           <span class="price">$3.99</span>
 
-          <a class="view"
-             href="tools/social-media-planner.html">
+          <a class="view" href="tools/social-media-planner.html">
             View Tool →
           </a>
 
@@ -858,12 +881,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Finance">
-
         <div class="icon">💰</div>
 
         <h3>Expense Calculator</h3>
@@ -876,8 +897,7 @@
 
           <span class="price">$2.99</span>
 
-          <a class="view"
-             href="tools/expense-calculator.html">
+          <a class="view" href="tools/expense-calculator.html">
             View Tool →
           </a>
 
@@ -888,12 +908,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Business">
-
         <div class="icon">🏷️</div>
 
         <h3>Pricing Calculator</h3>
@@ -906,8 +924,7 @@
 
           <span class="price">$3.99</span>
 
-          <a class="view"
-             href="tools/pricing-calculator.html">
+          <a class="view" href="tools/pricing-calculator.html">
             View Tool →
           </a>
 
@@ -918,12 +935,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Finance">
-
         <div class="icon">📈</div>
 
         <h3>ROI Calculator</h3>
@@ -936,8 +951,7 @@
 
           <span class="price">$2.99</span>
 
-          <a class="view"
-             href="tools/roi-calculator.html">
+          <a class="view" href="tools/roi-calculator.html">
             View Tool →
           </a>
 
@@ -948,12 +962,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Business">
-
         <div class="icon">📋</div>
 
         <h3>Business Quote Generator</h3>
@@ -966,8 +978,7 @@
 
           <span class="price">$3.99</span>
 
-          <a class="view"
-             href="tools/quote-generator.html">
+          <a class="view" href="tools/quote-generator.html">
             View Tool →
           </a>
 
@@ -978,12 +989,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Productivity">
-
         <div class="icon">📝</div>
 
         <h3>Meeting Notes Generator</h3>
@@ -996,8 +1005,7 @@
 
           <span class="price">$2.99</span>
 
-          <a class="view"
-             href="tools/meeting-notes-generator.html">
+          <a class="view" href="tools/meeting-notes-generator.html">
             View Tool →
           </a>
 
@@ -1008,12 +1016,10 @@
           </a>
 
         </div>
-
       </div>
 
 
       <div class="card tool-card" data-category="Marketing">
-
         <div class="icon">📅</div>
 
         <h3>Content Calendar Generator</h3>
@@ -1026,8 +1032,7 @@
 
           <span class="price">$3.99</span>
 
-          <a class="view"
-             href="tools/content-calendar.html">
+          <a class="view" href="tools/content-calendar.html">
             View Tool →
           </a>
 
@@ -1038,7 +1043,6 @@
           </a>
 
         </div>
-
       </div>
 
     </div>
@@ -1115,9 +1119,7 @@
 
     </div>
 
-
     <div class="grid">
-
 
       <div class="free-card">
 
@@ -1178,7 +1180,6 @@
 
       </div>
 
-
     </div>
 
   </div>
@@ -1202,10 +1203,8 @@
 
     </div>
 
-
     <div class="grid"
          style="grid-template-columns:repeat(3,1fr);gap:12px">
-
 
       <div class="card"
            style="min-height:auto;padding:18px">
@@ -1260,7 +1259,6 @@
 
       </div>
 
-
     </div>
 
   </div>
@@ -1283,7 +1281,6 @@
       </p>
 
     </div>
-
 
     <div class="feature">
 
@@ -1341,7 +1338,6 @@
     prepare marketing plans and clean or analyze text.
   </p>
 
-
   <h2>
     Online Business Tools
   </h2>
@@ -1353,7 +1349,6 @@
     services, pricing and business operations.
   </p>
 
-
   <h2>
     Productivity and Writing Tools
   </h2>
@@ -1363,7 +1358,6 @@
     The Word Counter can count words, characters, sentences and paragraphs,
     while the Text Cleaner helps remove unnecessary spacing from copied text.
   </p>
-
 
   <h2>
     Marketing and Content Tools
@@ -1375,7 +1369,6 @@
     and plan content more efficiently.
   </p>
 
-
   <h2>
     Explore ToolVault
   </h2>
@@ -1385,7 +1378,6 @@
     what each utility can do. ToolVault is being developed as a growing
     collection of focused digital tools for practical everyday workflows.
   </p>
-
 
   <div class="seo-related">
 
@@ -1426,12 +1418,26 @@
 
 <footer>
 
-<a href="https://www.directree.io" target="_blank" rel="noopener">
-  <img src="https://www.directree.io/badge/directree-badge-lightmode.svg"
-       alt="Verified on directree"
-       width="200"
-       height="37" />
-</a>
+  <!-- DIRECTREE VERIFIED BADGE -->
+  <div class="directree-badge-wrapper">
+
+    <a
+      href="https://www.directree.io"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Verified on Directree"
+    >
+      <img
+        src="https://www.directree.io/badge/directree-badge-lightmode.svg"
+        alt="Verified on Directree"
+        width="200"
+        height="37"
+      >
+    </a>
+
+  </div>
+
+
   <div class="container">
 
     <span>
